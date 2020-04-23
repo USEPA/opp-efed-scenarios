@@ -1,0 +1,151 @@
+cdl,cdl_desc,cdl_alias,cdl_alias_desc,pwc_class,pwc_class_desc,model,gen_class_name,gen_class,cfr_label_group,cfr_label_group_desc
+1,Corn,1,Corn,10,Corn,all,Corn,10,15B,Cereal Grains 
+2,Cotton,2,Cotton,20,Cotton,all,Cotton,20,20C,Oilseed 
+3,Rice,3,Rice,30,Rice,pfam,Rice,30,15C,Cereal Grains 
+4,Sorghum,4,Sorghum,40,Other grains or corn,all,Other grains,80,15B,Cereal Grains 
+5,Soybeans,5,Soybeans,50,Soybean,all,Soybeans,40,6,Legumes 
+6,Sunflower,6,Sunflower,60,Row or field crop,all,Other row crops,90,20B,Oilseed 
+10,Peanuts,10,Peanuts,60,Row or field crop,all,Other row crops,90,,not listed
+11,Tobacco,11,Tobacco,60,Row or field crop,all,Other row crops,90,,not listed
+12,Sweet Corn,12,Sweet Corn,70,"Vegetable, fresh or processing market",all,Vegetables,60,15B,Cereal Grains 
+13,Pop or Orn Corn,13,Pop or Orn Corn,10,Corn,all,Vegetables,60,15B,Cereal Grains 
+14,Mint,14,Mint,80,"Hay, all",all,Vegetables,60,25A,Herbs 
+21,Barley,21,Barley,90,Small grains,all,Other grains,80,15A,Cereal Grains 
+22,Durum Wheat,22,Durum Wheat,100,"Wheat, spring",all,Wheat,22,15A,Cereal Grains 
+23,Spring Wheat,23,Spring Wheat,100,"Wheat, spring",all,Wheat,23,15A,Cereal Grains 
+24,Winter Wheat,24,Winter Wheat,110,"Wheat, winter",all,Wheat,24,15A,Cereal Grains 
+25,Other Small Grains,25,Other Small Grains,90,Small grains,all,Other grains,80,15A,Cereal Grains 
+26,Dbl Crop WinWht/Soybeans,24,Winter Wheat,110,"Wheat, winter",all,Wheat,24,15A,Cereal Grains 
+26,Dbl Crop WinWht/Soybeans,5,Soybeans,50,Soybean,all,Soybeans,40,6,Legumes 
+27,Rye,27,Rye,90,Small grains,all,Other grains,80,15A,Cereal Grains 
+28,Oats,28,Oats,90,Small grains,all,Other grains,80,15A,Cereal Grains 
+29,Millet,29,Millet,40,Other grains or corn,all,Other grains,80,15B,Cereal Grains 
+30,Speltz,30,Speltz,90,Small grains,all,Other grains,80,15A,Cereal Grains 
+31,Canola,31,Canola,90,Small grains,all,Other grains,80,20A,Oilseed 
+32,Flaxseed,32,Flaxseed,90,Small grains,all,Other grains,80,20A,Oilseed 
+33,Safflower,33,Safflower,90,Small grains,all,Other grains,80,20B,Oilseed 
+34,Rape Seed,34,Rape Seed,90,Small grains,all,Other grains,80,20A,Oilseed 
+35,Mustard,35,Mustard,90,Small grains,all,Vegetables,60,20A,Oilseed 
+36,Alfalfa,36,Alfalfa,80,"Hay, all",all,Pasture/hay/forage,110,18,Nongrass Animal Feeds 
+37,Other Hay/Non Alfalfa,37,Other Hay/Non Alfalfa,80,"Hay, all",all,Pasture/hay/forage,110,17,Nongrass Animal Feeds 
+38,Camelina,38,Camelina,90,Small grains,all,Other grains,80,20A,Oilseed 
+39,Buckwheat,39,Buckwheat,90,Small grains,all,Other grains,80,15A,Cereal Grains 
+41,Sugarbeets,41,Sugarbeets,60,Row or field crop,all,Other row crops,90,1A,Vegetables-Root and Tuber 
+42,Dry Beans,42,Dry Beans,120,"Vegetable, commodity",all,Vegetables,60,6-18E,Vegetables-Legume 
+43,Potatoes,43,Potatoes,120,"Vegetable, commodity",all,Vegetables,60,1C,Vegetables-Root and Tuber 
+44,Other Crops,44,Other Crops,60,Row or field crop,all,Other crops,100,,Mixed
+45,Sugarcane,45,Sugarcane,130,Sugarcane,all,Other grains,80,,not listed
+46,Sweet Potatoes,46,Sweet Potatoes,120,"Vegetable, commodity",all,Vegetables,60,1D,Vegetables-Root and Tuber 
+47,Misc Vegs & Fruits,47,Misc Vegs & Fruits,70,"Vegetable, fresh or processing market",all,Vegetables,60,,Mixed
+48,Watermelons,48,Watermelons,70,"Vegetable, fresh or processing market",all,Vegetables,60,9A,Vegetables-Cucurbit 
+49,Onions,49,Onions,120,"Vegetable, commodity",all,Vegetables,60,3-07A,Vegetables-Bulb 
+50,Cucumbers,50,Cucumbers,70,"Vegetable, fresh or processing market",all,Vegetables,60,9B,Vegetables-Cucurbit 
+51,Chick Peas,51,Chick Peas,120,"Vegetable, commodity",all,Vegetables,60,6-18C,Vegetables-Legume 
+52,Lentils,52,Lentils,120,"Vegetable, commodity",all,Vegetables,60,6-18C,Vegetables-Legume 
+53,Peas,53,Peas,120,"Vegetable, commodity",all,Vegetables,60,6-18B D F,Vegetables-Legume 
+54,Tomatoes,54,Tomatoes,70,"Vegetable, fresh or processing market",all,Vegetables,60,8-10A,Vegetables-Fruiting 
+55,Caneberries,55,Caneberries,140,"Small fruit, trellised",all,Ground fruit,61,13-07A,Berries and Small Fruit 
+56,Hops,56,Hops,140,"Small fruit, trellised",all,Other row crops,90,,
+57,Herbs,57,Herbs,70,"Vegetable, fresh or processing market",all,Vegetables,60,25A,Herbs 
+58,Clover/Wildflowers,58,Clover/Wildflowers,80,"Hay, all",all,Other crops,100,17,Nongrass Animal Feeds 
+59,Sod/Grass Seed,59,Sod,150,"Turf, small grain (seed)",all,Other crops,100,,
+59,Sod/Grass Seed,59,Grass Seed,150,"Turf, small grain (seed)",all,Other crops,100,,
+60,Switchgrass,60,Switchgrass,80,"Hay, all",all,Pasture/hay/forage,110,17,Nongrass Animal Feeds 
+61,Fallow/Idle Cropland,61,Fallow/Idle Cropland,160,Fallow,sam,Other crops,100,,
+62,Pasture/Grass,62,Pasture/Grass,170,Pasture or forage,sam,Pasture/hay/forage,110,,
+63,Forest,63,Forest,180,Forest,sam,Forest,140,,
+64,Shrubland,64,Shrubland,190,Shrubland,sam,Shrubland,160,,
+65,Barren,65,Barren,160,Fallow,sam,Miscellaneous land,200,,
+66,Cherries,66,Cherries,200,"Orchard, deciduous",all,Other Orchards,70,12-12A,Stone Fruit 
+67,Peaches,67,Peaches,200,"Orchard, deciduous",all,Other Orchards,70,12-12B,Stone Fruit 
+68,Apples,68,Apples,200,"Orchard, deciduous",all,Other Orchards,70,10-Nov,Pome Fruit 
+69,Grapes,69,Grapes,140,"Small fruit, trellised",all,Grapes,71,13-07F,Berries and Small Fruit 
+70,Christmas Trees,70,Christmas Trees,210,"Orchard, evergreen",all,Other trees,75,,
+71,Other Tree Crops,71,Other Tree Crops,200,"Orchard, deciduous",all,Other Orchards,70,,Mixed
+72,Citrus,72,Citrus,210,"Orchard, evergreen",all,Citrus,72,10-Oct,Citrus Fruits 
+73,unidentified,73,unidentified,220,Miscellaneous land,sam,Miscellaneous land,200,,
+74,Pecans,74,Pecans,200,"Orchard, deciduous",all,Other Orchards,70,14-12,Tree Nuts 
+75,Almonds,75,Almonds,200,"Orchard, deciduous",all,Other Orchards,70,14-12,Tree Nuts 
+76,Walnuts,76,Walnuts,200,"Orchard, deciduous",all,Other Orchards,70,14-12,Tree Nuts 
+77,Pears,77,Pears,200,"Orchard, deciduous",all,Other Orchards,70,10-Nov,Pome Fruit 
+81,Clouds/No Data,81,Clouds/No Data,220,Miscellaneous land,sam,Miscellaneous land,200,,
+82,Developed,82,Developed,230,"Developed, medium",sam,Developed-med,123,,
+83,Water,83,Water,240,Water,sam,Water,180,,
+87,Wetlands,87,Wetlands,250,"Wetland, herbaceous",sam,Wetlands-herbaceous,195,,
+88,Non-ag/Undefined,88,Non-ag/Undefined,220,Miscellaneous land,sam,Miscellaneous land,200,,
+92,Aquaculture,92,Aquaculture,260,Misc flooded,pfam,Other crops,100,,
+111,Open Water,111,Open Water,240,Water,sam,Water,180,,
+112,Perennial Ice/Snow ,112,Perennial Ice/Snow ,220,Miscellaneous land,sam,Miscellaneous land,200,,
+121,Developed/Open Space,121,Developed/Open Space,270,"Developed, open",sam,Developed-open,121,,
+122,Developed/Low Intensity,122,Developed/Low Intensity,280,"Developed, low",sam,Developed-low,122,,
+123,Developed/Med Intensity,123,Developed/Med Intensity,230,"Developed, medium",sam,Developed-med,123,,
+124,Developed/High Intensity,124,Developed/High Intensity,290,"Developed, high",sam,Developed-high,124,,
+131,Barren,131,Barren,160,Fallow,sam,Miscellaneous land,200,,
+141,Deciduous Forest,141,Deciduous Forest,180,Forest,sam,Forest,140,,
+142,Evergreen Forest,142,Evergreen Forest,180,Forest,sam,Forest,140,,
+143,Mixed Forest,143,Mixed Forest,180,Forest,sam,Forest,140,,
+152,Shrubland,152,Shrubland,190,Shrubland,sam,Shrubland,160,,
+176,Grass/Pasture,176,Grassland/Pasture,170,Pasture or forage,sam,Pasture/hay/forage,110,,
+190,Woody Wetlands,190,Woody Wetlands,300,"Wetland, woody",sam,Wetlands-woods,190,,
+195,Herbaceous Wetlands,195,Herbaceous Wetlands,250,"Wetland, herbaceous",sam,Wetlands-herbaceous,195,,
+204,Pistachios,204,Pistachios,200,"Orchard, deciduous",all,Other Orchards,70,14-12,Tree Nuts 
+205,Triticale,205,Triticale,90,Small grains,all,Other grains,80,15A,Cereal Grains 
+206,Carrots,206,Carrots,70,"Vegetable, fresh or processing market",all,Vegetables,60,1A,Vegetables-Root and Tuber 
+207,Asparagus,207,Asparagus,70,"Vegetable, fresh or processing market",all,Vegetables,60,22A,Vegetables-Stem and Stalk 
+208,Garlic,208,Garlic,70,"Vegetable, fresh or processing market",all,Vegetables,60,3-07A,Vegetables-Bulb 
+209,Cantaloupes,209,Cantaloupes,70,"Vegetable, fresh or processing market",all,Vegetables,60,9A,Vegetables-Cucurbit 
+210,Prunes,210,Prunes,200,"Orchard, deciduous",all,Other Orchards,70,12-12C,Stone Fruit 
+211,Olives,211,Olives,210,"Orchard, evergreen",all,Other Orchards,70,23A,Tropical fruit-edible peel 
+212,Oranges,212,Oranges,210,"Orchard, evergreen",all,Citrus,72,10-10A,Citrus Fruits 
+213,Honeydew Melons,213,Honeydew Melons,70,"Vegetable, fresh or processing market",all,Vegetables,60,9A,Vegetables-Cucurbit 
+214,Broccoli,214,Broccoli,70,"Vegetable, fresh or processing market",all,Vegetables,60,16-May,Vegetables-Brassica 
+216,Peppers,216,Peppers,70,"Vegetable, fresh or processing market",all,Vegetables,60,8-10B,Vegetables-Fruiting 
+217,Pomegranates,217,Pomegranates,200,"Orchard, deciduous",all,Other Orchards,70,24B,Tropical Fruit-Inedible Peel 
+218,Nectarines,218,Nectarines,200,"Orchard, deciduous",all,Other Orchards,70,12-12B,Stone Fruit 
+219,Greens,219,Greens,70,"Vegetable, fresh or processing market",all,Vegetables,60,4-16A,Vegetables-Leafy 
+220,Plums,220,Plums,200,"Orchard, deciduous",all,Other Orchards,70,12-12C,Stone Fruit 
+221,Strawberries,221,Strawberries,70,"Vegetable, fresh or processing market",all,Ground fruit,61,13-07G,Berries and Small Fruit 
+222,Squash,222,Squash,70,"Vegetable, fresh or processing market",all,Vegetables,60,9B,Vegetables-Cucurbit 
+223,Apricots,223,Apricots,200,"Orchard, deciduous",all,Other Orchards,70,12-12C,Stone Fruit 
+224,Vetch,224,Vetch,80,"Hay, all",all,Pasture/hay/forage,110,18,Nongrass Animal Feeds 
+225,Dbl Crop WinWht/Corn,24,Winter Wheat,110,"Wheat, winter",all,Wheat,24,15A,Cereal Grains 
+225,Dbl Crop WinWht/Corn,1,Corn,10,Corn,all,Corn,10,15B,Cereal Grains 
+226,Dbl Crop Oats/Corn,28,Oats,90,Small grains,all,Other grains,80,15A,Cereal Grains 
+226,Dbl Crop Oats/Corn,1,Corn,10,Corn,all,Corn,10,15B,Cereal Grains 
+227,Lettuce,227,Lettuce,70,"Vegetable, fresh or processing market",all,Vegetables,60,4-16A,Vegetables-Leafy 
+229,Pumpkins,229,Pumpkins,70,"Vegetable, fresh or processing market",all,Vegetables,60,9B,Vegetables-Cucurbit 
+230,Dbl Crop Lettuce/Durum Wht,227,Lettuce,70,"Vegetable, fresh or processing market",all,Vegetables,60,4-16A,Vegetables-Leafy 
+230,Dbl Crop Lettuce/Durum Wht,22,Durum Wheat,100,"Wheat, spring",all,Wheat,22,15A,Cereal Grains 
+231,Dbl Crop Lettuce/Cantaloupe,227,Lettuce,70,"Vegetable, fresh or processing market",all,Vegetables,60,4-16A,Vegetables-Leafy 
+231,Dbl Crop Lettuce/Cantaloupe,209,Cantaloupes,70,"Vegetable, fresh or processing market",all,Vegetables,60,9A,Vegetables-Cucurbit 
+232,Dbl Crop Lettuce/Cotton,227,Lettuce,70,"Vegetable, fresh or processing market",all,Vegetables,60,4-16A,Vegetables-Leafy 
+232,Dbl Crop Lettuce/Cotton,2,Cotton,20,Cotton,all,Cotton,20,20C,Oilseed 
+233,Dbl Crop Lettuce/Barley,227,Lettuce,70,"Vegetable, fresh or processing market",all,Vegetables,60,4-16A,Vegetables-Leafy 
+233,Dbl Crop Lettuce/Barley,21,Barley,90,Small grains,all,Other grains,80,15A,Cereal Grains 
+234,Dbl Crop Durum Wht/Sorghum,22,Durum Wheat,100,"Wheat, spring",all,Wheat,22,15A,Cereal Grains 
+234,Dbl Crop Durum Wht/Sorghum,4,Sorghum,40,Other grains or corn,all,Other grains,80,15B,Cereal Grains 
+235,Dbl Crop Barley/Sorghum,21,Barley,90,Small grains,all,Other grains,80,15A,Cereal Grains 
+235,Dbl Crop Barley/Sorghum,4,Sorghum,40,Other grains or corn,all,Other grains,80,15B,Cereal Grains 
+236,Dbl Crop WinWht/Sorghum,24,Winter Wheat,110,"Wheat, winter",all,Wheat,24,15A,Cereal Grains 
+236,Dbl Crop WinWht/Sorghum,4,Sorghum,40,Other grains or corn,all,Other grains,80,15B,Cereal Grains 
+237,Dbl Crop Barley/Corn,21,Barley,90,Small grains,all,Other grains,80,15A,Cereal Grains 
+237,Dbl Crop Barley/Corn,1,Corn,10,Corn,all,Corn,10,15B,Cereal Grains 
+238,Dbl Crop WinWht/Cotton,24,Winter Wheat,110,"Wheat, winter",all,Wheat,24,15A,Cereal Grains 
+238,Dbl Crop WinWht/Cotton,2,Cotton,20,Cotton,all,Cotton,20,20C,Oilseed 
+239,Dbl Crop Soybeans/Cotton,5,Soybeans,50,Soybean,all,Soybeans,40,6,Legumes 
+239,Dbl Crop Soybeans/Cotton,2,Cotton,20,Cotton,all,Cotton,20,20C,Oilseed 
+240,Dbl Crop Soybeans/Oats,5,Soybeans,50,Soybean,all,Soybeans,40,6,Legumes 
+240,Dbl Crop Soybeans/Oats,28,Oats,90,Small grains,all,Other grains,80,15A,Cereal Grains 
+241,Dbl Crop Corn/Soybeans,1,Corn,10,Corn,all,Corn,10,15B,Cereal Grains 
+241,Dbl Crop Corn/Soybeans,5,Soybeans,50,Soybean,all,Soybeans,40,6,Legumes 
+242,Blueberries,242,Blueberries,140,"Small fruit, trellised",all,Ground fruit,61,13-07B,Berries and Small Fruit 
+243,Cabbage,243,Cabbage,70,"Vegetable, fresh or processing market",all,Vegetables,60,16-May,Vegetables-Brassica 
+244,Cauliflower,244,Cauliflower,70,"Vegetable, fresh or processing market",all,Vegetables,60,16-May,Vegetables-Brassica 
+245,Celery,245,Celery,70,"Vegetable, fresh or processing market",all,Vegetables,60,22B,Vegetables-Stem and Stalk 
+246,Radishes,246,Radishes,70,"Vegetable, fresh or processing market",all,Vegetables,60,1A,Vegetables-Root and Tuber 
+247,Turnips,247,Turnips,70,"Vegetable, fresh or processing market",all,Vegetables,60,1A,Vegetables-Root and Tuber 
+248,Eggplants,248,Eggplants,70,"Vegetable, fresh or processing market",all,Vegetables,60,8-10B,Vegetables-Fruiting 
+249,Gourds,249,Gourds,70,"Vegetable, fresh or processing market",all,Vegetables,60,9B,Vegetables-Cucurbit 
+250,Cranberries,250,Cranberries,320,Cranberry,pfam,Ground fruit,61,13-07H,Berries and Small Fruit 
+254,Dbl Crop Barley/Soybeans,21,Barley,90,Small grains,all,Other grains,80,15A,Cereal Grains 
+254,Dbl Crop Barley/Soybeans,5,Soybeans,50,Soybean,all,Soybeans,40,6,Legumes 

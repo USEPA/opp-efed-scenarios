@@ -11,8 +11,8 @@ import pandas as pd
 
 # Import local modules and variables
 import write
-from utilities import fields, report
-from parameters import max_horizons, hydro_soil_group, uslep_values, aggregation_bins, depth_bins, usle_m_vals, \
+from efed_lib.efed_lib import report
+from parameters import fields, max_horizons, hydro_soil_group, uslep_values, aggregation_bins, depth_bins, usle_m_vals, \
     usle_m_bins
 
 # This silences some error messages being raised by Pandas
@@ -191,7 +191,7 @@ def depth_weight_soils(in_soils):
 
     # Clear all fields corresponding to horizons, and add depth-binned data
     fields.expand('horizon')  # this will add all the _n fields
-    for field in fields.fetch('horizontal'):
+    for field in fields.fetch('horizon'):
         del in_soils[field]
     in_soils = pd.concat([in_soils.reset_index()] + depth_weighted, axis=1)
 
@@ -315,12 +315,10 @@ def scenarios(in_scenarios, mode, region, write_qc=True):
     in_scenarios = in_scenarios.reset_index()
 
     if mode == 'pwc':
-        test_fields = sorted({f for f in fields.fetch('pwc_scenario') if f not in fields.fetch('horizontal')})
+        test_fields = sorted({f for f in fields.fetch('pwc_scenario') if f not in fields.fetch('horizon')})
         qc_table = fields.perform_qc(in_scenarios[test_fields]).copy()
-        tester = pd.concat([in_scenarios[['scenario_id']], qc_table], axis=1)
-        # tester.to_csv('tester.csv')
         in_scenarios = in_scenarios[qc_table.max(axis=1) < 2]
-        fields.expand('horizon')
+        fields.expand('horizon', max_horizons)
     else:
         fields.expand("depth")
         in_scenarios = in_scenarios[fields.fetch('sam_scenario')]
@@ -374,12 +372,12 @@ def soils(in_soils, mode):
     in_soils = in_soils[~(in_soils.horizon_num > max_horizons)]
 
     # Extend columns of data for multiple horizons
-    horizon_data = in_soils.set_index(['cokey', 'horizon_num'])[fields.fetch('horizontal')]
+    horizon_data = in_soils.set_index(['cokey', 'horizon_num'])[fields.fetch('horizon')]
     horizon_data = horizon_data.unstack().sort_index(1, level=1)
     horizon_data.columns = ['_'.join(map(str, i)) for i in horizon_data.columns]
 
     # Initialize empty fields for fields linked to soil horizons
-    for f in fields.fetch('horizontal'):
+    for f in fields.fetch('horizon'):
         for i in range(in_soils.horizon_num.max(), max_horizons + 1):
             horizon_data["{}_{}".format(f, i)] = np.nan
         del in_soils[f]
@@ -405,9 +403,9 @@ def soils(in_soils, mode):
         np.int16(pd.cut(in_soils.slope, aggregation_bins['slope'], labels=False))]
 
     # Set n_horizons to the first invalid horizon
-    horizon_fields = [f for f in fields.fetch('horizontal') if f in fields.fetch('pwc_scenario')]
+    horizon_fields = [f for f in fields.fetch('horizon') if f in fields.fetch('pwc_scenario')]
     in_soils = in_soils.reset_index()
-    fields.expand('horizon')
+    fields.expand('horizon', max_horizons)
     qc_table = fields.perform_qc(in_soils).copy()
     for field in horizon_fields:
         check_fields = ['{}_{}'.format(field, i + 1) for i in range(max_horizons)]

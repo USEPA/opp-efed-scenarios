@@ -16,9 +16,11 @@ import pandas as pd
 import modify
 import read
 import write
-from utilities import report
-from parameters import nhd_regions
+
 from paths import scratch_dir
+from efed_lib.efed_lib import report
+from parameters import nhd_regions
+# TODO - get rid of this
 from parameters import pwc_selection_field as crop_field
 from parameters import pwc_selection_pct as selection_pct
 from parameters import pwc_min_selection as min_sample
@@ -91,7 +93,7 @@ def select_pwc_scenarios(in_scenarios, crop_params):
     crop_groups = crop_params[[crop_field, crop_field + '_desc']].drop_duplicates().values
 
     # First, write the entire scenario table to a 'parent' table
-    yield 'parent', in_scenarios
+    yield 'parent', '', in_scenarios
 
     # Write a table for each crop or crop group
     for crop, crop_name in crop_groups:
@@ -102,10 +104,10 @@ def select_pwc_scenarios(in_scenarios, crop_params):
             sample = sample.sample(selection_size)
         if not sample.empty:
             meta_table.append([crop, crop_name, n_scenarios, min((n_scenarios, selection_size))])
-            yield '{}_{}'.format(crop, crop_name), sample
+            yield crop, crop_name, sample
 
     # Write a table describing how many scenarios were selected for each crop
-    yield 'meta', pd.DataFrame(np.array(meta_table), columns=['crop', 'crop_name', 'n_scenarios', 'sample_size'])
+    yield 'meta', '', pd.DataFrame(np.array(meta_table), columns=['crop', 'crop_name', 'n_scenarios', 'sample_size'])
 
 
 def chunk_combinations(combos):
@@ -142,10 +144,11 @@ def scenarios_and_recipes(regions, years, mode):
     report("Reading input files...")
 
     # Read and modify data indexed to weather grid
-    met_params = read.met(mode)
+    met_params = read.met()
     met_params = modify.met(met_params)
 
     # Soils, watersheds and combinations are broken up by NHD region
+    regions = ['15', '16', '18']
     for region in regions:
         report("Processing Region {}...".format(region))
         report("Reading regional input files...", 1)
@@ -179,13 +182,16 @@ def scenarios_and_recipes(regions, years, mode):
                 report("Writing to file...", 2)
                 write.scenarios(scenarios, mode, region, name=chunk_num)
         elif mode == 'pwc':
+            print(0, combinations[combinations.cdl == 5])
             scenarios = create_scenarios(combinations, soil_params, crop_params, met_params)
+            print(111, scenarios[scenarios.cdl_alias == 5].shape)
             scenarios = modify.scenarios(scenarios, mode, region)
-
+            print(222, scenarios[scenarios.cdl_alias == 5].shape)
+            continue
             # For PWC, apply sampling and write crop-specific tables
-            for crop_name, crop_scenarios in select_pwc_scenarios(scenarios, crop_params):
+            for crop_num, crop_name, crop_scenarios in select_pwc_scenarios(scenarios, crop_params):
                 report("Writing table for Region {} {}...".format(region, crop_name), 2)
-                write.scenarios(crop_scenarios, mode, region, name=crop_name)
+                write.scenarios(crop_scenarios, mode, region, name=crop_name, num=crop_num)
 
 
 def main():

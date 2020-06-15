@@ -1,0 +1,6 @@
+[submodule "hydro"]
+	path = hydro
+	url = https://github.com/usepa/opp-efed-hydro
+[submodule "efed-lib"]
+	path = efed-lib
+	url = https://github.com/usepa/opp-efed

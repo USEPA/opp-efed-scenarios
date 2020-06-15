@@ -8,6 +8,11 @@ Parameters and variables used by multiple scripts.
 import numpy as np
 import pandas as pd
 from collections import OrderedDict
+from paths import fields_and_qc_path
+from efed_lib.efed_lib import FieldManager
+
+date_fmt = "%d-%b"  # 06-Feb
+fields = FieldManager(fields_and_qc_path)
 
 # PWC scenario selection parameters
 pwc_selection_field = 'pwc_class'
@@ -17,11 +22,9 @@ pwc_min_selection = 1000
 # Parameters for PWC scenario postprocessing
 kocs = [10, 1000, 10000]
 pwc_durations = ['acute', 'chronic', 'cancer']
-selection_percentiles = [50, 90]  # percentile for selection
+selection_percentile = 90  # percentile for selection
 selection_window = 0.5  # select scenarios within a range
 area_weighting = True
-percentile_field = "{}_%ile"
-scenario_id_field = 'scenario_id'
 
 # Chunk size for reading scenarios
 chunk_size = 3000000
@@ -66,8 +69,6 @@ erom_months = [str(x).zfill(2) for x in range(1, 13)] + ['ma']
 # The number of soil horizons available in each soil table
 # Set to the soil with the most horizons in 2016 SSURGO (in Kansas)
 max_horizons = 8
-
-
 
 # NHD regions and the states that overlap
 states_nhd = OrderedDict((('01', {"ME", "NH", "VT", "MA", "CT", "RI", "NY"}),

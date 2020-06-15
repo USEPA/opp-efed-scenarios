@@ -6,13 +6,16 @@ Functions for writing output files.
 
 # Import builtin and standard libraries
 import os
+import csv
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
 # Import local variables
+from parameters import fields, max_horizons, kocs, pwc_durations
 from paths import sam_scenario_path, pwc_scenario_path, recipe_path, hydro_file_path, combo_path, condensed_nhd_path, \
-    qc_path
+    qc_path, summary_outfile, selected_outfile, plot_outfile, combined_outfile, combined_results, gdd_intermediate_path,\
+    gdd_output_path
 
 
 # TODO - create a wrapper function to makedirs automatically
@@ -21,8 +24,7 @@ def combinations(region, year, table):
     """ Write a combinations table to a csv file """
     out_path = combo_path.format(region, year)
     # Create output directory
-    if not os.path.exists(os.path.dirname(out_path)):
-        os.makedirs(os.path.dirname(out_path))
+    create_dir(out_path)
     table.to_csv(out_path, index=None)
 
 
@@ -38,10 +40,10 @@ def create_dir(out_path):
         os.makedirs(os.path.dirname(out_path))
 
 
-def data_table(data, outfile):
+def scenario_summary_table(data, region, class_name, class_num):
+    outfile = summary_outfile.format(class_name, 'all', region)
     """ Write a dataframe to a csv file """
-    if not os.path.exists(os.path.dirname(outfile)):
-        os.makedirs(os.path.dirname(outfile))
+    create_dir(outfile)
     data.to_csv(outfile, index=None)
 
 
@@ -112,20 +114,42 @@ def recipes(region, recipe_table, recipe_map, mode='mmap'):
         f.write(f"{recipe_table.shape}")
 
 
-def scenarios(scenario_matrix, mode, region, name=None):
+def scenarios(scenario_matrix, mode, region, name=None, num=None):
     """ Write a scenarios table to file
     The 'name' parameter is used to specify crop group for PWC scenarios """
     if scenario_matrix is not None:
         if mode == 'sam':
             out_path = sam_scenario_path.format(region, name)
         elif mode == 'pwc':
-            out_path = pwc_scenario_path.format(region, name)
+            out_path = pwc_scenario_path.format(region, num, name)
         out_path = out_path.replace("/", "-")
         create_dir(out_path)
         scenario_matrix.to_csv(out_path, index=False)
 
 
-def plot(outfile, legend=True, legend_title=None, clear=True, position='best'):
+def selected_scenarios(selection, first_run=False):
+    create_dir(combined_outfile)
+    # Add a filename field
+    selection = selection.reset_index()
+    selection['filename'] = selection.class_name + \
+                            '_' + selection.koc.astype("str") + \
+                            '_' + selection.region.astype("str") + \
+                            '_' + selection.duration
+
+    # Choose output fields
+    fields.expand('horizon', max_horizons)
+    scenario_fields = fields.fetch('pwc_scenario') + ['filename']
+    scenario_fields.remove("region")
+
+    # Write to file
+    flag = 'w' if first_run else 'a'
+    selection[fields.fetch('results')].to_csv(combined_results, mode=flag, header=(flag == 'w'), index=None)
+    selection[scenario_fields].to_csv(combined_outfile, mode=flag, header=(flag == 'w'), index=None)
+
+
+def plot(region, class_name, class_num, koc, label, legend=False, legend_title=None, clear=True, position='best'):
+    outfile = plot_outfile.format(region, class_name, koc, label)
+    create_dir(outfile)
     if legend:
         plt.legend(loc=position, title=legend_title)
     plt.savefig(outfile, dpi=600)
@@ -140,3 +164,9 @@ def qc_table(qc_table, write_id):
         if not os.path.isdir(os.path.dirname(outfile)):
             os.makedirs(os.path.dirname(outfile))
         qc_table.to_csv(outfile)
+
+
+def gdd_results(all_data, intermediate=False):
+    out_path = gdd_intermediate_path if intermediate else gdd_output_path
+    #all_data['stationID'] = all_data.stationID.astype(np.int32)
+    all_data.to_csv(out_path, index=None)

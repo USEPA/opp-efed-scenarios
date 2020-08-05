@@ -60,7 +60,8 @@ def create_recipes(combos, watershed_params):
     return recipes[['scenario_index', 'area']], recipe_map, combos.reset_index()
 
 
-def create_scenarios(combinations, soil_data, crop_params, met_data):
+def create_scenarios(combinations, soil_params, met_params, crop_params, crop_dates,
+                     irrigation, curve_numbers):
     """
     Merge soil/weather/land use combinations with tabular parameter datasets.
     :param combinations: Combinations table (df)
@@ -69,14 +70,23 @@ def create_scenarios(combinations, soil_data, crop_params, met_data):
     :param met_data: Data indexed to weather grid (df)
     :return: Scenarios table (df)
     """
-    # Merge soil and met grid data
-    scenarios = combinations.merge(met_data, how="left", on="weather_grid")
-    scenarios = scenarios.merge(soil_data, how="left", on="soil_id", suffixes=("", "_soil"))
 
-    # All crop data are indexed to CDL class, some are indexed to CDL and State. Merge both
-    a = scenarios.merge(crop_params, on=['cdl', 'cdl_alias', 'state'])
-    b = scenarios.merge(crop_params[crop_params['state'].isna()].drop('state', axis=1), on=['cdl', 'cdl_alias'])
-    scenarios = pd.concat([a, b])
+    # Merge all tables
+    scenarios = combinations.merge(met_params, how="left", on="weather_grid")
+    scenarios = scenarios.merge(soil_params, how="left", on="soil_id", suffixes=("", "_soil"))
+    scenarios = scenarios.merge(crop_params, how="left", on=['cdl', 'cdl_alias'])
+    scenarios = scenarios.merge(irrigation, how="left", on=['cdl_alias', 'state'])
+    scenarios = scenarios.merge(curve_numbers, how="left", on=['region', 'pwc_class'])
+    print(scenarios[scenarios.pwc_class == 70].shape)
+    # Split crop dates by indexing
+    state_dates = crop_dates.loc[pd.isnull(crop_dates.weather_grid)].drop('weather_grid', axis=1)
+    grid_dates = crop_dates.loc[~pd.isnull(crop_dates.weather_grid)].drop('state', axis=1)
+    scenarios = pd.concat([scenarios.merge(grid_dates, on=['cdl', 'cdl_alias', 'weather_grid']),
+                           scenarios.merge(state_dates, on=['cdl', 'cdl_alias', 'state'])])
+    print(scenarios[scenarios.pwc_class == 70].shape)
+    # temporary
+    for date in 'plant_begin', 'plant_end', 'harvest_begin', 'harvest_end':
+        scenarios[date] = None
 
     return scenarios
 
@@ -147,18 +157,22 @@ def scenarios_and_recipes(regions, years, mode):
     met_params = read.met()
     met_params = modify.met(met_params)
 
+    # Read crop related params. This has multiple functions since data are differently indexed
+    crop_params = read.crop()
+    crop_dates = read.crop_dates()
+    irrigation = read.irrigation()
+    crop_dates = modify.crop_dates(crop_dates)
+
     # Soils, watersheds and combinations are broken up by NHD region
-    regions = ['15', '16', '18']
     for region in regions:
         report("Processing Region {}...".format(region))
         report("Reading regional input files...", 1)
 
-        # Read and modify data indexed to crop
-        crop_params = read.crop(region)
-        crop_params = modify.crop(crop_params, mode)
+        # Read curve numbers
+        curve_numbers = read.curve_numbers(region)
 
         # Read and modify data indexed to soil
-        soil_params = read.soils(mode, region)
+        soil_params = read.soil(mode, region)
         soil_params, aggregation_key = modify.soils(soil_params, mode)
 
         # Read and modify met/crop/land cover/soil/watershed combinations
@@ -169,8 +183,7 @@ def scenarios_and_recipes(regions, years, mode):
         if mode == 'sam':
             report(f"Creating watershed recipes and aggregating combinations...", 1)
             watershed_params = read.nhd(region)[['gridcode', 'comid']]
-            recipes, recipe_map, combinations = \
-                create_recipes(combinations, watershed_params)
+            recipes, recipe_map, combinations = create_recipes(combinations, watershed_params)
             write.recipes(region, recipes, recipe_map)
 
         # Create and modify scenarios, and write to file
@@ -182,12 +195,11 @@ def scenarios_and_recipes(regions, years, mode):
                 report("Writing to file...", 2)
                 write.scenarios(scenarios, mode, region, name=chunk_num)
         elif mode == 'pwc':
-            print(0, combinations[combinations.cdl == 5])
-            scenarios = create_scenarios(combinations, soil_params, crop_params, met_params)
-            print(111, scenarios[scenarios.cdl_alias == 5].shape)
+            scenarios = create_scenarios(combinations, soil_params, met_params, crop_params, crop_dates,
+                                         irrigation, curve_numbers)
+
             scenarios = modify.scenarios(scenarios, mode, region)
-            print(222, scenarios[scenarios.cdl_alias == 5].shape)
-            continue
+
             # For PWC, apply sampling and write crop-specific tables
             for crop_num, crop_name, crop_scenarios in select_pwc_scenarios(scenarios, crop_params):
                 report("Writing table for Region {} {}...".format(region, crop_name), 2)

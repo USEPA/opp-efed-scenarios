@@ -6,18 +6,25 @@ or formatting.
 """
 
 # Import standard or builtin libraries
-import os
-import re
 import numpy as np
 import pandas as pd
+from parameters import date_fmt
 
 # Import local modules and variables
 from parameters import states_nhd, pwc_durations
 from paths import condensed_soil_path, met_attributes_path, combo_path, crop_dates_path, \
     crop_params_path, gen_params_path, irrigation_path, \
-    preprocessed_path, pwc_scenario_path, crop_group_path, gdd_input_path, reconstituted_path
+    preprocessed_path, pwc_scenario_path, crop_group_path, reconstituted_path, orchard_vine_dates_path
 from efed_lib.efed_lib import report
 from parameters import fields
+
+
+def date_to_num(params):
+    # Convert dates to days since Jan 1
+    date_fields = [f for f in fields.fetch('all_dates') if f in params.columns]
+    for field in date_fields:
+        params[field] = (pd.to_datetime(params[field], format=date_fmt) - pd.to_datetime("1900-01-01")).dt.days
+    return params
 
 
 def test_path(f):
@@ -47,10 +54,11 @@ def combinations(region, years, nrows=None):
         combos = pd.read_csv(combo_file, dtype=np.uint32, nrows=nrows)[header]
         combos['year'] = np.int16(year)
         all_combos = combos if all_combos is None else pd.concat([all_combos, combos], axis=0)
+    all_combos['region'] = region
     return all_combos
 
 
-def crop(region):
+def crop():
     """
     Read data from parameter tables linked to land use and combine into a single table
     for generating field scenarios.
@@ -67,45 +75,30 @@ def crop(region):
     param_fields, dtypes = fields.fetch('CropParams', dtypes=True, col='external_name')
     crop_params = pd.read_csv(crop_params_path, usecols=param_fields, dtype=dtypes)
 
-    # Read crop dates
-    date_fields, dtypes = fields.fetch('CropDates', dtypes=True)
-    crop_dates = pd.read_csv(crop_dates_path, usecols=date_fields, dtype=dtypes)
-    # Convert dates to days since Jan 1
-    for field in fields.fetch('date'):
-        crop_dates[field] = (pd.to_datetime(crop_dates[field], format=date_fmt) - pd.to_datetime("1900-01-01")).dt.days
-    # Where harvest is before plant, add 365 days (e.g. winter wheat)
-    for stage in ['begin', 'end', 'begin_active', 'end_active']:
-        crop_dates.loc[crop_dates[f'plant_{stage}'] > crop_dates[f'harvest_{stage}'], f'harvest_{stage}'] += 365
-
-    # Read irrigation parameters
-    irrigation_fields, dtypes = fields.fetch('Irrigation', dtypes=True)
-    irrigation_data = pd.read_csv(irrigation_path, usecols=irrigation_fields, dtype=dtypes)
-
-    # Read parameters indexed to crop groups
-    group_fields, dtypes = fields.fetch('CurveNumbers', dtypes=True)
-    group_params = pd.read_csv(gen_params_path, usecols=group_fields, dtype=dtypes)
-    group_params = group_params[group_params.region == region]
-
-    data = crop_index.merge(crop_params, on=['cdl', 'cdl_alias'], how='left') \
-        .merge(crop_dates, on=['cdl', 'cdl_alias'], how='left', suffixes=('', '_burn')) \
-        .merge(irrigation_data, on=['cdl_alias', 'state'], how='left') \
-        .merge(group_params, on='pwc_class', how='left', suffixes=('_cdl', '_gen'))
-
-    data[['evergreen', 'alt_date']] = data[['evergreen', 'alt_date']].fillna(0).astype(bool)
+    data = crop_index.merge(crop_params, on=['cdl', 'cdl_alias'], how='left')
 
     return data
 
 
-def gdd(grapes=False):
-    if not grapes:
-        table = pd.read_csv(gdd_input_path)
-        for col in table.columns.values:
-            if col.endswith("temp_f"):
-                table[col.rstrip('_f')] = (table.pop(col) - 32.) * (5 / 9)
-    else:
-        raise FutureWarning("Haven't implemented grapes yet")
-    table = table.dropna(subset=['emergence_gdd', 'maxcover_gdd', 'emergence_base_temp', 'maxcover_base_temp'])
-    return table
+def curve_numbers(region):
+    group_fields, dtypes = fields.fetch('CurveNumbers', dtypes=True)
+    group_params = pd.read_csv(gen_params_path, usecols=group_fields, dtype=dtypes)
+    return group_params[group_params.region == region]
+
+
+def crop_dates(mode='pwc'):
+    # Read crop dates
+    dates = pd.read_csv(crop_dates_path)
+    if mode == 'pwc':
+        dates = dates[dates.sam_only != 1]
+    print(dates[(dates.state == 'CA') & (dates.cdl == 221)])
+    return dates.rename(columns={'stationID': 'weather_grid'})
+
+
+def irrigation():
+    irrigation_fields, dtypes = fields.fetch('Irrigation', dtypes=True)
+    irrigation_data = pd.read_csv(irrigation_path, usecols=irrigation_fields, dtype=dtypes)
+    return irrigation_data
 
 
 def met():
@@ -119,7 +112,7 @@ def met():
     return met_data
 
 
-def soils(mode, region=None, state=None):
+def soil(mode, region=None, state=None):
     """
     Read and aggregate all soils data for an NHD Hydroregion or state
     :param mode: 'sam' or 'pwc'
@@ -208,8 +201,6 @@ def pwc_outfile(region=None, class_num=None, class_name=None, koc=None, preproce
 
         # Split the Batch Run ID field into constituent parts
         data = table.pop('run_id').str.split('_', expand=True)
-        print(data.head())
-        print(['bunk'] + fields.fetch('pwc_run_id'))
         data.columns = ['bunk'] + fields.fetch('pwc_run_id')
         table = pd.concat([data, table], axis=1)
         table = table.melt(id_vars=[f for f in table.columns if not f in pwc_durations], value_vars=pwc_durations,

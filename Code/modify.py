@@ -13,7 +13,7 @@ import pandas as pd
 import write
 from efed_lib.efed_lib import report
 from parameters import fields, max_horizons, hydro_soil_group, uslep_values, aggregation_bins, depth_bins, usle_m_vals, \
-    usle_m_bins
+    usle_m_bins, date_fmt
 
 # This silences some error messages being raised by Pandas
 pd.options.mode.chained_assignment = None
@@ -103,55 +103,28 @@ def combinations(combos, crop_params, mode, agg_key):
     return combos
 
 
-def crop(params, mode):
+def crop_dates(params):
     """
-    Modify a table of parameters linked to crop. Notably includes selection of plant and harvest dates.
+    Modify dates and perform selection of plant and harvest dates.
     :param params: Table of parameters linked to crop (df)
     :param mode: 'sam' or 'pwc'
     :return: Modified table of parameters linked to crop
     """
 
-    # Select crop dates
-    for stage in ('plant', 'harvest', 'maxcover', 'emergence'):
-        params[f"{stage}_date"] = 0
+    # Convert dates to days since Jan 1
+    date_fields = sorted(set(params.columns.values) & (set(fields.fetch('CropDates')) - set(fields.fetch('id'))))
+    for field in date_fields:
+        params[field] = (pd.to_datetime(params[field], format=date_fmt) - pd.to_datetime("1900-01-01")).dt.days
 
-    if mode == 'pwc':
+    # If any stage is at an earlier date than the previous stage, assume it's in the next year
+    # TODO - check this assumption
+    last_field = None
+    for field in date_fields:
+        if last_field is not None:
+            params.loc[params[field] < params[last_field], field] += 365.
+        last_field = field
 
-        # Convert fields to boolean
-        for field in ['sam_only', 'evergreen']:
-            params[field] = params[field].fillna(0).astype(bool)
-
-        # Use middle of active range for plant and harvest
-        for stage in ('plant', 'harvest'):
-            params[f'{stage}_date'] = (params[f'{stage}_begin_active'] + params[f'{stage}_end_active']) / 2
-
-        # Emergence is set to 7 days after plant
-        params['emergence_date'] = np.int32(params.plant_date + 7)
-
-        # Max cover is set to halfway between emergence and harvest
-        params['maxcover_date'] = np.int32((params.emergence_date + params.harvest_date) / 2)
-
-        # Use designated values for crops with 'alt_date' designation or missing dates
-        for stage in ('plant', 'emergence', 'maxcover', 'harvest'):
-            sel = params.alt_date | params[f'{stage}_date'].isna()
-            params.loc[sel, f'{stage}_date'] = params.loc[sel, f'{stage}_desig']
-
-        # For evergreen crops, canopy is always on the plant at maximum coverage
-        params.loc[params.evergreen, ['plant_date', 'emergence_date', 'maxcover_date', 'harvest_date']] = \
-            np.array([1, 1, 2, 365])
-
-    elif mode == 'sam':
-        params['plant_begin'] = params['plant_begin_active']
-        params['plant_end'] = params['plant_end_active']
-        params['harvest_begin'] = params['harvest_begin_active']
-        params['harvest_end'] = params['harvest_end_active']
-
-        params['emergence_begin'] = np.int32(params.plant_begin + 7)
-        params['emergence_end'] = np.int32(params.plant_end + 7)
-        params['maxcover_begin'] = np.int32((params.emergence_begin + params.harvest_begin) / 2)
-        params['maxcover_end'] = np.int32((params.emergence_end + params.harvest_end) / 2)
-
-    return params.astype(fields.data_type(cols=params.columns))
+    return params
 
 
 def depth_weight_soils(in_soils):
@@ -317,6 +290,7 @@ def scenarios(in_scenarios, mode, region, write_qc=True):
     if mode == 'pwc':
         test_fields = sorted({f for f in fields.fetch('pwc_scenario') if f not in fields.fetch('horizon')})
         qc_table = fields.perform_qc(in_scenarios[test_fields]).copy()
+        qc_table.to_csv("bads.csv")
         in_scenarios = in_scenarios[qc_table.max(axis=1) < 2]
         fields.expand('horizon', max_horizons)
     else:
@@ -348,7 +322,7 @@ def soils(in_soils, mode):
 
     # Adjust soil data values
     in_soils.loc[:, 'orgC'] /= 1.724  # oc -> om
-    in_soils.loc[:, ['fc', 'wp']] /= 100.  # pct -> decimal
+    in_soils.loc[:, ['water_max', 'water_min']] /= 100.  # pct -> decimal
 
     # Use defaults for slope and slope length where missing
     in_soils.loc[pd.isnull(in_soils.slope_length), 'slope_length'] = slope_length_max
@@ -372,6 +346,7 @@ def soils(in_soils, mode):
     in_soils = in_soils[~(in_soils.horizon_num > max_horizons)]
 
     # Extend columns of data for multiple horizons
+    horizon_fields = fields.fetch('horizon')
     horizon_data = in_soils.set_index(['cokey', 'horizon_num'])[fields.fetch('horizon')]
     horizon_data = horizon_data.unstack().sort_index(1, level=1)
     horizon_data.columns = ['_'.join(map(str, i)) for i in horizon_data.columns]

@@ -14,8 +14,7 @@ import matplotlib.pyplot as plt
 # Import local variables
 from parameters import fields, max_horizons, kocs, pwc_durations
 from paths import sam_scenario_path, pwc_scenario_path, recipe_path, hydro_file_path, combo_path, condensed_nhd_path, \
-    qc_path, summary_outfile, selected_outfile, plot_outfile, combined_outfile, combined_results, gdd_intermediate_path,\
-    gdd_output_path
+    qc_path, summary_outfile, selected_outfile, plot_outfile, combined_outfile, combined_results
 
 
 # TODO - create a wrapper function to makedirs automatically
@@ -124,6 +123,7 @@ def scenarios(scenario_matrix, mode, region, name=None, num=None):
             out_path = pwc_scenario_path.format(region, num, name)
         out_path = out_path.replace("/", "-")
         create_dir(out_path)
+        print(out_path)
         scenario_matrix.to_csv(out_path, index=False)
 
 
@@ -165,8 +165,3 @@ def qc_table(qc_table, write_id):
             os.makedirs(os.path.dirname(outfile))
         qc_table.to_csv(outfile)
 
-
-def gdd_results(all_data, intermediate=False):
-    out_path = gdd_intermediate_path if intermediate else gdd_output_path
-    #all_data['stationID'] = all_data.stationID.astype(np.int32)
-    all_data.to_csv(out_path, index=None)

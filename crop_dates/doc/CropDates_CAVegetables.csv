@@ -1,0 +1,94 @@
+﻿State,CDL,CDL_Category,Gen_PWC_Scen,cdl_alias,Season,SAM_only,Evergreen,Alt_Date,plant_mid,harvest_mid,emergence,max_cover,plant_begin,plant_begin_active,plant_end_active,plant_end,harvest_begin,harvest_begin_active,harvest_end_active,harvest_end,Bloom_beg,Bloom_end,CRD_CA,CA06010,CA06020,CA06030,CA06040,CA06050,CA06051,CA06060,CA06080E,CA06080W
+CA,221,Strawberries,"Vegetable, market",221,,,,,30-Jan,20-Jun,6-Feb,14-Apr,1-Dec,,,31-Mar,25-Mar,10-Apr,30-Aug,30-Sep,20-Feb,20-Mar,"06040, 06051, 06080W",,,,1,,1,,,1
+CA,221,Strawberries,"Vegetable, market",221,,1,,,30-Jan,20-Jun,6-Feb,14-Apr,1-Dec,,,31-Mar,25-Mar,10-Apr,30-Aug,30-Sep,20-Feb,20-Mar,"06010, 06020, 06030, 06050, 06060, 06080E",1,1,1,,1,,1,1,
+CA,12,Sweet Corn,"Vegetable, market",12,1,,,,15-Feb,23-May,22-Feb,8-Apr,2-Jan,,,31-Mar,10-Apr,1-May,15-Jun,10-Jul,,,"06040, 06051, 06080E",,,,1,,1,,1,
+CA,12,Sweet Corn,"Vegetable, market",12,2,,,,16-May,8-Aug,23-May,30-Jun,1-Mar,,,31-Jul,20-Jun,1-Jul,15-Sep,15-Oct,,,"06040, 06051, 06080E",,,,1,,1,,1,
+CA,12,Sweet Corn,"Vegetable, market",12,3,,,,31-Jul,16-Oct,7-Aug,11-Sep,1-Jul,,,31-Aug,20-Sep,1-Oct,31-Oct,1-Dec,,,"06040, 06051, 06080E",,,,1,,1,,1,
+CA,12,Sweet Corn,"Vegetable, market",12,,1,,,15-Feb,23-May,22-Feb,8-Apr,2-Jan,,,31-Mar,10-Apr,1-May,15-Jun,10-Jul,,,"06010, 06020, 06030, 06050, 06060, 06080W",1,1,1,,1,,1,,1
+CA,57,Herbs,"Vegetable, market",57,,,,,14-Jan,14-Apr,21-Jan,4-Mar,1-Oct,,,30-Apr,30-Dec,,,29-Jul,,,"06040, 06080E, 06080W",,,,1,,,,1,1
+CA,57,Herbs,"Vegetable, market",57,,1,,,14-Jan,14-Apr,21-Jan,4-Mar,1-Oct,,,30-Apr,30-Dec,,,29-Jul,,,"06010, 06020, 06030, 06050, 06051, 06060",1,1,1,,1,1,1,,
+CA,47,Misc Vegs & Fruits,"Vegetable, market",47,,1,,,21-Feb,7-Jun,28-Feb,18-Apr,15-Jan,,,31-Mar,1-May,15-May,30-Jun,1-Jul,,,"06010, 06020, 06030, 06040, 06050, 06051, 06060, 06080E, 06080W",1,1,1,1,1,1,1,1,1
+CA,214,Broccoli,"Vegetable, market",214,,,,,16-Mar,15-May,23-Mar,18-Apr,1-Mar,,,31-Mar,15-Apr,30-Apr,31-May,15-Jun,,,06080E,,,,,,,,1,
+CA,214,Broccoli,"Vegetable, market",214,,,,,16-Jul,15-Aug,23-Jul,3-Aug,1-Jun,,,31-Aug,15-Jul,30-Jul,31-Aug,15-Sep,,,"06040, 06080W",,,,1,,,,,1
+CA,214,Broccoli,"Vegetable, market",214,,,,,16-Oct,15-Nov,23-Oct,3-Nov,1-Sep,,,30-Nov,15-Oct,31-Oct,30-Nov,15-Dec,,,6040,,,,1,,,,,
+CA,214,Broccoli,"Vegetable, market",214,,,,,14-Jan,2-Feb,21-Jan,27-Jan,1-Dec,,,28-Feb,15-Jan,20-Jan,15-Feb,15-Mar,,,6051,,,,,,1,,,
+CA,214,Broccoli,"Vegetable, market",214,,1,,,16-Mar,15-May,23-Mar,18-Apr,1-Mar,,,31-Mar,15-Apr,30-Apr,31-May,15-Jun,,,"06010, 06020, 06030, 06050, 06060",1,1,1,,1,,1,,
+CA,243,Cabbage,"Vegetable, market",243,,,,,16-Jan,3-May,23-Jan,14-Mar,1-Jan,,,31-Jan,15-Mar,1-Apr,5-Jun,25-Jun,,,"06040, 06051",,,,1,,1,,,
+CA,243,Cabbage,"Vegetable, market",243,,,,,2-May,31-Aug,9-May,5-Jul,1-Feb,,,31-Jul,1-Jul,1-Aug,30-Sep,30-Nov,,,"06040, 06051, 06080W",,,,1,,1,,,1
+CA,243,Cabbage,"Vegetable, market",243,,,,,8-Oct,12-Jan,15-Oct,28-Nov,15-Sep,,,31-Oct,1-Dec,25-Dec,31-Jan,28-Feb,,,06080E,,,,,,,,1,
+CA,243,Cabbage,"Vegetable, market",243,,1,,,16-Jan,3-May,23-Jan,14-Mar,1-Jan,,,31-Jan,15-Mar,1-Apr,5-Jun,25-Jun,,,"06010, 06020, 06030, 06050, 06060",1,1,1,,1,,1,,
+CA,244,Cauliflower,"Vegetable, market",244,,,,,15-Apr,15-May,22-Apr,4-May,1-Mar,,,31-May,15-Apr,30-Apr,31-May,15-Jun,,,"06040, 06080W",,,,1,,,,,1
+CA,244,Cauliflower,"Vegetable, market",244,,,,,1-Jul,15-Aug,8-Jul,27-Jul,1-Jun,,,31-Jul,15-Jul,30-Jul,31-Aug,15-Sep,,,6040,,,,1,,,,,
+CA,244,Cauliflower,"Vegetable, market",244,,,,,1-Oct,15-Nov,8-Oct,27-Oct,1-Sep,,,31-Oct,15-Oct,1-Nov,30-Nov,15-Dec,,,6051,,,,,,1,,,
+CA,244,Cauliflower,"Vegetable, market",244,,,,,31-Dec,2-Feb,7-Jan,20-Jan,1-Dec,,,31-Jan,15-Jan,20-Jan,15-Feb,15-Mar,,,06080E,,,,,,,,1,
+CA,244,Cauliflower,"Vegetable, market",244,,1,,,15-Apr,15-May,22-Apr,4-May,1-Mar,,,31-May,15-Apr,30-Apr,31-May,15-Jun,,,"06010, 06020, 06030, 06050, 06060",1,1,1,,1,,1,,
+CA,208,Garlic,"Vegetable, market",208,,,,,14-Dec,31-Jul,21-Dec,11-Apr,15-Sep,,,15-Mar,1-May,1-Jun,30-Sep,30-Nov,,,"06040, 06051, 06060",,,,1,,1,1,,
+CA,208,Garlic,"Vegetable, market",208,,1,,,14-Dec,31-Jul,21-Dec,11-Apr,15-Sep,,,15-Mar,1-May,1-Jun,30-Sep,30-Nov,,,"06010, 06020, 06030, 06050, 06080E, 06080W",1,1,1,,1,,,1,1
+CA,209,Cantaloupes,"Vegetable, market",209,1,,,,31-Jan,15-Jun,7-Feb,12-Apr,20-Dec,,,15-Mar,1-May,1-Jun,30-Jun,5-Jul,,,06080E,,,,,,,,1,
+CA,209,Cantaloupes,"Vegetable, market",209,2,,,,31-Jul,30-Oct,7-Aug,18-Sep,1-Jul,,,31-Aug,1-Oct,15-Oct,15-Nov,15-Dec,,,06080E,,,,,,,,1,
+CA,209,Cantaloupes,"Vegetable, market",209,,,,,11-May,16-Aug,18-May,2-Jul,20-Feb,,,30-Jul,20-Jun,1-Aug,31-Aug,31-Oct,,,"06040, 06050, 06051",,,,1,1,1,,,
+CA,209,Cantaloupes,"Vegetable, market",209,,1,,,11-May,16-Aug,18-May,2-Jul,20-Feb,,,30-Jul,20-Jun,1-Aug,31-Aug,31-Oct,,,"06010, 06020, 06030, 06060, 06080W",1,1,1,,,,1,,1
+CA,213,Honeydew Melons,"Vegetable, market",213,1,,,,31-Jan,15-Jun,7-Feb,12-Apr,20-Dec,,,15-Mar,1-May,1-Jun,30-Jun,5-Jul,,,06080E,,,,,,,,1,
+CA,213,Honeydew Melons,"Vegetable, market",213,2,,,,31-Jan,15-Jun,7-Feb,12-Apr,20-Dec,,,15-Mar,1-May,1-Jun,30-Jun,5-Jul,,,06080E,,,,,,,,1,
+CA,213,Honeydew Melons,"Vegetable, market",213,,,,,31-Jan,15-Jun,7-Feb,12-Apr,20-Dec,,,15-Mar,1-May,1-Jun,30-Jun,5-Jul,,,"06040, 06050, 06051",,,,1,1,1,,,
+CA,213,Honeydew Melons,"Vegetable, market",213,,1,,,31-Jan,15-Jun,7-Feb,12-Apr,20-Dec,,,15-Mar,1-May,1-Jun,30-Jun,5-Jul,,,"06010, 06020, 06030, 06060, 06080W",1,1,1,,,,1,,1
+CA,48,Watermelons,"Vegetable, market",48,,,,,6-Feb,15-Jun,13-Feb,15-Apr,15-Dec,,,31-Mar,15-May,1-Jun,30-Jun,15-Jul,,,06080E,,,,,,,,1,
+CA,48,Watermelons,"Vegetable, market",48,,,,,18-May,16-Aug,25-May,5-Jul,1-Apr,,,5-Jul,1-Jul,1-Aug,31-Aug,25-Oct,,,"06050, 06051",,,,,1,1,,,
+CA,48,Watermelons,"Vegetable, market",48,,1,,,18-May,16-Aug,25-May,5-Jul,1-Apr,,,5-Jul,1-Jul,1-Aug,31-Aug,25-Oct,,,"06010, 06020, 06030, 06040, 06060, 06080W",1,1,1,1,,,1,,1
+CA,50,Cucumbers,"Vegetable, market",50,2,,,,16-Jan,3-May,23-Jan,14-Mar,1-Jan,,,31-Jan,15-Mar,1-Apr,5-Jun,30-Jun,,,"06080E, 06080W",,,,,,,,1,1
+CA,50,Cucumbers,"Vegetable, market",50,1,,,,16-May,18-Sep,23-May,21-Jul,1-May,,,31-May,15-Aug,1-Sep,5-Oct,30-Nov,,,"06040, 06050, 06051, 06080W",,,,1,1,1,,,1
+CA,50,Cucumbers,"Vegetable, market",50,,,,,16-May,18-Sep,23-May,21-Jul,1-May,,,31-May,15-Aug,1-Sep,5-Oct,15-Oct,,,"06040, 06080E",,,,1,,,,1,
+CA,50,Cucumbers,"Vegetable, market",50,,1,,,16-May,18-Sep,23-May,21-Jul,1-May,,,31-May,15-Aug,1-Sep,5-Oct,30-Nov,,,"06010, 06020, 06030, 06060",1,1,1,,,,1,,
+CA,229,Pumpkins,"Vegetable, market",229,,,,,31-May,1-Oct,7-Jun,4-Aug,1-Apr,,,31-Jul,1-Aug,1-Sep,31-Oct,30-Nov,,,"06040, 06050, 06051, 06080E, 06080W",,,,1,1,1,,1,1
+CA,229,Pumpkins,"Vegetable, market",229,,1,,,31-May,1-Oct,7-Jun,4-Aug,1-Apr,,,31-Jul,1-Aug,1-Sep,31-Oct,30-Nov,,,"06010, 06020, 06030, 06060",1,1,1,,,,1,,
+CA,222,Squash,"Vegetable, market",222,,,,,15-Apr,1-Jul,22-Apr,27-May,1-Apr,,,30-Apr,1-May,1-Jun,31-Jul,31-Aug,,,"06040, 06050, 06051, 06080E, 06080W",,,,1,1,1,,1,1
+CA,222,Squash,"Vegetable, market",222,,1,,,15-Apr,1-Jul,22-Apr,27-May,1-Apr,,,30-Apr,1-May,1-Jun,31-Jul,31-Aug,,,"06010, 06020, 06030, 06060",1,1,1,,,,1,,
+CA,54,Tomatoes,"Vegetable, market",54,,,,,21-Feb,7-Jun,28-Feb,18-Apr,15-Jan,,,31-Mar,1-May,15-May,30-Jun,1-Jul,,,"06080E, 06080W",,,,,,,,1,1
+CA,54,Tomatoes,"Vegetable, market",54,,,,,15-May,30-Aug,22-May,11-Jul,1-Mar,,,30-Jul,1-Jul,15-Jul,15-Oct,31-Oct,,,6051,,,,,,1,,,
+CA,54,Tomatoes,"Vegetable, market",54,,,,,16-Jul,15-Oct,23-Jul,3-Sep,1-Jun,,,31-Aug,1-Sep,15-Sep,15-Nov,31-Jan,,,"06040, 06050, 06051",,,,1,1,1,,,
+CA,54,Tomatoes,"Vegetable, market",54,,1,,,16-Jul,15-Oct,23-Jul,3-Sep,1-Jun,,,31-Aug,1-Sep,15-Sep,15-Nov,31-Jan,,,"06010, 06020, 06030, 06060",1,1,1,,,,1,,
+CA,248,Eggplants,"Vegetable, market",248,,1,,,21-Feb,7-Jun,28-Feb,18-Apr,15-Jan,,,31-Mar,1-May,15-May,30-Jun,1-Jul,,,"06010, 06020, 06030, 06040, 06050, 06051, 06060, 06080E, 06080W",1,1,1,1,1,1,1,1,1
+CA,216,Peppers,"Vegetable, market",216,,,,,16-May,1-Oct,23-May,27-Jul,1-Feb,1-May,31-May,30-Jun,1-Aug,1-Sep,31-Oct,30-Nov,,,"06040, 06051",,,,1,,1,,,
+CA,216,Peppers,"Vegetable, market",216,,,,,30-Jan,18-May,6-Feb,29-Mar,1-Jan,,,1-Mar,20-Apr,1-May,5-Jun,30-Jun,,,06080W,,,,,,,,,1
+CA,216,Peppers,"Vegetable, market",216,,,,,17-Mar,16-Jul,24-Mar,20-May,1-Jan,,,31-May,1-May,1-Jun,31-Aug,30-Sep,,,06080E,,,,,,,,1,
+CA,216,Peppers,"Vegetable, market",216,,1,,,16-May,1-Oct,23-May,27-Jul,1-Feb,1-May,31-May,30-Jun,1-Aug,1-Sep,31-Oct,30-Nov,,,"06010, 06020, 06030, 06050, 06060",1,1,1,,1,,1,,
+CA,219,Greens,"Vegetable, market",219,,,,,15-Sep,15-Jun,22-Sep,2-Feb,1-Sep,,,30-Sep,1-Apr,1-Jun,30-Jun,30-Sep,,,"06040, 06051, 06080E, 06080W",,,,1,,1,,1,1
+CA,219,Greens,"Vegetable, market",219,,1,,,15-Sep,15-Jun,22-Sep,2-Feb,1-Sep,,,30-Sep,1-Apr,1-Jun,30-Jun,30-Sep,,,"06010, 06020, 06030, 06050, 06060",1,1,1,,1,,1,,
+CA,227,Lettuce,"Vegetable, market",227,1,,,,14-Feb,31-May,21-Feb,11-Apr,1-Jan,,,31-Mar,1-Apr,1-May,30-Jun,31-Jul,,,"06040, 06080E",,,,1,,,,1,1
+CA,227,Lettuce,"Vegetable, market",227,2,,,,31-May,15-Aug,7-Jun,12-Jul,1-Apr,,,31-Jul,1-Jun,1-Jul,30-Sep,31-Oct,,,6040,,,,1,,,,,
+CA,227,Lettuce,"Vegetable, market",227,,,,,31-Aug,30-Oct,7-Sep,3-Oct,1-Aug,,,30-Sep,1-Oct,15-Oct,15-Nov,30-Nov,,,"06050, 06051",,,,,1,1,,,
+CA,227,Lettuce,"Vegetable, market",227,3,,,,15-Oct,30-Jan,22-Oct,11-Dec,15-Sep,,,15-Nov,1-Dec,1-Jan,1-Mar,31-Mar,,,06080E,,,,,,,,1,1
+CA,227,Lettuce,"Vegetable, market",227,,1,,,31-Aug,30-Oct,7-Sep,3-Oct,1-Aug,,,30-Sep,1-Oct,15-Oct,15-Nov,30-Nov,,,"06010, 06020, 06030, 06060",1,1,1,,,,1,,
+CA,233,Dbl Crop Lettuce/Barley,"Vegetable, market",227,1,,,,31-Aug,30-Oct,7-Sep,3-Oct,1-Aug,,,30-Sep,1-Oct,15-Oct,15-Nov,30-Nov,,,"06040, 06051, 06080E, 06080W",,,,1,,1,,1,1
+CA,230,Dbl Crop Lettuce/Durum Wht,"Vegetable, market",227,1,,,,31-May,15-Aug,7-Jun,12-Jul,1-Apr,,,31-Jul,1-Jun,1-Jul,30-Sep,31-Oct,,,"06040, 06051, 06080E, 06080W",,,,1,,1,,1,1
+CA,231,Dbl Crop Lettuce/Cantaloupe,"Vegetable, market",227,1,,,,15-Oct,30-Jan,22-Oct,11-Dec,15-Sep,,,15-Nov,1-Dec,1-Jan,1-Mar,31-Mar,,,06080E,,,,,,,,1,
+CA,231,Dbl Crop Lettuce/Cantaloupe,"Vegetable, market",209,2,,,,31-Jul,30-Oct,7-Aug,18-Sep,1-Jul,,,31-Aug,1-Oct,15-Oct,15-Nov,15-Dec,,,06080E,,,,,,,,1,
+CA,232,Dbl Crop Lettuce/Cotton,"Vegetable, market",227,1,,,,15-Oct,30-Jan,22-Oct,11-Dec,15-Sep,,,15-Nov,1-Dec,1-Jan,1-Mar,31-Mar,,,"06040, 06051, 06080E, 06080W",,,,1,,1,,1,1
+CA,206,Carrots,"Vegetable, market",206,,,,,30-Jan,23-Apr,6-Feb,16-Mar,1-Dec,,,31-Mar,1-Mar,1-Mar,15-Jun,30-Jun,,,06080E,,,,,,,,1,
+CA,206,Carrots,"Vegetable, market",206,,,,,30-Jan,7-Jun,6-Feb,7-Apr,1-Dec,,,31-Mar,1-May,15-May,30-Jun,31-Jul,,,06080W,,,,,,,,,1
+CA,206,Carrots,"Vegetable, market",206,,,,,31-May,16-Oct,7-Jun,11-Aug,1-Apr,,,31-Jul,1-Aug,1-Sep,30-Nov,31-Dec,,,6040,,,,1,,,,,
+CA,206,Carrots,"Vegetable, market",206,,,,,15-Aug,31-Dec,22-Aug,27-Oct,1-Jul,,,30-Sep,1-Nov,1-Dec,31-Jan,1-Mar,,,"06050, 06051, 06080W",,,,,1,1,,,1
+CA,206,Carrots,"Vegetable, market",206,,1,,,15-Aug,31-Dec,22-Aug,27-Oct,1-Jul,,,30-Sep,1-Nov,1-Dec,31-Jan,1-Mar,,,"06010, 06020, 06030, 06060",1,1,1,,,,1,,
+CA,246,Radishes,"Vegetable, market",246,,,,,15-Aug,31-Dec,22-Aug,27-Oct,1-Jul,,,30-Sep,1-Nov,1-Dec,31-Jan,1-Mar,,,"06051, 06080W",,,,,,1,,,1
+CA,246,Radishes,"Vegetable, market",246,,1,,,15-Aug,31-Dec,22-Aug,27-Oct,1-Jul,,,30-Sep,1-Nov,1-Dec,31-Jan,1-Mar,,,"06010, 06020, 06030, 06040, 06050, 06060, 06080E",1,1,1,1,1,,1,1,
+CA,247,Turnips,"Vegetable, market",247,,,,,15-Aug,31-Dec,22-Aug,27-Oct,1-Jul,,,30-Sep,1-Nov,1-Dec,31-Jan,1-Mar,,,"06051, 06080W",,,,,,1,,,1
+CA,247,Turnips,"Vegetable, market",247,,1,,,15-Aug,31-Dec,22-Aug,27-Oct,1-Jul,,,30-Sep,1-Nov,1-Dec,31-Jan,1-Mar,,,"06010, 06020, 06030, 06040, 06050, 06060, 06080E",1,1,1,1,1,,1,1,
+CA,207,Asparagus,"Vegetable, market",207,,,,,17-Mar,22-Nov,24-Mar,23-Jul,1-Feb,,,30-Apr,,15-Nov,30-Nov,,,,"06040, 06051, 06080E, 06080W",,,,1,,1,,1,1
+CA,207,Asparagus,"Vegetable, market",207,,1,,,17-Mar,22-Nov,24-Mar,23-Jul,1-Feb,,,30-Apr,,15-Nov,30-Nov,,,,"06010, 06020, 06030, 06050, 06060",1,1,1,,1,,1,,
+CA,245,Celery,"Vegetable, market",245,4,,,,30-Sep,30-Jan,7-Oct,4-Dec,1-Aug,,,30-Nov,10-Nov,1-Jan,1-Mar,31-Mar,,,"06040, 06080E, 06080W",,,,1,,,,1,1
+CA,245,Celery,"Vegetable, market",245,1,,,,30-Jan,31-May,6-Feb,4-Apr,1-Dec,,,31-Mar,1-Apr,1-May,30-Jun,15-Jul,,,"06040, 06080E, 06080W",,,,1,,,,1,1
+CA,245,Celery,"Vegetable, market",245,2,,,,15-Apr,16-Jul,22-Apr,3-Jun,1-Mar,,,31-May,20-Jun,1-Jul,31-Jul,31-Aug,,,"06040, 06080E, 06080W",,,,1,,,,1,1
+CA,245,Celery,"Vegetable, market",245,3,,,,16-Jul,1-Dec,23-Jul,26-Sep,1-Jun,,,31-Aug,1-Sep,1-Nov,31-Dec,15-Jan,,,"06040, 06080E, 06080W",,,,1,,,,1,1
+CA,245,Celery,"Vegetable, market",245,,1,,,30-Jan,31-May,6-Feb,4-Apr,1-Dec,,,31-Mar,1-Apr,1-May,30-Jun,15-Jul,,,"06010, 06050, 06051, 06060",1,,,,1,1,1,,
+CA,42,Dry Beans,"Vegetable, commodity",42,,,,,6-Apr,11-Jul,13-Apr,27-May,26-Feb,,,15-May,25-May,7-Jun,15-Aug,30-Sep,,,"06040, 06050, 06051, 06080W",,,,1,1,1,,,1
+CA,42,Dry Beans,"Vegetable, commodity",42,,1,,,6-Apr,11-Jul,13-Apr,27-May,26-Feb,,,15-May,25-May,7-Jun,15-Aug,30-Sep,,,"06010, 06020, 06030, 06060, 06080E",1,1,1,,,,1,1,
+CA,52,Lentils,"Vegetable, commodity",52,,1,,,6-Apr,11-Jul,13-Apr,27-May,26-Feb,,,15-May,25-May,7-Jun,15-Aug,30-Sep,,,6020,,1,,,,,,,
+CA,49,Onions,"Vegetable, commodity",49,1,,,1,15-Dec,16-May,22-Dec,22-Mar,1-Oct,,,1-Mar,15-Mar,1-May,31-May,15-Jun,,,"06020, 06040, 06051, 06080E",,1,,1,,1,,1,
+CA,49,Onions,"Vegetable, commodity",49,2,,,1,1-Mar,31-Jul,8-Mar,6-Jun,1-Jan,,,30-Apr,1-Jul,1-Jul,31-Aug,31-Oct,,,"06020, 06040, 06051, 06080E",,1,,1,,1,,1,
+CA,49,Onions,"Vegetable, commodity",49,2,1,,1,1-Mar,31-Jul,8-Mar,6-Jun,1-Jan,,,30-Apr,1-Jul,1-Jul,31-Aug,31-Oct,,,"06010, 06030, 06050, 06060, 06080W",1,,1,,1,,1,,1
+CA,53,Peas,"Vegetable, commodity",53,,,,,6-Apr,11-Jul,13-Apr,27-May,26-Feb,,,15-May,25-May,7-Jun,15-Aug,30-Sep,,,"06040, 06080W",,,,1,,,,,1
+CA,53,Peas,"Vegetable, commodity",53,,1,,,6-Apr,11-Jul,13-Apr,27-May,26-Feb,,,15-May,25-May,7-Jun,15-Aug,30-Sep,,,"06010, 06020, 06030, 06050, 06051, 06060, 06080W",1,1,1,,1,1,1,,
+CA,43,Potatoes,"Vegetable, commodity",43,,,,,29-Apr,15-Oct,6-May,26-Jul,15-May,15-Apr,14-May,25-May,15-Jul,10-Oct,20-Oct,15-Nov,,,"06020, 06040, 06050, 06051, 06080E",,,,,,,,,
+CA,43,Potatoes,"Vegetable, commodity",43,,1,,,29-Apr,15-Oct,6-May,26-Jul,15-May,15-Apr,14-May,25-May,15-Jul,10-Oct,20-Oct,15-Nov,,,"06010, 06030, 06050, 06060, 06080W",,,,,,,,,
+CA,46,Sweet Potatoes,"Vegetable, commodity",46,,,,1,29-Apr,15-Oct,6-May,26-Jul,15-May,15-Apr,14-May,25-May,15-Jul,10-Oct,20-Oct,15-Nov,,,6051,,,,,,,,,
+CA,46,Sweet Potatoes,"Vegetable, commodity",46,,2,,1,29-Apr,15-Oct,6-May,26-Jul,15-May,15-Apr,14-May,25-May,15-Jul,10-Oct,20-Oct,15-Nov,,,"06010, 06040, 06050, 06060, 06080E, 06080W",,,,,,,,,

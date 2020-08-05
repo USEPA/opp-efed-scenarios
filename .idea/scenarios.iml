@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
-    <orderEntry type="inheritedJdk" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/hydro" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/efed_lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/crop_dates" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/Tables" />
+    </content>
+    <orderEntry type="jdk" jdkName="Python 3.7 (precip)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="R Skeletons" level="application" />
     <orderEntry type="library" name="R User Library" level="project" />

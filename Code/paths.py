@@ -53,13 +53,12 @@ preprocessed_path = os.path.join(pwc_output_path, "{0}_{1}", "{0}_{1}_all.csv") 
 crop_params_path = os.path.join(table_path, "cdl_params.csv")
 gen_params_path = os.path.join(table_path, "curve_numbers.csv")
 crop_dates_path = os.path.join(table_path, "crop_dates.csv")
+orchard_vine_dates_path = os.path.join(table_path, "orchard_vine_dates.csv")
 crop_group_path = os.path.join(table_path, "crop_groups.csv")
 met_attributes_path = os.path.join(table_path, "met_params.csv")
 fields_and_qc_path = os.path.join(table_path, "fields_and_qc.csv")
 irrigation_path = os.path.join(table_path, "irrigation.csv")
-gdd_input_path = os.path.join(table_path, "gdd_in.csv")
-gdd_intermediate_path = os.path.join(table_path, "gdd_intermediate.csv")
-gdd_output_path = os.path.join(table_path, "gdd_out.csv")
+
 
 # Misc paths
 shapefile_path = os.path.join(scratch_dir, "Shapefiles")

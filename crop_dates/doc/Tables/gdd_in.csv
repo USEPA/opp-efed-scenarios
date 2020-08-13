@@ -1,0 +1,8 @@
+﻿gdd_crop,gdd_crop_desc,emergence_event,emergence_base_temp_f,emergence_gdd_start,emergence_gdd,maxcover_event,maxcover_base_temp_f,maxcover_gdd_start,maxcover_gdd
+gdd_apples,Apples (Red delicious),Full bloom,43,new_year,420,Fruit set,43,new_year,570
+gdd_peaches,Peach and nectarines,Full bloom,43,new_year,290,Shuck split,43,new_year,509
+gdd_pecans,Pecan,Bud Break,60,new_year,15,Pollination?,60,new_year,210
+gdd_almonds,Almond,Full Bloom,40,new_year,40,1% Hull split,40,emergence,150
+gdd_pears,Pear,Full bloom,43,new_year,340,Fruit set,43,new_year,482
+gdd_cherries,Cherry (sweet/tart avg),Full bloom,43,new_year,308.5,Fruit set,43,new_year,469
+gdd_plums,Plum and prune,Full bloom,43,new_year,297,Fruit set,43,new_year,462

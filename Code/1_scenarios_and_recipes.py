@@ -77,13 +77,13 @@ def create_scenarios(combinations, soil_params, met_params, crop_params, crop_da
     scenarios = scenarios.merge(crop_params, how="left", on=['cdl', 'cdl_alias'])
     scenarios = scenarios.merge(irrigation, how="left", on=['cdl_alias', 'state'])
     scenarios = scenarios.merge(curve_numbers, how="left", on=['region', 'pwc_class'])
-    print(scenarios[scenarios.pwc_class == 70].shape)
+
     # Split crop dates by indexing
     state_dates = crop_dates.loc[pd.isnull(crop_dates.weather_grid)].drop('weather_grid', axis=1)
     grid_dates = crop_dates.loc[~pd.isnull(crop_dates.weather_grid)].drop('state', axis=1)
     scenarios = pd.concat([scenarios.merge(grid_dates, on=['cdl', 'cdl_alias', 'weather_grid']),
                            scenarios.merge(state_dates, on=['cdl', 'cdl_alias', 'state'])])
-    print(scenarios[scenarios.pwc_class == 70].shape)
+
     # temporary
     for date in 'plant_begin', 'plant_end', 'harvest_begin', 'harvest_end':
         scenarios[date] = None

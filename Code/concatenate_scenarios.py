@@ -9,7 +9,7 @@ from paths import pwc_scenario_path
 from paths import crop_group_path
 
 out_path = r"J:\opp-efed-data\inputs\Production\Concatenated\{}_{}_all.csv"  # crop num, crop name
-num_filter = [8]
+num_filter = [70, 140, 200]
 crop_groups = pd.read_csv(crop_group_path)[['pwc_class', 'pwc_class_desc']].drop_duplicates()
 for num, desc in crop_groups.values:
     if num in num_filter:

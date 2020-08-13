@@ -118,11 +118,7 @@ def crop_dates(params):
 
     # If any stage is at an earlier date than the previous stage, assume it's in the next year
     # TODO - check this assumption
-    last_field = None
-    for field in date_fields:
-        if last_field is not None:
-            params.loc[params[field] < params[last_field], field] += 365.
-        last_field = field
+
 
     return params
 

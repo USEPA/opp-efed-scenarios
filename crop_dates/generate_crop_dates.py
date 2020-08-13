@@ -5,8 +5,7 @@ import numpy as np
 import datetime as dt
 from parameters import fields, date_fmt
 
-# TODO - more implementation of 'fields' for field management, esp in process_fixed_dates
-# TODO immediate - no harvest for vines/blueberries. missing maxcover for pecans and pistachios(too cold?)
+# TODO - out_fields to fields_and_qc.csv
 out_fields = ['cdl', 'cdl_desc', 'cdl_alias', 'cdl_alias_desc', 'state', met_id_field,
               'sam_only', 'season', 'plant_date', 'emergence_date', 'maxcover_date', 'harvest_date']
 
@@ -24,8 +23,7 @@ def num_to_date(params):
         try:
             return (dt.date(2001, 1, 1) + dt.timedelta(days=int(date))).strftime(date_fmt)
         except:
-            return np.datetime64('NaT')
-
+            return 'n/a'
     date_fields = [f for f in fields.fetch('date') if f in params.columns]
     for field in date_fields:
         params[field] = params[field].apply(n_to_d)
@@ -33,7 +31,7 @@ def num_to_date(params):
 
 
 def combine_dates(all_dates, xwalk):
-    calculated_dates = pd.read_csv(gdd_output_path)
+    calculated_dates = pd.read_csv(gdd_output_path).fillna('n/a')
 
     # Combine calculated dates with others
     all_dates = all_dates.merge(xwalk[[met_id_field, 'ncep_index']], on=met_id_field, how='left') \
@@ -89,7 +87,6 @@ def select_fixed_dates(params):
 def process_fixed_dates():
     most_fixed = pd.read_csv(fixed_dates_path)
     vegetables = pd.read_csv(ca_vegetable_path)
-    vegetables['alt_date'] = 1
     vegetables['cdl_alias'] = vegetables['cdl']
     vegetables['cdl_alias_desc'] = vegetables['cdl_desc']
     dates = pd.concat([most_fixed, vegetables], axis=0)
@@ -103,6 +100,10 @@ def process_fixed_dates():
     for stage in ('plant', 'harvest', 'maxcover', 'emergence'):
         dates[f"{stage}_date"] = 0
 
+    # Where harvest is before plant, add 365 days (e.g. winter wheat)
+    for stage in ['begin', 'end', 'begin_active', 'end_active']:
+        dates.loc[dates[f'plant_{stage}'] > dates[f'harvest_{stage}'], f'harvest_{stage}'] += 365
+
     # Use middle of active range for plant and harvest
     for stage in ('plant', 'harvest'):
         dates[f'{stage}_date'] = (dates[f'{stage}_begin'] + dates[f'{stage}_end']) / 2
@@ -113,18 +114,14 @@ def process_fixed_dates():
     # Max cover is set to halfway between emergence and harvest
     dates['maxcover_date'] = np.int32((dates.emergence_date + dates.harvest_date) / 2)
 
-    # Use designated values for crops with 'alt_date' designation or missing dates
+    # If a value is provided in the '_desig' field, use it
     for stage in ('plant', 'emergence', 'maxcover', 'harvest'):
-        sel = dates.alt_date | dates[f'{stage}_date'].isna()
+        sel = ~pd.isnull(dates[f'{stage}_desig'])
         dates.loc[sel, f'{stage}_date'] = dates.loc[sel, f'{stage}_desig']
 
     # For evergreen crops, canopy is always on the plant at maximum coverage
     dates.loc[dates.evergreen, ['plant_date', 'emergence_date', 'maxcover_date', 'harvest_date']] = \
         np.array([1, 1, 2, 365])
-
-    # Where harvest is before plant, add 365 days (e.g. winter wheat)
-    for stage in ['begin', 'end', 'begin_active', 'end_active']:
-        dates.loc[dates[f'plant_{stage}'] > dates[f'harvest_{stage}'], f'harvest_{stage}'] += 365
 
     dates = num_to_date(dates)
 
@@ -145,12 +142,12 @@ def main():
     fixed_dates = process_fixed_dates()
 
     # Write output
-    pd.concat([fixed_dates, variable_dates], axis=0) \
+    all_dates = pd.concat([fixed_dates, variable_dates], axis=0) \
         .dropna(subset=['cdl']) \
         .dropna(subset=['plant_date', 'emergence_date', 'maxcover_date', 'harvest_date'], how='all') \
         .sort_values(['cdl', 'state', met_id_field]) \
-        .rename(columns={met_id_field: 'weather_grid'}) \
-        .to_csv(dates_output, index=None)
+        .rename(columns={met_id_field: 'weather_grid'})
+    all_dates.to_csv(dates_output, index=None)
 
 
 main()

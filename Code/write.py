@@ -104,7 +104,6 @@ def recipes(region, recipe_table, recipe_map, mode='mmap'):
     if mode == 'csv':
         recipe_table.to_csv(f"{path}.csv", index=None)
     else:
-        print(recipe_table)
         fp = np.memmap(f"{path}", np.int64, 'w+', shape=recipe_table.shape)
         fp[:] = recipe_table.values
         del fp
@@ -123,15 +122,15 @@ def scenarios(scenario_matrix, mode, region, name=None, num=None):
             out_path = pwc_scenario_path.format(region, num, name)
         out_path = out_path.replace("/", "-")
         create_dir(out_path)
-        print(out_path)
         scenario_matrix.to_csv(out_path, index=False)
 
 
 def selected_scenarios(selection, first_run=False):
     create_dir(combined_outfile)
+
     # Add a filename field
     selection = selection.reset_index()
-    selection['filename'] = selection.class_name + \
+    selection['filename'] = selection.pwc_class.astype("str") + \
                             '_' + selection.koc.astype("str") + \
                             '_' + selection.region.astype("str") + \
                             '_' + selection.duration

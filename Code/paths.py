@@ -12,7 +12,7 @@ import re
 run_local = True
 local_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir))
 if run_local:
-    root_dir = r"J:\opp-efed-data\inputs"
+    root_dir = r"J:\opp-efed-data\scenarios"
     input_dir = r"J:\opp-efed-data\global"
 else:
     root_dir = local_dir
@@ -44,11 +44,6 @@ met_grid_path = os.path.join(intermediate_dir, "Weather", "met_stations.csv")
 processed_soil_path = os.path.join(intermediate_dir, "ProcessedSoils", "{}", "region_{}")  # mode, region
 combined_raster_path = os.path.join(intermediate_dir, "CombinedRasters", "c{}_{}")
 
-# Temporary paths
-pwc_output_path = os.path.join(production_dir, "Results")
-reconstituted_path = os.path.join(production_dir, "Reconstituted", "{}_{}_{}_{}.csv")  # region, class_num, class_name, koc
-preprocessed_path = os.path.join(pwc_output_path, "{0}_{1}", "{0}_{1}_all.csv")  # class num, class_name
-
 # Table paths
 crop_params_path = os.path.join(table_path, "cdl_params.csv")
 gen_params_path = os.path.join(table_path, "curve_numbers.csv")
@@ -70,6 +65,7 @@ recipe_path = os.path.join(production_dir, "RecipeFiles", "r{}")  # region
 sam_scenario_path = os.path.join(production_dir, "SamScenarios", "r{}_{}.csv")  # region, chunk
 pwc_scenario_path = os.path.join(production_dir, "PwcScenarios", "{1}_{2}",
                                  "{0}_{1}_{2}.csv")  # region, crop num, crop name
+pwc_outfile_path = os.path.join(production_dir, "PwcOutput", "{}_{}.txt")  # crop_num, koc
 combined_scenario_path = os.path.join(production_dir, "PwcScenarios", "combined",
                                       "{}_{}_all.csv")  # crop num, crop name
 pwc_metfile_path = os.path.join(production_dir, "PwcMetfiles", "s{}.csv")

@@ -17,7 +17,7 @@ import read
 import write
 from efed_lib.efed_lib import report
 from parameters import selection_percentile, area_weighting, pwc_durations, fields, max_horizons, nhd_regions, kocs
-from paths import reconstituted_path, crop_group_path
+from paths import crop_group_path
 
 # This silences some error messages being raised by Pandas
 pd.options.mode.chained_assignment = None
@@ -38,34 +38,27 @@ def check_vals(combined_table, pwc_input, pwc_output):
             report(f"out missing: {list(out_missing)[:5]}")
 
 
-def get_scenarios(preprocessed=False, use_parent=False, region_filter=None, class_filter=None):
+def get_scenarios(region_filter=None, class_filter=None):
+    from hydro.nhd import nhd_regions
+
     classes = pd.read_csv(crop_group_path)[['pwc_class', 'pwc_class_desc']] \
         .drop_duplicates().sort_values('pwc_class').values
+
+    # Subset regions and classes based on filters
+    regions = nhd_regions if region_filter is None else region_filter
+
+    if class_filter is not None:
+        classes = [row for row in classes if row[0] in class_filter]
+
     for class_num, class_name in classes:
-        if class_filter is None or class_num in class_filter:
+        pwc_output = pd.concat([read.pwc_outfile(class_num, koc) for koc in kocs], axis=0)
+        for region in regions:
             try:
-                pwc_input = read.pwc_infile(class_num, class_name, preprocessed=preprocessed, use_parent=use_parent)
+                pwc_input = read.pwc_infile(class_num, class_name, region)
+                combined = pwc_output.merge(pwc_input, on='scenario_id', how='inner')
+                yield region, class_num, class_name, combined
             except FileNotFoundError:
-                report(f"No file found for {class_name}", 1)
-                continue
-            for region in sorted(pwc_input.region.unique()):
-                if region_filter is None or region in region_filter:
-                    try:
-                        all_kocs = []
-                        for koc in kocs:
-                            pwc_output = read.pwc_outfile(region, class_num, class_name, koc, preprocessed=preprocessed)
-                            combined = pwc_input.merge(pwc_output, on='scenario_id', how='right')
-                            for var in 'region', 'class_num', 'class_name', 'koc':
-                                combined[var] = eval(var)
-                            all_kocs.append(combined)
-                        combined = pd.concat(all_kocs, axis=0)
-                        nulls = pd.isnull(combined.conc).sum()
-                        if nulls > 0:
-                            report(f"Failure: {nulls}/{combined.shape[0]} null values")
-                        yield region, class_num, class_name, combined
-                    except Exception as e:
-                        print(6789, e)
-                        yield None, None, None, None
+                pass
 
 
 def compute_percentiles(scenarios):
@@ -107,23 +100,17 @@ def select_scenarios(scenarios):
             selection_set = scenarios[(scenarios.duration == duration) & (scenarios.koc == koc)]
             selection_set['dev'] = (selection_set['%ile'] - selection_percentile).abs()
             rank = selection_set.sort_values(['dev', 'area'], ascending=[True, False]).index
-            print(selection_set.loc[rank][['%ile', 'conc', 'dev', 'area']])
             selected_conc = selection_set.loc[rank].iloc[0].conc
-            print(selected_conc)
-            conc_select = selection_set[selection_set.conc == selected_conc]
-            print(conc_select[['conc', '%ile', 'dev']])
-            exit()
             selection = selection_set[selection_set.conc == selected_conc] \
                 .sort_values('area', ascending=False) \
                 .iloc[0].to_frame().T
-            print(selection)
-            exit()
             all_selected.append(selection)
     all_selected = \
         pd.concat(all_selected, axis=0).sort_values(['koc', 'duration'], ascending=True).reset_index()
 
     # Partition selection into raw scenarios and a 'results' table containing the concentrations
     selection_fields = fields.fetch('pwc_scenario')
+    # TODO - put in field manager
     results_fields = [f for f in fields.fetch('results') if f not in selection_fields]
     selection_set = all_selected[selection_fields + results_fields]
 
@@ -158,18 +145,19 @@ def report_region(scenarios, region, class_name, class_num):
 
 def main():
     fields.expand('horizon', max_horizons)
-    region_filter = ['01']
-    class_filter = [40]
+    region_filter = None
+    class_filter = [70, 140, 200]
 
     for run_num, (region, class_num, class_name, scenarios) in \
-            enumerate(get_scenarios(preprocessed=True, region_filter=region_filter, class_filter=class_filter)):
+            enumerate(get_scenarios(region_filter=region_filter, class_filter=class_filter)):
         if scenarios is not None:
             report(f"Working on Region {region} {class_name}...")
             try:
+                print(scenarios.shape)
                 selection = report_region(scenarios, region, class_name, class_num)
                 write.selected_scenarios(selection, run_num == 0)
             except Exception as e:
-                print(e)
+                raise e
 
 
 if __name__ == "__main__":

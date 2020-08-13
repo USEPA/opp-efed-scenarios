@@ -33,7 +33,7 @@ def index_to_date(dates):
         if not np.isnan(date):
             output.append((dt.date(2001, 1, 1) + dt.timedelta(days=int(date))).strftime(date_fmt))
         else:
-            output.append('')
+            output.append("n/a")
     return output
 
 
@@ -59,7 +59,6 @@ def annual_dates(gdd, emergence_gdd, maxcover_gdd, maxcover_event='new_year', re
             raise KeyError(f"Invalid start type {maxcover_event}")
     except ValueError:
         maxcover_idx = np.nan
-
     if return_dates:
         return index_to_date([emergence_idx, maxcover_idx])
     else:

@@ -4,3 +4,6 @@
 [submodule "efed-lib"]
 	path = efed-lib
 	url = https://github.com/usepa/opp-efed
+[submodule "efed_lib"]
+	path = efed_lib
+	url = https://github.com/usepa/opp-efed

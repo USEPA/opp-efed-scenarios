@@ -109,10 +109,10 @@ def select_scenarios(scenarios):
         pd.concat(all_selected, axis=0).sort_values(['koc', 'duration'], ascending=True).reset_index()
 
     # Partition selection into raw scenarios and a 'results' table containing the concentrations
-    selection_fields = fields.fetch('pwc_scenario')
-    # TODO - put in field manager
-    results_fields = [f for f in fields.fetch('results') if f not in selection_fields]
-    selection_set = all_selected[selection_fields + results_fields]
+    out_fields = fields.fetch('pwc_scenario') + fields.fetch('selection')
+    print(666, out_fields)
+    exit()
+    selection_set = all_selected[fields.fetch('pwc_scenario') + fields.fetch('selection')]
 
     return selection_set
 
@@ -146,15 +146,16 @@ def report_region(scenarios, region, class_name, class_num):
 def main():
     fields.expand('horizon', max_horizons)
     region_filter = None
-    class_filter = [70, 140, 200]
+    class_filter = [70, 130, 140, 200]
 
     for run_num, (region, class_num, class_name, scenarios) in \
             enumerate(get_scenarios(region_filter=region_filter, class_filter=class_filter)):
         if scenarios is not None:
             report(f"Working on Region {region} {class_name}...")
             try:
-                print(scenarios.shape)
                 selection = report_region(scenarios, region, class_name, class_num)
+                print(selection.columns.values)
+                exit()
                 write.selected_scenarios(selection, run_num == 0)
             except Exception as e:
                 raise e

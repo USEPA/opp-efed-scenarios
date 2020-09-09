@@ -2,46 +2,25 @@ import pandas as pd
 from crop_dates_paths import met_xwalk_path, gdd_output_path, fixed_dates_path, \
     dates_output, met_id_field, variable_dates_path, ca_vegetable_path
 import numpy as np
-import datetime as dt
-from parameters import fields, date_fmt
-
-# TODO - out_fields to fields_and_qc.csv
-out_fields = ['cdl', 'cdl_desc', 'cdl_alias', 'cdl_alias_desc', 'state', met_id_field,
-              'sam_only', 'season', 'plant_date', 'emergence_date', 'maxcover_date', 'harvest_date']
-
-
-def date_to_num(params):
-    # Convert dates to days since Jan 1
-    date_fields = [f for f in fields.fetch('all_dates') if f in params.columns]
-    for field in date_fields:
-        params[field] = (pd.to_datetime(params[field], format=date_fmt) - pd.to_datetime("1900-01-01")).dt.days
-    return params
-
-
-def num_to_date(params):
-    def n_to_d(date):
-        try:
-            return (dt.date(2001, 1, 1) + dt.timedelta(days=int(date))).strftime(date_fmt)
-        except:
-            return 'n/a'
-    date_fields = [f for f in fields.fetch('date') if f in params.columns]
-    for field in date_fields:
-        params[field] = params[field].apply(n_to_d)
-    return params
+from parameters import fields
+from modify import date_to_num, num_to_date
 
 
 def combine_dates(all_dates, xwalk):
     calculated_dates = pd.read_csv(gdd_output_path).fillna('n/a')
 
-    # Combine calculated dates with others
-    all_dates = all_dates.merge(xwalk[[met_id_field, 'ncep_index']], on=met_id_field, how='left') \
-        .merge(calculated_dates[['ncep_index', 'spring_freeze', 'fall_freeze']].drop_duplicates(),
-               on='ncep_index', how='left')
+    # Append freeze dates
+    freeze_dates = calculated_dates[['ncep_index', 'spring_freeze', 'fall_freeze']].drop_duplicates()
+    all_dates = all_dates\
+        .merge(xwalk[['weather_grid', 'ncep_index']], on='weather_grid', how='left') \
+        .merge(freeze_dates, on='ncep_index', how='left')
 
+    # Append GDD-derived dates by stage
     for stage in ['emergence', 'maxcover', 'harvest']:
         try:
             date_field = f'{stage}_date'
-            all_dates = all_dates.merge(calculated_dates[['ncep_index', 'gdd_crop', stage]],
+            gdd_dates = calculated_dates[['ncep_index', 'gdd_crop', stage]]
+            all_dates = all_dates.merge(gdd_dates,
                                         left_on=['ncep_index', stage],
                                         right_on=['ncep_index', 'gdd_crop'],
                                         how='left', suffixes=("", "_date"))
@@ -52,6 +31,7 @@ def combine_dates(all_dates, xwalk):
         frost_rows = (all_dates[stage] == 'fall_frost')
         all_dates.loc[frost_rows, date_field] = all_dates.loc[frost_rows, 'fall_freeze']
 
+    out_fields = [f for f in fields.fetch('crop_dates') if f in all_dates.columns]
     return all_dates[out_fields]
 
 
@@ -60,7 +40,7 @@ def read_variable(met_xwalk):
     # Read both and combine, with the output indexed by weather grid
 
     # Get station to state crosswalk
-    station_state = met_xwalk[[met_id_field, 'state']].drop_duplicates()
+    station_state = met_xwalk[['weather_grid', 'state']].drop_duplicates()
 
     # Read dates indexed by state/cdl and expand to met grid
     dates = pd.read_csv(variable_dates_path)
@@ -125,12 +105,12 @@ def process_fixed_dates():
 
     dates = num_to_date(dates)
 
-    return dates[out_fields]
+    return dates[fields.fetch('crop_dates', field_filter=dates.columns)]
 
 
 def main():
     # Read met crosswalk
-    met_xwalk = pd.read_csv(met_xwalk_path)
+    met_xwalk = pd.read_csv(met_xwalk_path).rename(columns={met_id_field: 'weather_grid'})
 
     # Read crops with variable dates indexed by CDL
     cdl_dates = read_variable(met_xwalk)
@@ -144,9 +124,8 @@ def main():
     # Write output
     all_dates = pd.concat([fixed_dates, variable_dates], axis=0) \
         .dropna(subset=['cdl']) \
-        .dropna(subset=['plant_date', 'emergence_date', 'maxcover_date', 'harvest_date'], how='all') \
-        .sort_values(['cdl', 'state', met_id_field]) \
-        .rename(columns={met_id_field: 'weather_grid'})
+        .sort_values(['cdl', 'state', 'weather_grid'])[fields.fetch('crop_dates')]
+    all_dates.loc[pd.isnull(all_dates.season), 'season'] = 1
     all_dates.to_csv(dates_output, index=None)
 
 

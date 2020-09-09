@@ -18,14 +18,7 @@ from paths import condensed_soil_path, met_attributes_path, combo_path, crop_dat
 
 from efed_lib.efed_lib import report
 from parameters import fields
-
-
-def date_to_num(params):
-    # Convert dates to days since Jan 1
-    date_fields = [f for f in fields.fetch('all_dates') if f in params.columns]
-    for field in date_fields:
-        params[field] = (pd.to_datetime(params[field], format=date_fmt) - pd.to_datetime("1900-01-01")).dt.days
-    return params
+from modify import date_to_num
 
 
 def test_path(f):
@@ -69,20 +62,19 @@ def crop():
     fields.refresh()
 
     # Read CDL/crop group index
-    index_fields, dtypes = fields.fetch('CropGroups', dtypes=True)
+    index_fields, dtypes = fields.fetch('crop_groups', dtypes=True)
     crop_index = pd.read_csv(crop_group_path, usecols=index_fields, dtype=dtypes)
 
     # Read parameters indexed to CDL
-    param_fields, dtypes = fields.fetch('CropParams', dtypes=True, col='external_name')
+    param_fields, dtypes = fields.fetch('crop_params', dtypes=True, index_field='external_name')
     crop_params = pd.read_csv(crop_params_path, usecols=param_fields, dtype=dtypes)
-
     data = crop_index.merge(crop_params, on=['cdl', 'cdl_alias'], how='left')
 
     return data
 
 
 def curve_numbers(region):
-    group_fields, dtypes = fields.fetch('CurveNumbers', dtypes=True)
+    group_fields, dtypes = fields.fetch('curve_numbers', dtypes=True)
     group_params = pd.read_csv(gen_params_path, usecols=group_fields, dtype=dtypes)
     return group_params[group_params.region == region]
 
@@ -93,11 +85,21 @@ def crop_dates(mode='pwc'):
     if mode == 'pwc':
         dates = dates[dates.sam_only != 1]
 
-    return dates.rename(columns={'stationID': 'weather_grid'})
+    # Convert dates to days since Jan 1
+    dates = date_to_num(dates)
+    # If date is earlier than preceeding event, move it forward a year
+    # TODO - check this assumption. what if the dates are just off? should this be in modify.py?
+    date_fields = fields.fetch("plant_stage")
+    for i, stage_2 in enumerate(date_fields):
+        if i > 0:
+            stage_1 = date_fields[i - 1]
+            dates.loc[(dates[stage_2] < dates[stage_1]), stage_2] += 365.
+
+    return dates[fields.fetch('crop_dates')].rename(columns={'stationID': 'weather_grid'})
 
 
 def irrigation():
-    irrigation_fields, dtypes = fields.fetch('Irrigation', dtypes=True)
+    irrigation_fields, dtypes = fields.fetch('irrigation', dtypes=True)
     irrigation_data = pd.read_csv(irrigation_path, usecols=irrigation_fields, dtype=dtypes)
     return irrigation_data
 
@@ -107,7 +109,7 @@ def met():
     Read data tables indexed to weather grid
     :return: Table of parameters indexed to weather grid
     """
-    field_names, dtypes = fields.fetch("MetParams", dtypes=True)
+    field_names, dtypes = fields.fetch("met_params", dtypes=True)
     met_data = pd.read_csv(met_attributes_path, usecols=field_names, dtype=dtypes)
     # met_data = met_data.rename(columns={"stationID": 'weather_grid'})  # these combos have old weather grids?
     return met_data
@@ -128,11 +130,22 @@ def soil(mode, region=None, state=None):
     else:
         region_states = states_nhd[region]
     state_tables = []
-    valu_table = ssurgo("", "valu")
+    table_fields, data_types = fields.fetch('ssurgo', True, index_field='external_name')
+    valu_table = pd.read_csv(condensed_soil_path.format("", "valu"),
+                             dtype=data_types, usecols=lambda f: f in table_fields)
+
+    # ssurgo
+    """
+    table_fields, data_types = fields.fetch(name, dtypes=True, index_field='external_name')
+    table_path = condensed_soil_path.format(state, name)
+    return pd.read_csv(table_path, dtype=data_types, usecols=table_fields)
+    """
     for state in region_states:
         state_table = None
         for table_name, key_field in [('muaggatt', 'mukey'), ('component', 'mukey'), ('chorizon', 'cokey')]:
-            table = ssurgo(state, table_name)
+            table_path = condensed_soil_path.format(state, table_name)
+
+            table = pd.read_csv(table_path, dtype=data_types, usecols=lambda f: f in table_fields)
             state_table = table if state_table is None else pd.merge(state_table, table, on=key_field, how='outer')
         state_table['state'] = state
         state_tables.append(state_table)
@@ -140,18 +153,6 @@ def soil(mode, region=None, state=None):
     soil_data = soil_data.merge(valu_table, on='mukey')
 
     return soil_data.rename(columns=fields.convert)
-
-
-def ssurgo(state, name):
-    """
-    Read a condensed SSURGO soils data table
-    :param state: State (str)
-    :param name: Table name (str)
-    :return:
-    """
-    table_fields, data_types = fields.fetch(name, dtypes=True, col='external_name')
-    table_path = condensed_soil_path.format(state, name)
-    return pd.read_csv(table_path, dtype=data_types, usecols=table_fields)
 
 
 @test_path
@@ -178,7 +179,8 @@ def pwc_outfile(class_num=None, koc=None):
     :param in_file: Path to PWC output file (str)
     :return: Dataframe of PWC output (df)
     """
-    pwc_header = fields.fetch('pwc_id_fields') + pwc_durations
+
+    pwc_header = ['line_num', 'run_id'] + pwc_durations
     table_path = pwc_outfile_path.format(class_num, koc)
     table = pd.read_csv(table_path, names=pwc_header, delimiter=r'\s+')
 
@@ -187,10 +189,10 @@ def pwc_outfile(class_num=None, koc=None):
 
     # Split the Batch Run ID field into constituent parts
     data = table.pop('run_id').str.split('_', expand=True)
-    data.columns = ['bunk'] + fields.fetch('pwc_run_id')
+    data.columns = ['bunk', 'koc', 'scenario_id', 'rep']
     data['koc'] = koc
     table = pd.concat([data, table], axis=1)
-    table = table.melt(id_vars=[f for f in table.columns if not f in pwc_durations], value_vars=pwc_durations,
+    table = table.melt(id_vars=[f for f in table.columns if f not in pwc_durations], value_vars=pwc_durations,
                        var_name='duration', value_name='conc')
 
     return table

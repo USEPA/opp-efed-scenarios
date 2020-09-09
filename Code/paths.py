@@ -38,7 +38,6 @@ soil_raster_path = os.path.join(input_dir, "SoilMap", "soil{}.tif")  # region
 
 # Intermediate datasets
 weather_path = os.path.join(input_dir, "WeatherFiles", "met{}")  # region
-condensed_nhd_path = os.path.join(intermediate_dir, "CondensedNHD", 'nhd{}.csv')  # region
 combo_path = os.path.join(intermediate_dir, "Combinations", "{}_{}.csv")  # region, state, year
 met_grid_path = os.path.join(intermediate_dir, "Weather", "met_stations.csv")
 processed_soil_path = os.path.join(intermediate_dir, "ProcessedSoils", "{}", "region_{}")  # mode, region

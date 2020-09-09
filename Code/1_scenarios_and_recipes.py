@@ -18,12 +18,9 @@ import read
 import write
 
 from paths import scratch_dir
+from hydro import read_hydro
 from efed_lib.efed_lib import report
-from parameters import nhd_regions
-# TODO - get rid of this
-from parameters import pwc_selection_field as crop_field
-from parameters import pwc_selection_pct as selection_pct
-from parameters import pwc_min_selection as min_sample
+from parameters import nhd_regions, pwc_selection_field, pwc_min_selection, pwc_selection_pct
 
 
 def create_recipes(combos, watershed_params):
@@ -78,15 +75,14 @@ def create_scenarios(combinations, soil_params, met_params, crop_params, crop_da
     scenarios = scenarios.merge(irrigation, how="left", on=['cdl_alias', 'state'])
     scenarios = scenarios.merge(curve_numbers, how="left", on=['region', 'pwc_class'])
 
-    # Split crop dates by indexing
+    # Split crop dates by indexing. Some dates indexed by cdl and weather, others by cdl and state
     state_dates = crop_dates.loc[pd.isnull(crop_dates.weather_grid)].drop('weather_grid', axis=1)
     grid_dates = crop_dates.loc[~pd.isnull(crop_dates.weather_grid)].drop('state', axis=1)
     scenarios = pd.concat([scenarios.merge(grid_dates, on=['cdl', 'cdl_alias', 'weather_grid']),
                            scenarios.merge(state_dates, on=['cdl', 'cdl_alias', 'state'])])
 
-    # temporary
-    for date in 'plant_begin', 'plant_end', 'harvest_begin', 'harvest_end':
-        scenarios[date] = None
+    # 'season' occurs in both dates and cdl params. take the maximum
+    scenarios['season'] = scenarios[['season_x', 'season_y']].max(axis=1)
 
     return scenarios
 
@@ -100,16 +96,16 @@ def select_pwc_scenarios(in_scenarios, crop_params):
     """
     # Randomly sample from each crop group and save the sample
     meta_table = []  # table summarizing sample size for each crop
-    crop_groups = crop_params[[crop_field, crop_field + '_desc']].drop_duplicates().values
+    crop_groups = crop_params[[pwc_selection_field, pwc_selection_field + '_desc']].drop_duplicates().values
 
     # First, write the entire scenario table to a 'parent' table
     yield 'parent', '', in_scenarios
 
     # Write a table for each crop or crop group
     for crop, crop_name in crop_groups:
-        sample = in_scenarios.loc[in_scenarios[crop_field] == crop]
+        sample = in_scenarios.loc[in_scenarios[pwc_selection_field] == crop]
         n_scenarios = sample.shape[0]
-        selection_size = max((min_sample, int(n_scenarios * (selection_pct / 100))))
+        selection_size = max((pwc_min_selection, int(n_scenarios * (pwc_selection_pct / 100))))
         if n_scenarios > selection_size:
             sample = sample.sample(selection_size)
         if not sample.empty:
@@ -140,7 +136,7 @@ def chunk_combinations(combos):
         yield 1, combos
 
 
-def scenarios_and_recipes(regions, years, mode):
+def scenarios_and_recipes(regions, years, mode, class_filter=None):
     """
     Main program routine. Creates scenario and recipe (if applicable) files
     for specified NHD Plus Hydroregions and years. Years and regions provided
@@ -161,7 +157,6 @@ def scenarios_and_recipes(regions, years, mode):
     crop_params = read.crop()
     crop_dates = read.crop_dates()
     irrigation = read.irrigation()
-    crop_dates = modify.crop_dates(crop_dates)
 
     # Soils, watersheds and combinations are broken up by NHD region
     for region in regions:
@@ -182,22 +177,28 @@ def scenarios_and_recipes(regions, years, mode):
         # Generate watershed 'recipes' for SAM and aggregate combinations after recipe fields removed
         if mode == 'sam':
             report(f"Creating watershed recipes and aggregating combinations...", 1)
-            watershed_params = read.nhd(region)[['gridcode', 'comid']]
+            watershed_params = read_hydro.condensed_nhd(region)[['gridcode', 'comid']]
             recipes, recipe_map, combinations = create_recipes(combinations, watershed_params)
             write.recipes(region, recipes, recipe_map)
 
         # Create and modify scenarios, and write to file
         report(f"Creating scenarios...", 1)
         if mode == 'sam':
+            # Because SAM datasets do not exclude any scenarios, break into pieces to avoid memory overload
             for chunk_num, chunk in chunk_combinations(combinations):
-                scenarios = create_scenarios(chunk, soil_params, crop_params, met_params)
+                scenarios = create_scenarios(chunk, soil_params, met_params, crop_params, crop_dates,
+                                             irrigation, curve_numbers)
                 scenarios = modify.scenarios(scenarios, mode, region)
                 report("Writing to file...", 2)
                 write.scenarios(scenarios, mode, region, name=chunk_num)
         elif mode == 'pwc':
             scenarios = create_scenarios(combinations, soil_params, met_params, crop_params, crop_dates,
                                          irrigation, curve_numbers)
-
+            if class_filter is not None:
+                class_filter = pd.DataFrame({pwc_selection_field: class_filter})
+                scenarios = scenarios.merge(class_filter, on=pwc_selection_field, how='inner')
+                if scenarios.empty:
+                    continue
             scenarios = modify.scenarios(scenarios, mode, region)
 
             # For PWC, apply sampling and write crop-specific tables
@@ -211,10 +212,10 @@ def main():
     Specify mode, years, and regions for processing here """
     modes = ('pwc',)  # pwc and/or sam
     years = range(2014, 2019)
-    regions = nhd_regions
-
+    regions = ['03S']
+    class_filter = [130, 170]  # pwc - sugarcane, pasture
     for mode in modes:
-        scenarios_and_recipes(regions, years, mode)
+        scenarios_and_recipes(regions, years, mode, class_filter)
 
 
 if __name__ == "__main__":

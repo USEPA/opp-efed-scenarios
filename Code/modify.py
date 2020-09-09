@@ -8,6 +8,7 @@ Examples of modifications include: renaming or removing fields, calculating addi
 # Import builtins and standard libraries
 import numpy as np
 import pandas as pd
+import datetime as dt
 
 # Import local modules and variables
 import write
@@ -17,6 +18,26 @@ from parameters import fields, max_horizons, hydro_soil_group, uslep_values, agg
 
 # This silences some error messages being raised by Pandas
 pd.options.mode.chained_assignment = None
+
+
+def date_to_num(params):
+    # Convert dates to days since Jan 1
+    for field in fields.fetch('date', field_filter=params.columns):
+        params[field] = (pd.to_datetime(params[field], format=date_fmt) - pd.to_datetime("1900-01-01")).dt.days
+    return params
+
+
+def num_to_date(params):
+    def n_to_d(date):
+        try:
+            return (dt.date(2001, 1, 1) + dt.timedelta(days=int(date))).strftime(date_fmt)
+        except (ValueError, OverflowError):
+            return 'n/a'
+
+    for field in fields.fetch('date'):
+        if field in params.columns:
+            params[field] = params[field].apply(n_to_d)
+    return params
 
 
 def aggregate_soils(in_soils):
@@ -52,7 +73,7 @@ def aggregate_soils(in_soils):
 
     # Group by aggregation key and take the mean of all properties except HSG, which will use mode
     fields.refresh()
-    fields.expand('depth')
+    fields.expand('depth_weight', depth_bins)
     averaged = in_soils.groupby('soil_id')[fields.fetch('agg_mean')].mean().reset_index()
     hydro_group = in_soils.groupby('soil_id')[['hydro_group']].max()
     aggregated = averaged.merge(hydro_group, on='soil_id')
@@ -103,26 +124,6 @@ def combinations(combos, crop_params, mode, agg_key):
     return combos
 
 
-def crop_dates(params):
-    """
-    Modify dates and perform selection of plant and harvest dates.
-    :param params: Table of parameters linked to crop (df)
-    :param mode: 'sam' or 'pwc'
-    :return: Modified table of parameters linked to crop
-    """
-
-    # Convert dates to days since Jan 1
-    date_fields = sorted(set(params.columns.values) & (set(fields.fetch('CropDates')) - set(fields.fetch('id'))))
-    for field in date_fields:
-        params[field] = (pd.to_datetime(params[field], format=date_fmt) - pd.to_datetime("1900-01-01")).dt.days
-
-    # If any stage is at an earlier date than the previous stage, assume it's in the next year
-    # TODO - check this assumption
-
-
-    return params
-
-
 def depth_weight_soils(in_soils):
     """
     Creates standardized depth horizons for soils through averaging.
@@ -159,7 +160,7 @@ def depth_weight_soils(in_soils):
         depth_weighted.append(bin_table)
 
     # Clear all fields corresponding to horizons, and add depth-binned data
-    fields.expand('horizon')  # this will add all the _n fields
+    fields.expand('horizon', max_horizons)  # this will add all the _n fields
     for field in fields.fetch('horizon'):
         del in_soils[field]
     in_soils = pd.concat([in_soils.reset_index()] + depth_weighted, axis=1)
@@ -286,14 +287,13 @@ def scenarios(in_scenarios, mode, region, write_qc=True):
     if mode == 'pwc':
         test_fields = sorted({f for f in fields.fetch('pwc_scenario') if f not in fields.fetch('horizon')})
         qc_table = fields.perform_qc(in_scenarios[test_fields]).copy()
-        qc_table.to_csv("bads.csv")
         in_scenarios = in_scenarios[qc_table.max(axis=1) < 2]
         fields.expand('horizon', max_horizons)
     else:
-        fields.expand("depth")
+        fields.expand("depth_weight", depth_bins)
         in_scenarios = in_scenarios[fields.fetch('sam_scenario')]
         qc_table = fields.perform_qc(in_scenarios)
-        in_scenarios = in_scenarios.mask(qc_table == 2, fields.fill_value, axis=1)
+        in_scenarios = in_scenarios.mask(qc_table == 2, fields.fill(), axis=1)
     if write_qc:
         write.qc_report(in_scenarios, qc_table, region, mode)
     if mode == 'pwc':

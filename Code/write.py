@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 
 # Import local variables
 from parameters import fields, max_horizons, kocs, pwc_durations
-from paths import sam_scenario_path, pwc_scenario_path, recipe_path, hydro_file_path, combo_path, condensed_nhd_path, \
+from paths import sam_scenario_path, pwc_scenario_path, recipe_path, hydro_file_path, combo_path, \
     qc_path, summary_outfile, selected_outfile, plot_outfile, combined_outfile, combined_results
 
 
@@ -142,7 +142,7 @@ def selected_scenarios(selection, first_run=False):
 
     # Write to file
     flag = 'w' if first_run else 'a'
-    selection[fields.fetch('results')].to_csv(combined_results, mode=flag, header=(flag == 'w'), index=None)
+    selection[fields.fetch('selection')].to_csv(combined_results, mode=flag, header=(flag == 'w'), index=None)
     selection[scenario_fields].to_csv(combined_outfile, mode=flag, header=(flag == 'w'), index=None)
 
 

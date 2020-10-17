@@ -27,11 +27,11 @@ If you want all corn in region 3, enter corn_3*.*
 In this regard, its important to indicate the koc with a letter so as not to confuse the selection.
 """
 
-root_dir = r"G:\Branch and IO Info\EISB\Scenarios\orchard pwc scenarios needs Renaming"
+root_dir = r"G:\Branch and IO Info\EISB\Scenarios\orchard pwc scenarios"
 new_dir = r"G:\Branch and IO Info\EISB\Scenarios\NewScenarioFiles\{}\{}-r{}-{}.scn"  # koc_dir, crop, region, koc
 
 # Corn-koc10-r01-acute.scn2
-pattern = re.compile("(\d{2,3})_(\d{2,5})_(.{2,3})_(.+?)\.scn2")
+pattern = re.compile("([\.\d]{2,5})_(\d{2,5})_(.{2,3})_(.+?)\.scn2")
 
 koc_rename = {'10': 'A', '1000': 'B', '10000': 'C'}
 
@@ -39,7 +39,10 @@ koc_dir_rename = {'10': 'Koc under 100', '1000': 'Koc 100 to 3000', '10000': 'Ko
 
 crop_rename = \
     {"70": "Vegetables market",
-     "200": "Orchard deciduous"}
+     "130": "Sugarcane",
+     "140": "Small fruit trellis",
+     "200": "Orchard deciduous",
+     "200.0": "Orchard deciduous"}
 
 for a, _, c in os.walk(root_dir):
     for f in c:
@@ -57,6 +60,7 @@ for a, _, c in os.walk(root_dir):
                     nd = os.path.dirname(new_path)
                     if not os.path.exists(nd):
                         os.makedirs(nd)
+                    print(new_path)
                     copyfile(old_path, new_path)
         else:
             print(f"fail {f}")

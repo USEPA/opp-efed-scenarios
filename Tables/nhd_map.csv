@@ -1,0 +1,3 @@
+path,table,feature_type,field,format,internal_name
+NHDPlusCatchment,FeatureIDGridcode,reach,FeatureID,object,comid
+NHDPlusCatchment,FeatureIDGridcode,reach,GridCode,object,

@@ -16,7 +16,7 @@ from paths import condensed_soil_path, met_attributes_path, combo_path, crop_dat
     crop_params_path, gen_params_path, irrigation_path, \
     pwc_scenario_path, crop_group_path, pwc_outfile_path
 
-from efed_lib.efed_lib import report
+from tools.efed_lib import report
 from parameters import fields
 from modify import date_to_num
 
@@ -48,7 +48,7 @@ def combinations(region, years, nrows=None):
         combos = pd.read_csv(combo_file, dtype=np.uint32, nrows=nrows)[header]
         combos['year'] = np.int16(year)
         all_combos = combos if all_combos is None else pd.concat([all_combos, combos], axis=0)
-    all_combos['region'] = region
+    all_combos['region'] = str(region).zfill(2)
     return all_combos
 
 
@@ -109,13 +109,13 @@ def met():
     Read data tables indexed to weather grid
     :return: Table of parameters indexed to weather grid
     """
-    field_names, dtypes = fields.fetch("met_params", dtypes=True)
+    field_names, dtypes = fields.fetch("met_params", dtypes=True, index_field='external_name')
     met_data = pd.read_csv(met_attributes_path, usecols=field_names, dtype=dtypes)
     # met_data = met_data.rename(columns={"stationID": 'weather_grid'})  # these combos have old weather grids?
-    return met_data
+    return met_data.rename(columns=fields.convert)
 
 
-def soil(mode, region=None, state=None):
+def soil(mode):
     """
     Read and aggregate all soils data for an NHD Hydroregion or state
     :param mode: 'sam' or 'pwc'
@@ -124,35 +124,17 @@ def soil(mode, region=None, state=None):
     :return: Table of parameters indexed to soil map unit (df)
     """
     fields.refresh()
-
-    if region is None and state is not None:
-        region_states = [state]
-    else:
-        region_states = states_nhd[region]
-    state_tables = []
     table_fields, data_types = fields.fetch('ssurgo', True, index_field='external_name')
-    valu_table = pd.read_csv(condensed_soil_path.format("", "valu"),
-                             dtype=data_types, usecols=lambda f: f in table_fields)
-
-    # ssurgo
-    """
-    table_fields, data_types = fields.fetch(name, dtypes=True, index_field='external_name')
-    table_path = condensed_soil_path.format(state, name)
-    return pd.read_csv(table_path, dtype=data_types, usecols=table_fields)
-    """
-    for state in region_states:
-        state_table = None
-        for table_name, key_field in [('muaggatt', 'mukey'), ('component', 'mukey'), ('chorizon', 'cokey')]:
-            table_path = condensed_soil_path.format(state, table_name)
-
-            table = pd.read_csv(table_path, dtype=data_types, usecols=lambda f: f in table_fields)
-            state_table = table if state_table is None else pd.merge(state_table, table, on=key_field, how='outer')
-        state_table['state'] = state
-        state_tables.append(state_table)
-    soil_data = pd.concat(state_tables, axis=0)
-    soil_data = soil_data.merge(valu_table, on='mukey')
-
-    return soil_data.rename(columns=fields.convert)
+    table_map = [('muaggatt', 'mukey'), ('component', 'mukey'), ('chorizon', 'cokey'), ('Valu1', 'mukey')]
+    full_table = None
+    for table_name, key_field in table_map:
+        table_path = condensed_soil_path.format(table_name)
+        table = pd.read_csv(table_path, dtype=data_types, usecols=lambda f: f in table_fields)
+        if full_table is None:
+            full_table = table
+        else:
+            full_table = full_table.merge(table, on=key_field, how='outer')
+    return full_table.rename(columns=fields.convert)
 
 
 @test_path

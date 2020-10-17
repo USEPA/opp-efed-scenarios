@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 from collections import OrderedDict
 from paths import fields_and_qc_path
-from efed_lib.efed_lib import FieldManager
+from tools.efed_lib import FieldManager
 
 date_fmt = "%d-%b"  # 06-Feb
 fields = FieldManager(fields_and_qc_path)

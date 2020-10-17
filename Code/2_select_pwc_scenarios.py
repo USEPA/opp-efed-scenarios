@@ -15,7 +15,7 @@ import numpy as np
 import plot
 import read
 import write
-from efed_lib.efed_lib import report
+from tools.efed_lib import report
 from parameters import selection_percentile, area_weighting, pwc_durations, fields, max_horizons, nhd_regions, kocs
 from paths import crop_group_path
 
@@ -109,9 +109,6 @@ def select_scenarios(scenarios):
         pd.concat(all_selected, axis=0).sort_values(['koc', 'duration'], ascending=True).reset_index()
 
     # Partition selection into raw scenarios and a 'results' table containing the concentrations
-    out_fields = fields.fetch('pwc_scenario') + fields.fetch('selection')
-    print(666, out_fields)
-    exit()
     selection_set = all_selected[fields.fetch('pwc_scenario') + fields.fetch('selection')]
 
     return selection_set
@@ -146,7 +143,7 @@ def report_region(scenarios, region, class_name, class_num):
 def main():
     fields.expand('horizon', max_horizons)
     region_filter = None
-    class_filter = [70, 130, 140, 200]
+    class_filter = [130]
 
     for run_num, (region, class_num, class_name, scenarios) in \
             enumerate(get_scenarios(region_filter=region_filter, class_filter=class_filter)):
@@ -154,8 +151,6 @@ def main():
             report(f"Working on Region {region} {class_name}...")
             try:
                 selection = report_region(scenarios, region, class_name, class_num)
-                print(selection.columns.values)
-                exit()
                 write.selected_scenarios(selection, run_num == 0)
             except Exception as e:
                 raise e

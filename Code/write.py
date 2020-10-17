@@ -136,7 +136,6 @@ def selected_scenarios(selection, first_run=False):
                             '_' + selection.duration
 
     # Choose output fields
-    fields.expand('horizon', max_horizons)
     scenario_fields = fields.fetch('pwc_scenario') + ['filename']
     scenario_fields.remove("region")
 

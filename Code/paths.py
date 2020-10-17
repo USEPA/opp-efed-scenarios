@@ -12,8 +12,8 @@ import re
 run_local = True
 local_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir))
 if run_local:
-    root_dir = r"J:\opp-efed-data\scenarios"
-    input_dir = r"J:\opp-efed-data\global"
+    root_dir = r"E:\opp-efed-data\scenarios"
+    input_dir = r"E:\opp-efed-data\global"
 else:
     root_dir = local_dir
     input_dir = os.path.join(root_dir, "Input")
@@ -27,14 +27,15 @@ scratch_dir = os.path.join(root_dir, "Scratch")
 # Raw input data
 table_path = os.path.join(local_dir, "Tables")
 nhd_path = os.path.join(input_dir, "NHDPlusV21", "NHDPlus{}", "NHDPlus{}")  # vpu, region
-soil_path = os.path.join(input_dir, "SSURGO", "gSSURGO_{}.gdb")  # state
-condensed_soil_path = os.path.join(input_dir, "CustomSSURGO", "{}", "{}.csv")  # state, table name
-cdl_path = os.path.join(input_dir, "CDL", "cdl{}_{}.img")  # region, year
+soil_path = os.path.join(input_dir, "gSSURGO_CONUS", "gSSURGO_CONUS.gdb")  # state
+condensed_soil_path = os.path.join(input_dir, "ssurgo_csv", "{}.csv")  # table name
+cdl_path = os.path.join(input_dir, "cdl", "{}_30m_cdls.img")  # region, year
+condensed_nhd_path = os.path.join(root_dir, "CondensedNHD", "nhd_sam_r{}_reach.csv")  # region
 
-# Rasters
+# Raw raster path
 nhd_raster_path = os.path.join(nhd_path, "NHDPlusCatchment", "cat")
-# soil_raster_path = os.path.join(soil_path, "MapunitRaster_10m")
-soil_raster_path = os.path.join(input_dir, "SoilMap", "soil{}.tif")  # region
+soil_raster_path = os.path.join(input_dir, "gSSURGO_CONUS", "gSSURGO_CONUS.gdb", "MapunitRaster_30m")
+weather_raster_path = os.path.join(input_dir, "WeatherFileGrid", "stations")
 
 # Intermediate datasets
 weather_path = os.path.join(input_dir, "WeatherFiles", "met{}")  # region
@@ -52,7 +53,7 @@ crop_group_path = os.path.join(table_path, "crop_groups.csv")
 met_attributes_path = os.path.join(table_path, "met_params.csv")
 fields_and_qc_path = os.path.join(table_path, "fields_and_qc.csv")
 irrigation_path = os.path.join(table_path, "irrigation.csv")
-
+nhd_map_path = os.path.join(table_path, "nhd_map.csv")
 
 # Misc paths
 shapefile_path = os.path.join(scratch_dir, "Shapefiles")
@@ -78,8 +79,6 @@ combined_outfile = os.path.join(pwc_selection_path, "selected", "all_selected.cs
 combined_results = os.path.join(pwc_selection_path, "selected", "all_results.csv")
 plot_outfile = os.path.join(pwc_selection_path, "plots", 'r{}_{}_koc{}_{}.png')  # region, crop, koc, label
 results_dir = os.path.join(pwc_selection_path, "national_summary_files", '{}_{}_{}_{}')  # cdl_name, type, duration, koc
-
-
 
 ### AWS
 

@@ -6,8 +6,11 @@
       <sourceFolder url="file://$MODULE_DIR$/Code" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/efed_lib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/crop_dates" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/hydro/nhd_tools" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/hydro/nhd" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/Tables" />
       <excludeFolder url="file://$MODULE_DIR$/crop_dates/Tables" />
+      <excludeFolder url="file://$MODULE_DIR$/crop_dates/doc" />
       <excludeFolder url="file://$MODULE_DIR$/hydro/Tables" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.7 (precip)" jdkType="Python SDK" />

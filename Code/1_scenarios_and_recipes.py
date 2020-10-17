@@ -17,9 +17,9 @@ import modify
 import read
 import write
 
-from paths import scratch_dir
-from hydro import read_hydro
-from efed_lib.efed_lib import report
+from paths import scratch_dir, condensed_nhd_path
+from hydro.nhd import read_nhd
+from tools.efed_lib import report
 from parameters import nhd_regions, pwc_selection_field, pwc_min_selection, pwc_selection_pct
 
 
@@ -32,29 +32,50 @@ def create_recipes(combos, watershed_params):
     :return: Recipes, recipe map, scenarios (df, df, df)
     """
 
+    # Create a unique integer scenario index for a more compact recipe file
+    scenario_index = combos[['scenario_id']].drop_duplicates().reset_index().rename(columns={'index': 'scenario_index'})
+    combos = combos.merge(scenario_index, on='scenario_id', how='left')
+
+
     # Join combinations table with watershed params and
     # convert watershed id field from 'gridcode' to 'comid'
     recipes = combos[['year', 'gridcode', 'scenario_index', 'area']] \
         .merge(watershed_params, on='gridcode') \
-        .sort_values(['comid', 'year'])
+        .sort_values(['year', 'comid'])
     del recipes['gridcode']
+
+    year_comid = recipes[['year', 'comid']]
 
     # Identify rows where 'comid' or 'year' change value
     # This will provide the row ranges for each unique comid-year pair
-    key_fields = ['year', 'comid']
-    changes = np.nonzero(recipes[key_fields].diff().sum(axis=1))[0]
+    diffs = year_comid.diff()
+    diffs = diffs.sum(axis=1)
+    changes = np.nonzero(diffs.values)
+    changes = changes[0]
     starts = np.pad(changes, (1, 0), 'constant')
     ends = np.pad(changes, (0, 1), 'constant', constant_values=recipes.shape[0])
-    recipe_map = recipes[key_fields].iloc[starts]
+    recipe_map = year_comid.iloc[starts]
     recipe_map['start'], recipe_map['end'] = starts, ends
 
     # Once recipes are generated, watershed data is no longer needed.
     # Remove watershed parameters and aggregate common scenarios
     for field in 'gridcode', 'year':
         del combos[field]
-    combos = combos.groupby([f for f in combos.columns if f != 'area']).sum()
+    combos = combos.groupby([f for f in combos.columns if f != 'area']).sum().reset_index()
 
     return recipes[['scenario_index', 'area']], recipe_map, combos.reset_index()
+
+
+def finalize_crop_dates(scenarios, crop_dates):
+    # Merge crop dates
+    dates_index = scenarios[['scenario_id', 'cdl', 'cdl_alias', 'weather_grid', 'state']]
+    state_dates = crop_dates.loc[pd.isnull(crop_dates.weather_grid)].drop('weather_grid', axis=1)
+    grid_dates = crop_dates.loc[~pd.isnull(crop_dates.weather_grid)].drop('state', axis=1)
+    crop_dates = pd.concat([dates_index.merge(grid_dates, on=['cdl', 'cdl_alias', 'weather_grid']),
+                            dates_index.merge(state_dates, on=['cdl', 'cdl_alias', 'state'])])
+    for field in ['cdl', 'weather_grid', 'state']:
+        del crop_dates[field]
+    return crop_dates
 
 
 def create_scenarios(combinations, soil_params, met_params, crop_params, crop_dates,
@@ -68,18 +89,16 @@ def create_scenarios(combinations, soil_params, met_params, crop_params, crop_da
     :return: Scenarios table (df)
     """
 
-    # Merge all tables
+    # Merge all tables except crop dates
     scenarios = combinations.merge(met_params, how="left", on="weather_grid")
     scenarios = scenarios.merge(soil_params, how="left", on="soil_id", suffixes=("", "_soil"))
     scenarios = scenarios.merge(crop_params, how="left", on=['cdl', 'cdl_alias'])
     scenarios = scenarios.merge(irrigation, how="left", on=['cdl_alias', 'state'])
     scenarios = scenarios.merge(curve_numbers, how="left", on=['region', 'pwc_class'])
 
-    # Split crop dates by indexing. Some dates indexed by cdl and weather, others by cdl and state
-    state_dates = crop_dates.loc[pd.isnull(crop_dates.weather_grid)].drop('weather_grid', axis=1)
-    grid_dates = crop_dates.loc[~pd.isnull(crop_dates.weather_grid)].drop('state', axis=1)
-    scenarios = pd.concat([scenarios.merge(grid_dates, on=['cdl', 'cdl_alias', 'weather_grid']),
-                           scenarios.merge(state_dates, on=['cdl', 'cdl_alias', 'state'])])
+    # Crop dates are more complicated since there are variable indexes
+    crop_dates = finalize_crop_dates(scenarios, crop_dates)
+    scenarios = scenarios.merge(crop_dates, how="left", on=['scenario_id', 'cdl_alias'])
 
     # 'season' occurs in both dates and cdl params. take the maximum
     scenarios['season'] = scenarios[['season_x', 'season_y']].max(axis=1)
@@ -123,14 +142,14 @@ def chunk_combinations(combos):
     """
     from parameters import chunk_size
     n_combinations = combos.shape[0]
+    n_chunks = int(n_combinations / chunk_size) + 1
     if n_combinations > chunk_size:
-        tempfile = os.path.join(scratch_dir, 'raw_scenarios.csv')
-        combos.to_csv(tempfile, index=None)
-        report(f"Breaking combinations into {int(n_combinations / chunk_size) + 1} chunks", 1)
-        for i, chunk in enumerate(pd.read_csv(tempfile, chunksize=chunk_size)):
+        report(f"Breaking combinations into {n_chunks} chunks", 1)
+        for i, start_row in enumerate(range(0, n_combinations, chunk_size)):
+            end_row = min((start_row + chunk_size, n_combinations))
             report(f"Processing chunk {i + 1}...", 2)
+            chunk = combos.iloc[start_row:end_row]
             yield i + 1, chunk
-        os.remove(tempfile)
     else:
         report("Processing all combinations...", 2)
         yield 1, combos
@@ -150,13 +169,20 @@ def scenarios_and_recipes(regions, years, mode, class_filter=None):
     report("Reading input files...")
 
     # Read and modify data indexed to weather grid
+    report("Reading weather-indexed data...")
     met_params = read.met()
     met_params = modify.met(met_params)
 
     # Read crop related params. This has multiple functions since data are differently indexed
+    report("Reading crop data...")
     crop_params = read.crop()
     crop_dates = read.crop_dates()
     irrigation = read.irrigation()
+
+    # Read and modify data indexed to soil
+    report("Reading soils data...")
+    soil_params = read.soil(mode)
+    soil_params, aggregation_key = modify.soils(soil_params, mode)
 
     # Soils, watersheds and combinations are broken up by NHD region
     for region in regions:
@@ -166,10 +192,6 @@ def scenarios_and_recipes(regions, years, mode, class_filter=None):
         # Read curve numbers
         curve_numbers = read.curve_numbers(region)
 
-        # Read and modify data indexed to soil
-        soil_params = read.soil(mode, region)
-        soil_params, aggregation_key = modify.soils(soil_params, mode)
-
         # Read and modify met/crop/land cover/soil/watershed combinations
         combinations = read.combinations(region, years)
         combinations = modify.combinations(combinations, crop_params, mode, aggregation_key)
@@ -177,7 +199,7 @@ def scenarios_and_recipes(regions, years, mode, class_filter=None):
         # Generate watershed 'recipes' for SAM and aggregate combinations after recipe fields removed
         if mode == 'sam':
             report(f"Creating watershed recipes and aggregating combinations...", 1)
-            watershed_params = read_hydro.condensed_nhd(region)[['gridcode', 'comid']]
+            watershed_params = read_nhd.condensed_nhd(path=condensed_nhd_path.format(region))[['gridcode', 'comid']]
             recipes, recipe_map, combinations = create_recipes(combinations, watershed_params)
             write.recipes(region, recipes, recipe_map)
 
@@ -189,6 +211,7 @@ def scenarios_and_recipes(regions, years, mode, class_filter=None):
                 scenarios = create_scenarios(chunk, soil_params, met_params, crop_params, crop_dates,
                                              irrigation, curve_numbers)
                 scenarios = modify.scenarios(scenarios, mode, region)
+
                 report("Writing to file...", 2)
                 write.scenarios(scenarios, mode, region, name=chunk_num)
         elif mode == 'pwc':
@@ -210,10 +233,10 @@ def scenarios_and_recipes(regions, years, mode, class_filter=None):
 def main():
     """ Wraps scenarios_and_recipes.
     Specify mode, years, and regions for processing here """
-    modes = ('pwc',)  # pwc and/or sam
+    modes = ('sam',)  # pwc and/or sam
     years = range(2014, 2019)
-    regions = ['03S']
-    class_filter = [130, 170]  # pwc - sugarcane, pasture
+    regions = nhd_regions
+    class_filter = None
     for mode in modes:
         scenarios_and_recipes(regions, years, mode, class_filter)
 

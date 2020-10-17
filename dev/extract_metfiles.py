@@ -5,17 +5,17 @@ from shutil import copyfile
 
 
 # Set paths and create output directory
-overwrite = True
+overwrite = False
 scenario_dir = r"G:\Branch and IO Info\EISB\Scenarios\NewScenarioFiles"
 in_metfile_dir = r"J:\opp-efed-data\global\NewWeatherFiles"
-out_metfile_dir = r"G:\Branch and IO Info\EISB\Scenarios\NewScenarioFiles\metfiles"
+out_metfile_dir = r"G:\Branch and IO Info\EISB\Scenarios\NewScenarioFiles\Weather Files"
 metfile_map_path = os.path.join(out_metfile_dir, "metfile_map.csv")
 if not os.path.exists(out_metfile_dir):
     os.makedirs(out_metfile_dir)
 
 # Make a map of all the scenario files
 if overwrite or not os.path.exists(metfile_map_path):
-    scenario_map = [[f, os.path.join(a, f)] for a, _, c in os.walk(scenario_dir) for f in c]
+    scenario_map = [[f, os.path.join(a, f)] for a, _, c in os.walk(scenario_dir) for f in c if f.endswith(".scn2")]
     print(len(scenario_map))
     metfile_map = []
     for i, (f, p) in enumerate(scenario_map):
@@ -24,6 +24,7 @@ if overwrite or not os.path.exists(metfile_map_path):
             for _ in range(2):
                 metfile = next(g)
             metfile_map.append([f, p, metfile.strip()])
+            print(p)
             print(metfile)
     metfile_map = pd.DataFrame(np.array(metfile_map), columns=['f', 'p', 'metfile'])
 
@@ -36,4 +37,6 @@ else:
 for metfile in metfile_map.metfile.unique():
     old_metfile = os.path.join(in_metfile_dir, metfile)
     new_metfile = os.path.join(out_metfile_dir, metfile)
+    print(old_metfile)
+    print(new_metfile)
     copyfile(old_metfile, new_metfile)

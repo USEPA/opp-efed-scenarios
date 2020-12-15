@@ -101,8 +101,9 @@ def process_fixed_dates():
 
     # For evergreen crops, canopy is always on the plant at maximum coverage
     dates.loc[dates.evergreen, ['plant_date', 'emergence_date', 'maxcover_date', 'harvest_date']] = \
-        np.array([1, 1, 2, 365])
+        np.array([0, 0, 1, 364])
 
+    # Convert from number (e.g., 1) back to date (e.g., 02-Jan)
     dates = num_to_date(dates)
 
     return dates[fields.fetch('crop_dates', field_filter=dates.columns)]

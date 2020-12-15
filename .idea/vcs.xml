@@ -5,6 +5,7 @@
     <mapping directory="$PROJECT_DIR$/efed-lib" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/efed_lib" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/hydro" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hydro/tools_hydro" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/tools" vcs="Git" />
   </component>
 </project>

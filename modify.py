@@ -100,7 +100,7 @@ def combinations(combos, crop_params, mode, agg_key):
     # SAM - agg_key is ['mukey', 'state', 'soil_id']
     # PWC - agg_key is ['mukey', 'state']
     combos = combos.merge(agg_key, on='mukey', how='left')
-    print(555, combos.mukey.unique().shape)
+
     # Aggregate combinations by soil (SAM)
     # 'mukey' is replaced by aggregation id (soil_id) for sam, or renamed soil_id for pwc
     # from this point on soil_id is the index for soils
@@ -111,37 +111,27 @@ def combinations(combos, crop_params, mode, agg_key):
         del combos['year']
         del combos['gridcode']
         combos = combos.rename(columns={'mukey': 'soil_id'})
-    print(666, combos.soil_id.unique().shape)
-    print("combos done", combos.shape)
-    combos.to_csv("combos.csv", index=None)
-    #combos = pd.read_csv("combos.csv")
-    aggregate_fields = [c for c in combos.columns if c != "area"]
+
+    # combos = pd.read_csv("combos.csv")
+    # aggregate_fields = [c for c in combos.columns if c != "area"]
+    aggregate_fields = ['gridcode', 'cdl', 'weather_grid', 'year', 'region', 'cdl_alias',
+                        'soil_id']
     n_combos = combos.shape[0]
+    combos.to_csv("combos.csv", index=None)
     del combos
     blocks = []
     from parameters import chunk_size
-    print(n_combos)
-    print(aggregate_fields)
     for i in range(0, n_combos, chunk_size):
-        print(i, chunk_size)
         block = pd.read_csv("combos.csv", skiprows=range(1, i), nrows=chunk_size)
-        print(block.shape)
-        print(block.columns.values)
-        blocks.append(block.groupby(aggregate_fields).sum().reset_index())
-        if i == 2:
-            break
+        block = block.groupby(aggregate_fields).sum().reset_index()
+        blocks.append(block)
     combos = pd.concat(blocks, axis=0)
-    combos.to_csv("intermediate.csv")
-    print(combos.shape)
-
     combos = combos.groupby(aggregate_fields).sum().reset_index()  # big overhead jump
-    print(2346, combos.shape)
+
     # Create a unique identifier
     combos['scenario_id'] = combos.soil_id.astype("str") + \
                             '-' + combos.weather_grid.astype("str") + \
                             '-' + combos.cdl.astype("str")
-    print(2347, combos.shape)
-    exit()
     return combos
 
 

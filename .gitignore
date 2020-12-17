@@ -2,7 +2,7 @@
 .idea/tasks.xml
 
 dev/*
-
+*.csv
 # Storage
 crop_dates/qaqc/*
 crop_dates/Tables/junk/*

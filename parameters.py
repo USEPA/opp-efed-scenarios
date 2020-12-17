@@ -27,7 +27,7 @@ selection_window = 0.5  # select scenarios within a range
 area_weighting = True
 
 # Chunk size for reading scenarios
-chunk_size = 1000000
+chunk_size = 2000000
 
 # Raster cell size
 cell_size = 30

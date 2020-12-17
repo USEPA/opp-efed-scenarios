@@ -13,7 +13,6 @@ overwrite = True
 
 crop_groups = pd.read_csv(crop_group_path)[['pwc_class', 'pwc_class_desc']].drop_duplicates()
 for num, desc in crop_groups.values:
-    print(num, desc)
     all_tables = []
     out_file = out_path.format(num, desc)
     if overwrite or not os.path.exists(out_file):
@@ -25,8 +24,7 @@ for num, desc in crop_groups.values:
                 all_tables.append(table)
                 print(f"Appending table for region {region} {desc}")
             else:
-                print(path)
-                #print(f"Table for region {region} {desc} not found")
+                print(f"Table for region {region} {desc} not found")
         if len(all_tables) > 0:
             all_tables = pd.concat(all_tables, axis=0)[field_order]
             all_tables.to_csv(out_file, index=None)

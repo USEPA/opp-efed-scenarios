@@ -144,7 +144,7 @@ def chunk_combinations(combos):
     n_combinations = combos.shape[0]
     n_chunks = int(n_combinations / chunk_size) + 1
     if n_combinations > chunk_size:
-        report(f"Breaking combinations into {n_chunks} chunks", 1)
+        report(f"Breaking {n_combinations} combinations into {n_chunks} chunks", 1)
         for i, start_row in enumerate(range(0, n_combinations, chunk_size)):
             end_row = min((start_row + chunk_size, n_combinations))
             report(f"Processing chunk {i + 1}...", 2)
@@ -181,7 +181,7 @@ def scenarios_and_recipes(regions, years, mode, class_filter=None):
 
     # Read and modify data indexed to soil
     report("Reading soils data...")
-    soil_params = read.soil(mode)
+    soil_params = read.soil()
     soil_params, aggregation_key = modify.soils(soil_params, mode)
 
     # Create a filter if only processing certain crops
@@ -195,20 +195,16 @@ def scenarios_and_recipes(regions, years, mode, class_filter=None):
 
         # Read curve numbers
         curve_numbers = read.curve_numbers(region)
-        print(123, curve_numbers.shape)
+
         # Read and modify met/crop/land cover/soil/watershed combinations
-        #combinations = read.combinations(region, years)
-        #combinations.to_csv("combos_raw.csv", index=None)
-        combinations = pd.read_csv("combos_raw.csv")
+        combinations = read.combinations(region, years)
         combinations = modify.combinations(combinations, crop_params, mode, aggregation_key)
 
         # Generate watershed 'recipes' for SAM and aggregate combinations after recipe fields removed
         if mode == 'sam':
             report(f"Creating watershed recipes and aggregating combinations...", 1)
-            watershed_params = pd.read_csv(path=condensed_nhd_path.format(region))[['gridcode', 'comid']]
-            print(456, watershed_params.shape)
+            watershed_params = pd.read_csv(condensed_nhd_path.format(region))[['gridcode', 'comid']]
             recipes, recipe_map, combinations = create_recipes(combinations, watershed_params)
-            print(567, recipes.shape)
             write.recipes(region, recipes, recipe_map)
 
         # Create and modify scenarios, and write to file
@@ -218,8 +214,7 @@ def scenarios_and_recipes(regions, years, mode, class_filter=None):
             for chunk_num, chunk in chunk_combinations(combinations):
                 scenarios = create_scenarios(chunk, soil_params, met_params, crop_params, crop_dates,
                                              irrigation, curve_numbers)
-                print(678, chunk.shape)
-                print(789, scenarios.shape)
+
                 # Filter out only the desired crop, if a filter is specified
                 if class_filter is not None:
                     scenarios = scenarios.merge(class_filter, on=pwc_selection_field, how='inner')
@@ -227,7 +222,6 @@ def scenarios_and_recipes(regions, years, mode, class_filter=None):
                         continue
 
                 scenarios = modify.scenarios(scenarios, mode, region, write_qc=False)
-                print(8910, scenarios.shape)
                 report("Writing to file...", 2)
                 write.scenarios(scenarios, mode, region, name=chunk_num)
         elif mode == 'pwc':
@@ -240,6 +234,7 @@ def scenarios_and_recipes(regions, years, mode, class_filter=None):
                 report("Writing table for Region {} {}...".format(region, crop_name), 2)
                 write.scenarios(crop_scenarios, mode, region, name=crop_name, num=crop_num)
 
+        #os.remove("combos.csv")
 
 def main():
     """ Wraps scenarios_and_recipes.

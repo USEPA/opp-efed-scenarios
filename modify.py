@@ -91,7 +91,7 @@ def combinations(combos, crop_params, mode, agg_key):
     :param agg_key: Table linking aggregated soil IDs to original soil ID (df)
     :return: Modified combinations table (df)
     """
-
+    """
     # Split double-cropped classes into individual scenarios
     double_crops = \
         crop_params[['cdl', 'cdl_alias']].drop_duplicates().sort_values('cdl').astype(np.uint16)
@@ -111,13 +111,11 @@ def combinations(combos, crop_params, mode, agg_key):
         del combos['year']
         del combos['gridcode']
         combos = combos.rename(columns={'mukey': 'soil_id'})
-
-    # combos = pd.read_csv("combos.csv")
-    # aggregate_fields = [c for c in combos.columns if c != "area"]
-    aggregate_fields = ['gridcode', 'cdl', 'weather_grid', 'year', 'region', 'cdl_alias',
-                        'soil_id']
+    """
+    combos = pd.read_csv("combos.csv")
+    aggregate_fields = [c for c in combos.columns if c != "area"]
     n_combos = combos.shape[0]
-    combos.to_csv("combos.csv", index=None)
+    #combos.to_csv("combos.csv", index=None)
     del combos
     blocks = []
     from parameters import chunk_size
@@ -127,6 +125,7 @@ def combinations(combos, crop_params, mode, agg_key):
         blocks.append(block)
     combos = pd.concat(blocks, axis=0)
     combos = combos.groupby(aggregate_fields).sum().reset_index()  # big overhead jump
+    combos['region'] = combos.region.astype("str").str.zfill(2)
 
     # Create a unique identifier
     combos['scenario_id'] = combos.soil_id.astype("str") + \

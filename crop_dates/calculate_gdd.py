@@ -6,7 +6,6 @@ import pandas as pd
 import numpy as np
 import datetime as dt
 from collections.abc import Iterable
-from hydro.weather import NcepArray
 from parameters import date_fmt
 from crop_dates_paths import met_xwalk_path, gdd_output_path, gdd_input_path
 
@@ -159,12 +158,11 @@ def gdd_average(time_series, emergence_base_temp, maxcover_base_temp, emergence_
     return index_to_date(results)
 
 
-def iterate_stations(weather_stations, cube, years):
+def iterate_stations(weather_stations, years):
     n_stations = len(weather_stations)
     for i, station in enumerate(weather_stations):
         if not i % 10:
             print(f"\t{i}/{n_stations}")
-        data = cube.fetch_station(station)
         if years != 'all':
             data = data[(data.index.year >= years[0]) & (data.index.year <= years[1])]
         yield station, data

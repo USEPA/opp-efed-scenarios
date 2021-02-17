@@ -191,13 +191,14 @@ def scenarios_and_recipes(regions, years, mode, class_filter=None):
     # Soils, watersheds and combinations are broken up by NHD region
     for region in regions:
         report("Processing Region {}...".format(region))
-        report("Reading regional input files...", 1)
 
         # Read curve numbers
         curve_numbers = read.curve_numbers(region)
 
         # Read and modify met/crop/land cover/soil/watershed combinations
+        report("Reading combinations...")
         combinations = read.combinations(region, years)
+        report("Processing combinations...")
         combinations = modify.combinations(combinations, crop_params, mode, aggregation_key)
 
         # Generate watershed 'recipes' for SAM and aggregate combinations after recipe fields removed
@@ -241,7 +242,7 @@ def main():
     Specify mode, years, and regions for processing here """
     modes = ('sam',)  # pwc and/or sam
     years = range(2015, 2020)
-    #regions = nhd_regions[1:]
+    #regions = nhd_regions
     regions = ['07']
     class_filter = None
     for mode in modes:

@@ -1,559 +1,580 @@
 region,pwc_class,pwc_class_name,cn_cover_class,cn_fal_A,cn_fal_B,cn_fal_C,cn_fal_D,cn_cov_A,cn_cov_B,cn_cov_C,cn_cov_D,usle_c_cov,usle_c_fal
-01,10,Corn,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.538
-01,40,Other grains or corn,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.538
-01,50,Soybean,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.518
-01,60,Row or field crop,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.58
-01,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77,86,91,94,45,66,77,83,0.2,0.611
-01,80,"Hay, all",Close-seeded legumes (C) ,64,75,83,85,55,69,78,83,0.003,0.004
-01,90,Small grains,Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.22
-01,100,"Wheat, spring",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.278
-01,110,"Wheat, winter",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.229
-01,120,"Vegetable, commodity",Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.732
-01,130,Sugarcane,Sugarcane,43,65,77,82,43,65,77,82,0.001,0.717
-01,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.537
-01,150,"Turf, small grain (seed)",,49,69,79,84,49,69,79,84,0.003,0.004
-01,160,Fallow,Fallow,77,86,91,94,77,86,91,94,,
-01,170,Pasture or forage,"Pasture, grass, range",49,69,79,84,49,69,79,84,0.003,0.004
-01,180,Forest,Woods,43,65,76,82,43,65,76,82,0.001,0.001
-01,190,Shrubland,Brush-weed-grass,35,56,70,77,35,56,70,77,0.001,0.001
-01,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.223
-01,210,"Orchard, evergreen",Woods-grass (single CN),36,60,73,79,36,60,73,79,0.001,0.223
-01,220,Miscellaneous land,Fallow,77,86,91,94,77,86,91,94,,
-01,230,"Developed, medium",Residential-1/8 ac,77,85,90,92,77,85,90,92,,
-01,250,"Wetland, herbaceous",Meadow,30,58,71,78,30,58,71,78,,
-01,270,"Developed, open",Developed open space,49,69,79,84,49,69,79,84,,
-01,280,"Developed, low",Residential-1/3 ac,57,72,81,86,57,72,81,86,,
-01,290,"Developed, high","Urban, commercial",89,92,94,95,89,92,94,95,,
-01,300,"Wetland, woody",Woods,43,65,76,82,43,65,76,82,0.001,0.001
-02,10,Corn,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.538
-02,40,Other grains or corn,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.538
-02,40,Other grains or corn,Row Crop (C) ,,,,,,,,,0.2,0.538
-02,50,Soybean,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.518
-02,60,Row or field crop,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.58
-02,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77,86,91,94,45,66,77,83,0.2,0.611
-02,80,"Hay, all",Close-seeded legumes (C) ,64,75,83,85,55,69,78,83,0.003,0.004
-02,90,Small grains,Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.22
-02,100,"Wheat, spring",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.278
-02,110,"Wheat, winter",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.229
-02,120,"Vegetable, commodity",Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.732
-02,130,Sugarcane,Sugarcane,43,65,77,82,43,65,77,82,0.001,0.717
-02,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.537
-02,150,"Turf, small grain (seed)",,49,69,79,84,49,69,79,84,0.003,0.004
-02,160,Fallow,Fallow,77,86,91,94,77,86,91,94,,
-02,170,Pasture or forage,"Pasture, grass, range",49,69,79,84,49,69,79,84,0.003,0.004
-02,180,Forest,Woods,43,65,76,82,43,65,76,82,0.001,0.001
-02,190,Shrubland,Brush-weed-grass,35,56,70,77,35,56,70,77,0.001,0.001
-02,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.223
-02,210,"Orchard, evergreen",Woods-grass (single CN),36,60,73,79,36,60,73,79,0.001,0.223
-02,220,Miscellaneous land,Fallow,77,86,91,94,77,86,91,94,,
-02,230,"Developed, medium",Residential-1/8 ac,77,85,90,92,77,85,90,92,,
-02,250,"Wetland, herbaceous",Meadow,30,58,71,78,30,58,71,78,,
-02,270,"Developed, open",Developed open space,49,69,79,84,49,69,79,84,,
-02,280,"Developed, low",Residential-1/3 ac,57,72,81,86,57,72,81,86,,
-02,290,"Developed, high","Urban, commercial",89,92,94,95,89,92,94,95,,
-02,300,"Wetland, woody",Woods,43,65,76,82,43,65,76,82,0.001,0.001
-04,10,Corn,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.538
-04,40,Other grains or corn,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.538
-04,40,Other grains or corn,Row Crop (C) ,,,,,,,,,0.2,0.538
-04,50,Soybean,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.518
-04,60,Row or field crop,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.58
-04,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77,86,91,94,45,66,77,83,0.2,0.611
-04,80,"Hay, all",Close-seeded legumes (C) ,64,75,83,85,55,69,78,83,0.003,0.004
-04,90,Small grains,Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.22
-04,100,"Wheat, spring",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.278
-04,110,"Wheat, winter",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.229
-04,120,"Vegetable, commodity",Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.732
-04,130,Sugarcane,Sugarcane,43,65,77,82,43,65,77,82,0.001,0.717
-04,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.537
-04,150,"Turf, small grain (seed)",,49,69,79,84,49,69,79,84,0.003,0.004
-04,160,Fallow,Fallow,77,86,91,94,77,86,91,94,,
-04,170,Pasture or forage,"Pasture, grass, range",49,69,79,84,49,69,79,84,0.003,0.004
-04,180,Forest,Woods,43,65,76,82,43,65,76,82,0.001,0.001
-04,190,Shrubland,Brush-weed-grass,35,56,70,77,35,56,70,77,0.001,0.001
-04,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.223
-04,210,"Orchard, evergreen",Woods-grass (single CN),36,60,73,79,36,60,73,79,0.001,0.223
-04,220,Miscellaneous land,Fallow,77,86,91,94,77,86,91,94,,
-04,230,"Developed, medium",Residential-1/8 ac,77,85,90,92,77,85,90,92,,
-04,250,"Wetland, herbaceous",Meadow,30,58,71,78,30,58,71,78,,
-04,270,"Developed, open",Developed open space,49,69,79,84,49,69,79,84,,
-04,280,"Developed, low",Residential-1/3 ac,57,72,81,86,57,72,81,86,,
-04,290,"Developed, high","Urban, commercial",89,92,94,95,89,92,94,95,,
-04,300,"Wetland, woody",Woods,43,65,76,82,43,65,76,82,0.001,0.001
-05,10,Corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-05,40,Other grains or corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-05,50,Soybean,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.518
-05,60,Row or field crop,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.58
-05,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77,86,91,94,45,66,77,83,0.2,0.611
-05,80,"Hay, all",Close-seeded legumes (C) ,64,75,83,85,55,69,78,83,0.003,0.004
-05,90,Small grains,Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.22
-05,100,"Wheat, spring",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.278
-05,110,"Wheat, winter",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.229
-05,120,"Vegetable, commodity",Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.732
-05,130,Sugarcane,Sugarcane,43,65,77,82,43,65,77,82,0.001,0.717
-05,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.537
-05,150,"Turf, small grain (seed)",,49,69,79,84,49,69,79,84,0.003,0.004
-05,160,Fallow,Fallow,77,86,91,94,77,86,91,94,,
-05,170,Pasture or forage,"Pasture, grass, range",49,69,79,84,49,69,79,84,0.003,0.004
-05,180,Forest,Woods,43,65,76,82,43,65,76,82,0.001,0.001
-05,190,Shrubland,Brush-weed-grass,35,56,70,77,35,56,70,77,0.001,0.001
-05,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.223
-05,210,"Orchard, evergreen",Woods-grass (single CN),36,60,73,79,36,60,73,79,0.001,0.223
-05,220,Miscellaneous land,Fallow,77,86,91,94,77,86,91,94,,
-05,230,"Developed, medium",Residential-1/8 ac,77,85,90,92,77,85,90,92,,
-05,250,"Wetland, herbaceous",Meadow,30,58,71,78,30,58,71,78,,
-05,270,"Developed, open",Developed open space,49,69,79,84,49,69,79,84,,
-05,280,"Developed, low",Residential-1/3 ac,57,72,81,86,57,72,81,86,,
-05,290,"Developed, high","Urban, commercial",89,92,94,95,89,92,94,95,,
-05,300,"Wetland, woody",Woods,43,65,76,82,43,65,76,82,0.001,0.001
-06,10,Corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-06,40,Other grains or corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-06,50,Soybean,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.518
-06,60,Row or field crop,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.58
-06,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77,86,91,94,45,66,77,83,0.2,0.611
-06,80,"Hay, all",Close-seeded legumes (C) ,64,75,83,85,55,69,78,83,0.003,0.004
-06,90,Small grains,Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.22
-06,100,"Wheat, spring",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.278
-06,110,"Wheat, winter",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.229
-06,120,"Vegetable, commodity",Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.732
-06,130,Sugarcane,Sugarcane,43,65,77,82,43,65,77,82,0.001,0.717
-06,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.537
-06,150,"Turf, small grain (seed)",,49,69,79,84,49,69,79,84,0.003,0.004
-06,160,Fallow,Fallow,77,86,91,94,77,86,91,94,,
-06,170,Pasture or forage,"Pasture, grass, range",49,69,79,84,49,69,79,84,0.003,0.004
-06,180,Forest,Woods,43,65,76,82,43,65,76,82,0.001,0.001
-06,190,Shrubland,Brush-weed-grass,35,56,70,77,35,56,70,77,0.001,0.001
-06,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.223
-06,210,"Orchard, evergreen",Woods-grass (single CN),36,60,73,79,36,60,73,79,0.001,0.223
-06,220,Miscellaneous land,Fallow,77,86,91,94,77,86,91,94,,
-06,230,"Developed, medium",Residential-1/8 ac,77,85,90,92,77,85,90,92,,
-06,250,"Wetland, herbaceous",Meadow,30,58,71,78,30,58,71,78,,
-06,270,"Developed, open",Developed open space,49,69,79,84,49,69,79,84,,
-06,280,"Developed, low",Residential-1/3 ac,57,72,81,86,57,72,81,86,,
-06,290,"Developed, high","Urban, commercial",89,92,94,95,89,92,94,95,,
-06,300,"Wetland, woody",Woods,43,65,76,82,43,65,76,82,0.001,0.001
-07,10,Corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-07,40,Other grains or corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-07,50,Soybean,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.518
-07,60,Row or field crop,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.58
-07,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77,86,91,94,45,66,77,83,0.2,0.611
-07,80,"Hay, all",Close-seeded legumes (C) ,64,75,83,85,55,69,78,83,0.003,0.004
-07,90,Small grains,Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.22
-07,100,"Wheat, spring",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.278
-07,110,"Wheat, winter",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.229
-07,120,"Vegetable, commodity",Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.732
-07,130,Sugarcane,Sugarcane,43,65,77,82,43,65,77,82,0.001,0.717
-07,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.537
-07,150,"Turf, small grain (seed)",,49,69,79,84,49,69,79,84,0.003,0.004
-07,160,Fallow,Fallow,77,86,91,94,77,86,91,94,,
-07,170,Pasture or forage,"Pasture, grass, range",49,69,79,84,49,69,79,84,0.003,0.004
-07,180,Forest,Woods,43,65,76,82,43,65,76,82,0.001,0.001
-07,190,Shrubland,Brush-weed-grass,35,56,70,77,35,56,70,77,0.001,0.001
-07,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.223
-07,210,"Orchard, evergreen",Woods-grass (single CN),36,60,73,79,36,60,73,79,0.001,0.223
-07,220,Miscellaneous land,Fallow,77,86,91,94,77,86,91,94,,
-07,230,"Developed, medium",Residential-1/8 ac,77,85,90,92,77,85,90,92,,
-07,250,"Wetland, herbaceous",Meadow,30,58,71,78,30,58,71,78,,
-07,270,"Developed, open",Developed open space,49,69,79,84,49,69,79,84,,
-07,280,"Developed, low",Residential-1/3 ac,57,72,81,86,57,72,81,86,,
-07,290,"Developed, high","Urban, commercial",89,92,94,95,89,92,94,95,,
-07,300,"Wetland, woody",Woods,43,65,76,82,43,65,76,82,0.001,0.001
-08,10,Corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-08,20,Cotton,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.658
-08,40,Other grains or corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-08,50,Soybean,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.518
-08,60,Row or field crop,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.58
-08,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77,86,91,94,45,66,77,83,0.2,0.611
-08,80,"Hay, all",Close-seeded legumes (C) ,64,75,83,85,55,69,78,83,0.003,0.004
-08,90,Small grains,Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.22
-08,100,"Wheat, spring",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.278
-08,110,"Wheat, winter",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.229
-08,120,"Vegetable, commodity",Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.732
-08,130,Sugarcane,Sugarcane,43,65,77,82,43,65,77,82,0.001,0.717
-08,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.537
-08,150,"Turf, small grain (seed)",,49,69,79,84,49,69,79,84,0.003,0.004
-08,160,Fallow,Fallow,77,86,91,94,77,86,91,94,,
-08,170,Pasture or forage,"Pasture, grass, range",49,69,79,84,49,69,79,84,0.003,0.004
-08,180,Forest,Woods,43,65,76,82,43,65,76,82,0.001,0.001
-08,190,Shrubland,Brush-weed-grass,35,56,70,77,35,56,70,77,0.001,0.001
-08,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.223
-08,210,"Orchard, evergreen",Woods-grass (single CN),36,60,73,79,36,60,73,79,0.001,0.223
-08,220,Miscellaneous land,Fallow,77,86,91,94,77,86,91,94,,
-08,230,"Developed, medium",Residential-1/8 ac,77,85,90,92,77,85,90,92,,
-08,250,"Wetland, herbaceous",Meadow,30,58,71,78,30,58,71,78,,
-08,270,"Developed, open",Developed open space,49,69,79,84,49,69,79,84,,
-08,280,"Developed, low",Residential-1/3 ac,57,72,81,86,57,72,81,86,,
-08,290,"Developed, high","Urban, commercial",89,92,94,95,89,92,94,95,,
-08,300,"Wetland, woody",Woods,43,65,76,82,43,65,76,82,0.001,0.001
-09,10,Corn,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.538
-09,40,Other grains or corn,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.538
-09,40,Other grains or corn,Row Crop (C) ,,,,,,,,,0.2,0.538
-09,50,Soybean,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.518
-09,60,Row or field crop,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.58
-09,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77,86,91,94,45,66,77,83,0.2,0.611
-09,80,"Hay, all",Close-seeded legumes (C) ,64,75,83,85,55,69,78,83,0.003,0.004
-09,90,Small grains,Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.22
-09,100,"Wheat, spring",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.278
-09,110,"Wheat, winter",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.229
-09,120,"Vegetable, commodity",Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.732
-09,130,Sugarcane,Sugarcane,43,65,77,82,43,65,77,82,0.001,0.717
-09,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.537
-09,150,"Turf, small grain (seed)",,49,69,79,84,49,69,79,84,0.003,0.004
-09,160,Fallow,Fallow,77,86,91,94,77,86,91,94,,
-09,170,Pasture or forage,"Pasture, grass, range",49,69,79,84,49,69,79,84,0.003,0.004
-09,180,Forest,Woods,43,65,76,82,43,65,76,82,0.001,0.001
-09,190,Shrubland,Brush-weed-grass,35,56,70,77,35,56,70,77,0.001,0.001
-09,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.223
-09,210,"Orchard, evergreen",Woods-grass (single CN),36,60,73,79,36,60,73,79,0.001,0.223
-09,220,Miscellaneous land,Fallow,77,86,91,94,77,86,91,94,,
-09,230,"Developed, medium",Residential-1/8 ac,77,85,90,92,77,85,90,92,,
-09,250,"Wetland, herbaceous",Meadow,30,58,71,78,30,58,71,78,,
-09,270,"Developed, open",Developed open space,49,69,79,84,49,69,79,84,,
-09,280,"Developed, low",Residential-1/3 ac,57,72,81,86,57,72,81,86,,
-09,290,"Developed, high","Urban, commercial",89,92,94,95,89,92,94,95,,
-09,300,"Wetland, woody",Woods,43,65,76,82,43,65,76,82,0.001,0.001
-11,10,Corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-11,20,Cotton,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.748
-11,40,Other grains or corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-11,50,Soybean,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.518
-11,60,Row or field crop,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.58
-11,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77,86,91,94,45,66,77,83,0.2,0.611
-11,80,"Hay, all",Close-seeded legumes (C) ,64,75,83,85,55,69,78,83,0.003,0.004
-11,90,Small grains,Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.22
-11,100,"Wheat, spring",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.278
-11,110,"Wheat, winter",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.229
-11,120,"Vegetable, commodity",Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.732
-11,130,Sugarcane,Sugarcane,43,65,77,82,43,65,77,82,0.001,0.717
-11,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.537
-11,150,"Turf, small grain (seed)",,49,69,79,84,49,69,79,84,0.003,0.004
-11,160,Fallow,Fallow,77,86,91,94,77,86,91,94,,
-11,170,Pasture or forage,"Pasture, grass, range",49,69,79,84,49,69,79,84,0.003,0.004
-11,180,Forest,Woods,43,65,76,82,43,65,76,82,0.001,0.001
-11,190,Shrubland,Brush-weed-grass,35,56,70,77,35,56,70,77,0.001,0.001
-11,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.223
-11,210,"Orchard, evergreen",Woods-grass (single CN),36,60,73,79,36,60,73,79,0.001,0.223
-11,220,Miscellaneous land,Fallow,77,86,91,94,77,86,91,94,,
-11,230,"Developed, medium",Residential-1/8 ac,77,85,90,92,77,85,90,92,,
-11,250,"Wetland, herbaceous",Meadow,30,58,71,78,30,58,71,78,,
-11,270,"Developed, open",Developed open space,49,69,79,84,49,69,79,84,,
-11,280,"Developed, low",Residential-1/3 ac,57,72,81,86,57,72,81,86,,
-11,290,"Developed, high","Urban, commercial",89,92,94,95,89,92,94,95,,
-11,300,"Wetland, woody",Woods,43,65,76,82,43,65,76,82,0.001,0.001
-12,10,Corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-12,20,Cotton,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.748
-12,40,Other grains or corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-12,50,Soybean,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.518
-12,60,Row or field crop,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.58
-12,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77,86,91,94,45,66,77,83,0.2,0.611
-12,80,"Hay, all",Close-seeded legumes (C) ,64,75,83,85,55,69,78,83,0.003,0.004
-12,90,Small grains,Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.22
-12,100,"Wheat, spring",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.278
-12,110,"Wheat, winter",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.229
-12,120,"Vegetable, commodity",Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.732
-12,130,Sugarcane,Sugarcane,43,65,77,82,43,65,77,82,0.001,0.717
-12,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.537
-12,150,"Turf, small grain (seed)",,49,69,79,84,49,69,79,84,0.003,0.004
-12,160,Fallow,Fallow,77,86,91,94,77,86,91,94,,
-12,170,Pasture or forage,"Pasture, grass, range",49,69,79,84,49,69,79,84,0.003,0.004
-12,180,Forest,Woods,43,65,76,82,43,65,76,82,0.001,0.001
-12,190,Shrubland,Brush-weed-grass,35,56,70,77,35,56,70,77,0.001,0.001
-12,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.223
-12,210,"Orchard, evergreen",Woods-grass (single CN),36,60,73,79,36,60,73,79,0.001,0.223
-12,220,Miscellaneous land,Fallow,77,86,91,94,77,86,91,94,,
-12,230,"Developed, medium",Residential-1/8 ac,77,85,90,92,77,85,90,92,,
-12,250,"Wetland, herbaceous",Meadow,30,58,71,78,30,58,71,78,,
-12,270,"Developed, open",Developed open space,49,69,79,84,49,69,79,84,,
-12,280,"Developed, low",Residential-1/3 ac,57,72,81,86,57,72,81,86,,
-12,290,"Developed, high","Urban, commercial",89,92,94,95,89,92,94,95,,
-12,300,"Wetland, woody",Woods,43,65,76,82,43,65,76,82,0.001,0.001
-13,10,Corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-13,20,Cotton,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.748
-13,40,Other grains or corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-13,50,Soybean,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.518
-13,60,Row or field crop,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.58
-13,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77,86,91,94,45,66,77,83,0.2,0.611
-13,80,"Hay, all",Close-seeded legumes (C) ,64,75,83,85,55,69,78,83,0.003,0.004
-13,90,Small grains,Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.22
-13,100,"Wheat, spring",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.278
-13,110,"Wheat, winter",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.229
-13,120,"Vegetable, commodity",Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.732
-13,130,Sugarcane,Sugarcane,43,65,77,82,43,65,77,82,0.001,0.717
-13,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.537
-13,150,"Turf, small grain (seed)",,49,69,79,84,49,69,79,84,0.003,0.004
-13,160,Fallow,Fallow,77,86,91,94,77,86,91,94,,
-13,170,Pasture or forage,"Pasture, grass, range",49,69,79,84,49,69,79,84,0.003,0.004
-13,180,Forest,Woods,43,65,76,82,43,65,76,82,0.001,0.001
-13,190,Shrubland,Brush-weed-grass,35,56,70,77,35,56,70,77,0.001,0.001
-13,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.223
-13,210,"Orchard, evergreen",Woods-grass (single CN),36,60,73,79,36,60,73,79,0.001,0.223
-13,220,Miscellaneous land,Fallow,77,86,91,94,77,86,91,94,,
-13,230,"Developed, medium",Residential-1/8 ac,77,85,90,92,77,85,90,92,,
-13,250,"Wetland, herbaceous",Meadow,30,58,71,78,30,58,71,78,,
-13,270,"Developed, open",Developed open space,49,69,79,84,49,69,79,84,,
-13,280,"Developed, low",Residential-1/3 ac,57,72,81,86,57,72,81,86,,
-13,290,"Developed, high","Urban, commercial",89,92,94,95,89,92,94,95,,
-13,300,"Wetland, woody",Woods,43,65,76,82,43,65,76,82,0.001,0.001
-14,10,Corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-14,40,Other grains or corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-14,50,Soybean,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.518
-14,60,Row or field crop,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.58
-14,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77,86,91,94,45,66,77,83,0.2,0.611
-14,80,"Hay, all",Close-seeded legumes (C) ,64,75,83,85,55,69,78,83,0.003,0.004
-14,90,Small grains,Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.22
-14,100,"Wheat, spring",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.278
-14,110,"Wheat, winter",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.229
-14,120,"Vegetable, commodity",Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.732
-14,130,Sugarcane,Sugarcane,43,65,77,82,43,65,77,82,0.001,0.717
-14,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.537
-14,150,"Turf, small grain (seed)",,49,69,79,84,49,69,79,84,0.003,0.004
-14,160,Fallow,Fallow,77,86,91,94,77,86,91,94,,
-14,170,Pasture or forage,"Pasture, grass, range",49,69,79,84,49,69,79,84,0.003,0.004
-14,180,Forest,Woods,43,65,76,82,43,65,76,82,0.001,0.001
-14,190,Shrubland,Brush-weed-grass,35,56,70,77,35,56,70,77,0.001,0.001
-14,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.223
-14,210,"Orchard, evergreen",Woods-grass (single CN),36,60,73,79,36,60,73,79,0.001,0.223
-14,220,Miscellaneous land,Fallow,77,86,91,94,77,86,91,94,,
-14,230,"Developed, medium",Residential-1/8 ac,77,85,90,92,77,85,90,92,,
-14,250,"Wetland, herbaceous",Meadow,30,58,71,78,30,58,71,78,,
-14,270,"Developed, open",Developed open space,49,69,79,84,49,69,79,84,,
-14,280,"Developed, low",Residential-1/3 ac,57,72,81,86,57,72,81,86,,
-14,290,"Developed, high","Urban, commercial",89,92,94,95,89,92,94,95,,
-14,300,"Wetland, woody",Woods,43,65,76,82,43,65,76,82,0.001,0.001
-15,10,Corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-15,20,Cotton,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.748
-15,40,Other grains or corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-15,50,Soybean,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.518
-15,60,Row or field crop,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.58
-15,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77,86,91,94,45,66,77,83,0.2,0.611
-15,80,"Hay, all",Close-seeded legumes (C) ,64,75,83,85,55,69,78,83,0.003,0.004
-15,90,Small grains,Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.22
-15,100,"Wheat, spring",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.278
-15,110,"Wheat, winter",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.229
-15,120,"Vegetable, commodity",Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.732
-15,130,Sugarcane,Sugarcane,43,65,77,82,43,65,77,82,0.001,0.717
-15,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.537
-15,150,"Turf, small grain (seed)",,49,69,79,84,49,69,79,84,0.003,0.004
-15,160,Fallow,Fallow,77,86,91,94,77,86,91,94,,
-15,170,Pasture or forage,"Pasture, grass, range",49,69,79,84,49,69,79,84,0.003,0.004
-15,180,Forest,Woods,43,65,76,82,43,65,76,82,0.001,0.001
-15,190,Shrubland,Brush-weed-grass,35,56,70,77,35,56,70,77,0.001,0.001
-15,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.223
-15,210,"Orchard, evergreen",Woods-grass (single CN),36,60,73,79,36,60,73,79,0.001,0.223
-15,220,Miscellaneous land,Fallow,77,86,91,94,77,86,91,94,,
-15,230,"Developed, medium",Residential-1/8 ac,77,85,90,92,77,85,90,92,,
-15,250,"Wetland, herbaceous",Meadow,30,58,71,78,30,58,71,78,,
-15,270,"Developed, open",Developed open space,49,69,79,84,49,69,79,84,,
-15,280,"Developed, low",Residential-1/3 ac,57,72,81,86,57,72,81,86,,
-15,290,"Developed, high","Urban, commercial",89,92,94,95,89,92,94,95,,
-15,300,"Wetland, woody",Woods,43,65,76,82,43,65,76,82,0.001,0.001
-16,10,Corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-16,40,Other grains or corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-16,50,Soybean,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.518
-16,60,Row or field crop,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.58
-16,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77,86,91,94,45,66,77,83,0.2,0.611
-16,80,"Hay, all",Close-seeded legumes (C) ,64,75,83,85,55,69,78,83,0.003,0.004
-16,90,Small grains,Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.22
-16,100,"Wheat, spring",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.278
-16,110,"Wheat, winter",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.229
-16,120,"Vegetable, commodity",Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.732
-16,130,Sugarcane,Sugarcane,43,65,77,82,43,65,77,82,0.001,0.717
-16,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.537
-16,150,"Turf, small grain (seed)",,49,69,79,84,49,69,79,84,0.003,0.004
-16,160,Fallow,Fallow,77,86,91,94,77,86,91,94,,
-16,170,Pasture or forage,"Pasture, grass, range",49,69,79,84,49,69,79,84,0.003,0.004
-16,180,Forest,Woods,43,65,76,82,43,65,76,82,0.001,0.001
-16,190,Shrubland,Brush-weed-grass,35,56,70,77,35,56,70,77,0.001,0.001
-16,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.223
-16,210,"Orchard, evergreen",Woods-grass (single CN),36,60,73,79,36,60,73,79,0.001,0.223
-16,220,Miscellaneous land,Fallow,77,86,91,94,77,86,91,94,,
-16,230,"Developed, medium",Residential-1/8 ac,77,85,90,92,77,85,90,92,,
-16,250,"Wetland, herbaceous",Meadow,30,58,71,78,30,58,71,78,,
-16,270,"Developed, open",Developed open space,49,69,79,84,49,69,79,84,,
-16,280,"Developed, low",Residential-1/3 ac,57,72,81,86,57,72,81,86,,
-16,290,"Developed, high","Urban, commercial",89,92,94,95,89,92,94,95,,
-16,300,"Wetland, woody",Woods,43,65,76,82,43,65,76,82,0.001,0.001
-17,10,Corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-17,40,Other grains or corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-17,50,Soybean,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.518
-17,60,Row or field crop,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.58
-17,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77,86,91,94,45,66,77,83,0.2,0.611
-17,80,"Hay, all",Close-seeded legumes (C) ,64,75,83,85,55,69,78,83,0.003,0.004
-17,90,Small grains,Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.22
-17,100,"Wheat, spring",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.278
-17,110,"Wheat, winter",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.229
-17,120,"Vegetable, commodity",Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.732
-17,130,Sugarcane,Sugarcane,43,65,77,82,43,65,77,82,0.001,0.717
-17,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.537
-17,150,"Turf, small grain (seed)",,49,69,79,84,49,69,79,84,0.003,0.004
-17,160,Fallow,Fallow,77,86,91,94,77,86,91,94,,
-17,170,Pasture or forage,"Pasture, grass, range",49,69,79,84,49,69,79,84,0.003,0.004
-17,180,Forest,Woods,43,65,76,82,43,65,76,82,0.001,0.001
-17,190,Shrubland,Brush-weed-grass,35,56,70,77,35,56,70,77,0.001,0.001
-17,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.223
-17,210,"Orchard, evergreen",Woods-grass (single CN),36,60,73,79,36,60,73,79,0.001,0.223
-17,220,Miscellaneous land,Fallow,77,86,91,94,77,86,91,94,,
-17,230,"Developed, medium",Residential-1/8 ac,77,85,90,92,77,85,90,92,,
-17,250,"Wetland, herbaceous",Meadow,30,58,71,78,30,58,71,78,,
-17,270,"Developed, open",Developed open space,49,69,79,84,49,69,79,84,,
-17,280,"Developed, low",Residential-1/3 ac,57,72,81,86,57,72,81,86,,
-17,290,"Developed, high","Urban, commercial",89,92,94,95,89,92,94,95,,
-17,300,"Wetland, woody",Woods,43,65,76,82,43,65,76,82,0.001,0.001
-18,10,Corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-18,20,Cotton,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.748
-18,40,Other grains or corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-18,50,Soybean,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.518
-18,60,Row or field crop,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.58
-18,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77,86,91,94,45,66,77,83,0.2,0.611
-18,80,"Hay, all",Close-seeded legumes (C) ,64,75,83,85,55,69,78,83,0.003,0.004
-18,90,Small grains,Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.22
-18,100,"Wheat, spring",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.278
-18,110,"Wheat, winter",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.229
-18,120,"Vegetable, commodity",Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.732
-18,130,Sugarcane,Sugarcane,43,65,77,82,43,65,77,82,0.001,0.717
-18,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.537
-18,150,"Turf, small grain (seed)",,49,69,79,84,49,69,79,84,0.003,0.004
-18,160,Fallow,Fallow,77,86,91,94,77,86,91,94,,
-18,170,Pasture or forage,"Pasture, grass, range",49,69,79,84,49,69,79,84,0.003,0.004
-18,180,Forest,Woods,43,65,76,82,43,65,76,82,0.001,0.001
-18,190,Shrubland,Brush-weed-grass,35,56,70,77,35,56,70,77,0.001,0.001
-18,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.223
-18,210,"Orchard, evergreen",Woods-grass (single CN),36,60,73,79,36,60,73,79,0.001,0.223
-18,220,Miscellaneous land,Fallow,77,86,91,94,77,86,91,94,,
-18,230,"Developed, medium",Residential-1/8 ac,77,85,90,92,77,85,90,92,,
-18,250,"Wetland, herbaceous",Meadow,30,58,71,78,30,58,71,78,,
-18,270,"Developed, open",Developed open space,49,69,79,84,49,69,79,84,,
-18,280,"Developed, low",Residential-1/3 ac,57,72,81,86,57,72,81,86,,
-18,290,"Developed, high","Urban, commercial",89,92,94,95,89,92,94,95,,
-18,300,"Wetland, woody",Woods,43,65,76,82,43,65,76,82,0.001,0.001
-03N,10,Corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-03N,20,Cotton,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.658
-03N,40,Other grains or corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-03N,50,Soybean,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.518
-03N,60,Row or field crop,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.58
-03N,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77,86,91,94,45,66,77,83,0.2,0.611
-03N,80,"Hay, all",Close-seeded legumes (C) ,64,75,83,85,55,69,78,83,0.003,0.004
-03N,90,Small grains,Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.22
-03N,100,"Wheat, spring",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.278
-03N,110,"Wheat, winter",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.229
-03N,120,"Vegetable, commodity",Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.732
-03N,130,Sugarcane,Sugarcane,43,65,77,82,43,65,77,82,0.001,0.717
-03N,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.537
-03N,150,"Turf, small grain (seed)",,49,69,79,84,49,69,79,84,0.003,0.004
-03N,160,Fallow,Fallow,77,86,91,94,77,86,91,94,,
-03N,170,Pasture or forage,"Pasture, grass, range",49,69,79,84,49,69,79,84,0.003,0.004
-03N,180,Forest,Woods,43,65,76,82,43,65,76,82,0.001,0.001
-03N,190,Shrubland,Brush-weed-grass,35,56,70,77,35,56,70,77,0.001,0.001
-03N,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.223
-03N,210,"Orchard, evergreen",Woods-grass (single CN),36,60,73,79,36,60,73,79,0.001,0.223
-03N,220,Miscellaneous land,Fallow,77,86,91,94,77,86,91,94,,
-03N,230,"Developed, medium",Residential-1/8 ac,77,85,90,92,77,85,90,92,,
-03N,250,"Wetland, herbaceous",Meadow,30,58,71,78,30,58,71,78,,
-03N,270,"Developed, open",Developed open space,49,69,79,84,49,69,79,84,,
-03N,280,"Developed, low",Residential-1/3 ac,57,72,81,86,57,72,81,86,,
-03N,290,"Developed, high","Urban, commercial",89,92,94,95,89,92,94,95,,
-03N,300,"Wetland, woody",Woods,43,65,76,82,43,65,76,82,0.001,0.001
-03S,10,Corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-03S,20,Cotton,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.658
-03S,40,Other grains or corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-03S,50,Soybean,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.518
-03S,60,Row or field crop,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.58
-03S,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77,86,91,94,45,66,77,83,0.2,0.611
-03S,80,"Hay, all",Close-seeded legumes (C) ,64,75,83,85,55,69,78,83,0.003,0.004
-03S,90,Small grains,Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.22
-03S,100,"Wheat, spring",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.278
-03S,110,"Wheat, winter",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.229
-03S,120,"Vegetable, commodity",Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.732
-03S,130,Sugarcane,Sugarcane,43,65,77,82,43,65,77,82,0.001,0.717
-03S,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.537
-03S,150,"Turf, small grain (seed)",,49,69,79,84,49,69,79,84,0.003,0.004
-03S,160,Fallow,Fallow,77,86,91,94,77,86,91,94,,
-03S,170,Pasture or forage,"Pasture, grass, range",49,69,79,84,49,69,79,84,0.003,0.004
-03S,180,Forest,Woods,43,65,76,82,43,65,76,82,0.001,0.001
-03S,190,Shrubland,Brush-weed-grass,35,56,70,77,35,56,70,77,0.001,0.001
-03S,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.223
-03S,210,"Orchard, evergreen",Woods-grass (single CN),36,60,73,79,36,60,73,79,0.001,0.223
-03S,220,Miscellaneous land,Fallow,77,86,91,94,77,86,91,94,,
-03S,230,"Developed, medium",Residential-1/8 ac,77,85,90,92,77,85,90,92,,
-03S,250,"Wetland, herbaceous",Meadow,30,58,71,78,30,58,71,78,,
-03S,270,"Developed, open",Developed open space,49,69,79,84,49,69,79,84,,
-03S,280,"Developed, low",Residential-1/3 ac,57,72,81,86,57,72,81,86,,
-03S,290,"Developed, high","Urban, commercial",89,92,94,95,89,92,94,95,,
-03S,300,"Wetland, woody",Woods,43,65,76,82,43,65,76,82,0.001,0.001
-03W,10,Corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-03W,20,Cotton,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.658
-03W,40,Other grains or corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-03W,50,Soybean,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.518
-03W,60,Row or field crop,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.58
-03W,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77,86,91,94,45,66,77,83,0.2,0.611
-03W,80,"Hay, all",Close-seeded legumes (C) ,64,75,83,85,55,69,78,83,0.003,0.004
-03W,90,Small grains,Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.22
-03W,100,"Wheat, spring",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.278
-03W,110,"Wheat, winter",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.229
-03W,120,"Vegetable, commodity",Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.732
-03W,130,Sugarcane,Sugarcane,43,65,77,82,43,65,77,82,0.001,0.717
-03W,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.537
-03W,150,"Turf, small grain (seed)",,49,69,79,84,49,69,79,84,0.003,0.004
-03W,160,Fallow,Fallow,77,86,91,94,77,86,91,94,,
-03W,170,Pasture or forage,"Pasture, grass, range",49,69,79,84,49,69,79,84,0.003,0.004
-03W,180,Forest,Woods,43,65,76,82,43,65,76,82,0.001,0.001
-03W,190,Shrubland,Brush-weed-grass,35,56,70,77,35,56,70,77,0.001,0.001
-03W,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.223
-03W,210,"Orchard, evergreen",Woods-grass (single CN),36,60,73,79,36,60,73,79,0.001,0.223
-03W,220,Miscellaneous land,Fallow,77,86,91,94,77,86,91,94,,
-03W,230,"Developed, medium",Residential-1/8 ac,77,85,90,92,77,85,90,92,,
-03W,250,"Wetland, herbaceous",Meadow,30,58,71,78,30,58,71,78,,
-03W,270,"Developed, open",Developed open space,49,69,79,84,49,69,79,84,,
-03W,280,"Developed, low",Residential-1/3 ac,57,72,81,86,57,72,81,86,,
-03W,290,"Developed, high","Urban, commercial",89,92,94,95,89,92,94,95,,
-03W,300,"Wetland, woody",Woods,43,65,76,82,43,65,76,82,0.001,0.001
-10L,10,Corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-10L,40,Other grains or corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-10L,50,Soybean,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.518
-10L,60,Row or field crop,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.58
-10L,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77,86,91,94,45,66,77,83,0.2,0.611
-10L,80,"Hay, all",Close-seeded legumes (C) ,64,75,83,85,55,69,78,83,0.003,0.004
-10L,90,Small grains,Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.22
-10L,100,"Wheat, spring",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.278
-10L,110,"Wheat, winter",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.229
-10L,120,"Vegetable, commodity",Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.732
-10L,130,Sugarcane,Sugarcane,43,65,77,82,43,65,77,82,0.001,0.717
-10L,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.537
-10L,150,"Turf, small grain (seed)",,49,69,79,84,49,69,79,84,0.003,0.004
-10L,160,Fallow,Fallow,77,86,91,94,77,86,91,94,,
-10L,170,Pasture or forage,"Pasture, grass, range",49,69,79,84,49,69,79,84,0.003,0.004
-10L,180,Forest,Woods,43,65,76,82,43,65,76,82,0.001,0.001
-10L,190,Shrubland,Brush-weed-grass,35,56,70,77,35,56,70,77,0.001,0.001
-10L,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.223
-10L,210,"Orchard, evergreen",Woods-grass (single CN),36,60,73,79,36,60,73,79,0.001,0.223
-10L,220,Miscellaneous land,Fallow,77,86,91,94,77,86,91,94,,
-10L,230,"Developed, medium",Residential-1/8 ac,77,85,90,92,77,85,90,92,,
-10L,250,"Wetland, herbaceous",Meadow,30,58,71,78,30,58,71,78,,
-10L,270,"Developed, open",Developed open space,49,69,79,84,49,69,79,84,,
-10L,280,"Developed, low",Residential-1/3 ac,57,72,81,86,57,72,81,86,,
-10L,290,"Developed, high","Urban, commercial",89,92,94,95,89,92,94,95,,
-10L,300,"Wetland, woody",Woods,43,65,76,82,43,65,76,82,0.001,0.001
-10U,10,Corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-10U,40,Other grains or corn,Row Crop (C+CR),74,83,88,90,64,74,81,85,0.2,0.348
-10U,50,Soybean,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.58
-10U,60,Row or field crop,Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.58
-10U,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77,86,91,94,45,66,77,83,0.2,0.611
-10U,80,"Hay, all",Close-seeded legumes (C) ,64,75,83,85,55,69,78,83,0.003,0.004
-10U,90,Small grains,Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.22
-10U,100,"Wheat, spring",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.278
-10U,110,"Wheat, winter",Small Grain (C+CR),74,83,88,90,60,72,80,83,0.03,0.229
-10U,120,"Vegetable, commodity",Row Crop (C) ,77,86,91,94,65,75,82,86,0.2,0.732
-10U,130,Sugarcane,Sugarcane,43,65,77,82,43,65,77,82,0.001,0.717
-10U,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.537
-10U,150,"Turf, small grain (seed)",,49,69,79,84,49,69,79,84,0.003,0.004
-10U,160,Fallow,Fallow,77,86,91,94,77,86,91,94,,
-10U,170,Pasture or forage,"Pasture, grass, range",49,69,79,84,49,69,79,84,0.003,0.004
-10U,180,Forest,Woods,43,65,76,82,43,65,76,82,0.001,0.001
-10U,190,Shrubland,Brush-weed-grass,35,56,70,77,35,56,70,77,0.001,0.001
-10U,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45,66,77,83,36,60,73,79,0.001,0.223
-10U,210,"Orchard, evergreen",Woods-grass (single CN),36,60,73,79,36,60,73,79,0.001,0.223
-10U,220,Miscellaneous land,Fallow,77,86,91,94,77,86,91,94,,
-10U,230,"Developed, medium",Residential-1/8 ac,77,85,90,92,77,85,90,92,,
-10U,250,"Wetland, herbaceous",Meadow,30,58,71,78,30,58,71,78,,
-10U,270,"Developed, open",Developed open space,49,69,79,84,49,69,79,84,,
-10U,280,"Developed, low",Residential-1/3 ac,57,72,81,86,57,72,81,86,,
-10U,290,"Developed, high","Urban, commercial",89,92,94,95,89,92,94,95,,
-10U,300,"Wetland, woody",Woods,43,65,76,82,43,65,76,82,0.001,0.001
+01,10,Corn,Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.5379999999999999
+01,40,Other grains or corn,Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.5379999999999999
+01,50,Soybean,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.518
+01,60,Row or field crop,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.58
+01,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77.0,86.0,91.0,94.0,45.0,66.0,77.0,83.0,0.2,0.611
+01,80,"Hay, all",Close-seeded legumes (C) ,64.0,75.0,83.0,85.0,55.0,69.0,78.0,83.0,0.003,0.004
+01,90,Small grains,Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22
+01,100,"Wheat, spring",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.278
+01,110,"Wheat, winter",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22899999999999998
+01,120,"Vegetable, commodity",Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.732
+01,130,Sugarcane,Sugarcane,43.0,65.0,77.0,82.0,43.0,65.0,77.0,82.0,0.001,0.7170000000000001
+01,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.537
+01,150,"Turf, small grain (seed)",,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+01,160,Fallow,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+01,170,Pasture or forage,"Pasture, grass, range",49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+01,180,Forest,Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+01,190,Shrubland,Brush-weed-grass,35.0,56.0,70.0,77.0,35.0,56.0,70.0,77.0,0.001,0.001
+01,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.223
+01,210,"Orchard, evergreen",Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+01,220,Miscellaneous land,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+01,230,"Developed, medium",Residential-1/8 ac,77.0,85.0,90.0,92.0,77.0,85.0,90.0,92.0,,
+01,250,"Wetland, herbaceous",Meadow,30.0,58.0,71.0,78.0,30.0,58.0,71.0,78.0,,
+01,270,"Developed, open",Developed open space,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,,
+01,280,"Developed, low",Residential-1/3 ac,57.0,72.0,81.0,86.0,57.0,72.0,81.0,86.0,,
+01,290,"Developed, high","Urban, commercial",89.0,92.0,94.0,95.0,89.0,92.0,94.0,95.0,,
+01,300,"Wetland, woody",Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+02,10,Corn,Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.5379999999999999
+02,40,Other grains or corn,Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.5379999999999999
+02,40,Other grains or corn,Row Crop (C) ,,,,,,,,,0.2,0.5379999999999999
+02,50,Soybean,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.518
+02,60,Row or field crop,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.58
+02,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77.0,86.0,91.0,94.0,45.0,66.0,77.0,83.0,0.2,0.611
+02,80,"Hay, all",Close-seeded legumes (C) ,64.0,75.0,83.0,85.0,55.0,69.0,78.0,83.0,0.003,0.004
+02,90,Small grains,Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22
+02,100,"Wheat, spring",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.278
+02,110,"Wheat, winter",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22899999999999998
+02,120,"Vegetable, commodity",Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.732
+02,130,Sugarcane,Sugarcane,43.0,65.0,77.0,82.0,43.0,65.0,77.0,82.0,0.001,0.7170000000000001
+02,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.537
+02,150,"Turf, small grain (seed)",,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+02,160,Fallow,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+02,170,Pasture or forage,"Pasture, grass, range",49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+02,180,Forest,Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+02,190,Shrubland,Brush-weed-grass,35.0,56.0,70.0,77.0,35.0,56.0,70.0,77.0,0.001,0.001
+02,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.223
+02,210,"Orchard, evergreen",Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+02,220,Miscellaneous land,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+02,230,"Developed, medium",Residential-1/8 ac,77.0,85.0,90.0,92.0,77.0,85.0,90.0,92.0,,
+02,250,"Wetland, herbaceous",Meadow,30.0,58.0,71.0,78.0,30.0,58.0,71.0,78.0,,
+02,270,"Developed, open",Developed open space,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,,
+02,280,"Developed, low",Residential-1/3 ac,57.0,72.0,81.0,86.0,57.0,72.0,81.0,86.0,,
+02,290,"Developed, high","Urban, commercial",89.0,92.0,94.0,95.0,89.0,92.0,94.0,95.0,,
+02,300,"Wetland, woody",Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+04,10,Corn,Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.5379999999999999
+04,40,Other grains or corn,Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.5379999999999999
+04,40,Other grains or corn,Row Crop (C) ,,,,,,,,,0.2,0.5379999999999999
+04,50,Soybean,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.518
+04,60,Row or field crop,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.58
+04,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77.0,86.0,91.0,94.0,45.0,66.0,77.0,83.0,0.2,0.611
+04,80,"Hay, all",Close-seeded legumes (C) ,64.0,75.0,83.0,85.0,55.0,69.0,78.0,83.0,0.003,0.004
+04,90,Small grains,Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22
+04,100,"Wheat, spring",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.278
+04,110,"Wheat, winter",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22899999999999998
+04,120,"Vegetable, commodity",Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.732
+04,130,Sugarcane,Sugarcane,43.0,65.0,77.0,82.0,43.0,65.0,77.0,82.0,0.001,0.7170000000000001
+04,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.537
+04,150,"Turf, small grain (seed)",,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+04,160,Fallow,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+04,170,Pasture or forage,"Pasture, grass, range",49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+04,180,Forest,Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+04,190,Shrubland,Brush-weed-grass,35.0,56.0,70.0,77.0,35.0,56.0,70.0,77.0,0.001,0.001
+04,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.223
+04,210,"Orchard, evergreen",Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+04,220,Miscellaneous land,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+04,230,"Developed, medium",Residential-1/8 ac,77.0,85.0,90.0,92.0,77.0,85.0,90.0,92.0,,
+04,250,"Wetland, herbaceous",Meadow,30.0,58.0,71.0,78.0,30.0,58.0,71.0,78.0,,
+04,270,"Developed, open",Developed open space,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,,
+04,280,"Developed, low",Residential-1/3 ac,57.0,72.0,81.0,86.0,57.0,72.0,81.0,86.0,,
+04,290,"Developed, high","Urban, commercial",89.0,92.0,94.0,95.0,89.0,92.0,94.0,95.0,,
+04,300,"Wetland, woody",Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+05,10,Corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+05,40,Other grains or corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+05,50,Soybean,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.518
+05,60,Row or field crop,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.58
+05,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77.0,86.0,91.0,94.0,45.0,66.0,77.0,83.0,0.2,0.611
+05,80,"Hay, all",Close-seeded legumes (C) ,64.0,75.0,83.0,85.0,55.0,69.0,78.0,83.0,0.003,0.004
+05,90,Small grains,Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22
+05,100,"Wheat, spring",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.278
+05,110,"Wheat, winter",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22899999999999998
+05,120,"Vegetable, commodity",Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.732
+05,130,Sugarcane,Sugarcane,43.0,65.0,77.0,82.0,43.0,65.0,77.0,82.0,0.001,0.7170000000000001
+05,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.537
+05,150,"Turf, small grain (seed)",,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+05,160,Fallow,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+05,170,Pasture or forage,"Pasture, grass, range",49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+05,180,Forest,Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+05,190,Shrubland,Brush-weed-grass,35.0,56.0,70.0,77.0,35.0,56.0,70.0,77.0,0.001,0.001
+05,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.223
+05,210,"Orchard, evergreen",Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+05,220,Miscellaneous land,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+05,230,"Developed, medium",Residential-1/8 ac,77.0,85.0,90.0,92.0,77.0,85.0,90.0,92.0,,
+05,250,"Wetland, herbaceous",Meadow,30.0,58.0,71.0,78.0,30.0,58.0,71.0,78.0,,
+05,270,"Developed, open",Developed open space,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,,
+05,280,"Developed, low",Residential-1/3 ac,57.0,72.0,81.0,86.0,57.0,72.0,81.0,86.0,,
+05,290,"Developed, high","Urban, commercial",89.0,92.0,94.0,95.0,89.0,92.0,94.0,95.0,,
+05,300,"Wetland, woody",Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+06,10,Corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+06,40,Other grains or corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+06,50,Soybean,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.518
+06,60,Row or field crop,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.58
+06,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77.0,86.0,91.0,94.0,45.0,66.0,77.0,83.0,0.2,0.611
+06,80,"Hay, all",Close-seeded legumes (C) ,64.0,75.0,83.0,85.0,55.0,69.0,78.0,83.0,0.003,0.004
+06,90,Small grains,Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22
+06,100,"Wheat, spring",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.278
+06,110,"Wheat, winter",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22899999999999998
+06,120,"Vegetable, commodity",Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.732
+06,130,Sugarcane,Sugarcane,43.0,65.0,77.0,82.0,43.0,65.0,77.0,82.0,0.001,0.7170000000000001
+06,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.537
+06,150,"Turf, small grain (seed)",,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+06,160,Fallow,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+06,170,Pasture or forage,"Pasture, grass, range",49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+06,180,Forest,Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+06,190,Shrubland,Brush-weed-grass,35.0,56.0,70.0,77.0,35.0,56.0,70.0,77.0,0.001,0.001
+06,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.223
+06,210,"Orchard, evergreen",Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+06,220,Miscellaneous land,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+06,230,"Developed, medium",Residential-1/8 ac,77.0,85.0,90.0,92.0,77.0,85.0,90.0,92.0,,
+06,250,"Wetland, herbaceous",Meadow,30.0,58.0,71.0,78.0,30.0,58.0,71.0,78.0,,
+06,270,"Developed, open",Developed open space,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,,
+06,280,"Developed, low",Residential-1/3 ac,57.0,72.0,81.0,86.0,57.0,72.0,81.0,86.0,,
+06,290,"Developed, high","Urban, commercial",89.0,92.0,94.0,95.0,89.0,92.0,94.0,95.0,,
+06,300,"Wetland, woody",Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+07,10,Corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+07,40,Other grains or corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+07,50,Soybean,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.518
+07,60,Row or field crop,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.58
+07,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77.0,86.0,91.0,94.0,45.0,66.0,77.0,83.0,0.2,0.611
+07,80,"Hay, all",Close-seeded legumes (C) ,64.0,75.0,83.0,85.0,55.0,69.0,78.0,83.0,0.003,0.004
+07,90,Small grains,Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22
+07,100,"Wheat, spring",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.278
+07,110,"Wheat, winter",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22899999999999998
+07,120,"Vegetable, commodity",Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.732
+07,130,Sugarcane,Sugarcane,43.0,65.0,77.0,82.0,43.0,65.0,77.0,82.0,0.001,0.7170000000000001
+07,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.537
+07,150,"Turf, small grain (seed)",,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+07,160,Fallow,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+07,170,Pasture or forage,"Pasture, grass, range",49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+07,180,Forest,Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+07,190,Shrubland,Brush-weed-grass,35.0,56.0,70.0,77.0,35.0,56.0,70.0,77.0,0.001,0.001
+07,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.223
+07,210,"Orchard, evergreen",Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+07,220,Miscellaneous land,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+07,230,"Developed, medium",Residential-1/8 ac,77.0,85.0,90.0,92.0,77.0,85.0,90.0,92.0,,
+07,250,"Wetland, herbaceous",Meadow,30.0,58.0,71.0,78.0,30.0,58.0,71.0,78.0,,
+07,270,"Developed, open",Developed open space,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,,
+07,280,"Developed, low",Residential-1/3 ac,57.0,72.0,81.0,86.0,57.0,72.0,81.0,86.0,,
+07,290,"Developed, high","Urban, commercial",89.0,92.0,94.0,95.0,89.0,92.0,94.0,95.0,,
+07,300,"Wetland, woody",Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+08,10,Corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+08,20,Cotton,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.6579999999999999
+08,40,Other grains or corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+08,50,Soybean,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.518
+08,60,Row or field crop,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.58
+08,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77.0,86.0,91.0,94.0,45.0,66.0,77.0,83.0,0.2,0.611
+08,80,"Hay, all",Close-seeded legumes (C) ,64.0,75.0,83.0,85.0,55.0,69.0,78.0,83.0,0.003,0.004
+08,90,Small grains,Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22
+08,100,"Wheat, spring",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.278
+08,110,"Wheat, winter",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22899999999999998
+08,120,"Vegetable, commodity",Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.732
+08,130,Sugarcane,Sugarcane,43.0,65.0,77.0,82.0,43.0,65.0,77.0,82.0,0.001,0.7170000000000001
+08,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.537
+08,150,"Turf, small grain (seed)",,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+08,160,Fallow,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+08,170,Pasture or forage,"Pasture, grass, range",49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+08,180,Forest,Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+08,190,Shrubland,Brush-weed-grass,35.0,56.0,70.0,77.0,35.0,56.0,70.0,77.0,0.001,0.001
+08,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.223
+08,210,"Orchard, evergreen",Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+08,220,Miscellaneous land,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+08,230,"Developed, medium",Residential-1/8 ac,77.0,85.0,90.0,92.0,77.0,85.0,90.0,92.0,,
+08,250,"Wetland, herbaceous",Meadow,30.0,58.0,71.0,78.0,30.0,58.0,71.0,78.0,,
+08,270,"Developed, open",Developed open space,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,,
+08,280,"Developed, low",Residential-1/3 ac,57.0,72.0,81.0,86.0,57.0,72.0,81.0,86.0,,
+08,290,"Developed, high","Urban, commercial",89.0,92.0,94.0,95.0,89.0,92.0,94.0,95.0,,
+08,300,"Wetland, woody",Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+09,10,Corn,Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.5379999999999999
+09,40,Other grains or corn,Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.5379999999999999
+09,40,Other grains or corn,Row Crop (C) ,,,,,,,,,0.2,0.5379999999999999
+09,50,Soybean,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.518
+09,60,Row or field crop,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.58
+09,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77.0,86.0,91.0,94.0,45.0,66.0,77.0,83.0,0.2,0.611
+09,80,"Hay, all",Close-seeded legumes (C) ,64.0,75.0,83.0,85.0,55.0,69.0,78.0,83.0,0.003,0.004
+09,90,Small grains,Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22
+09,100,"Wheat, spring",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.278
+09,110,"Wheat, winter",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22899999999999998
+09,120,"Vegetable, commodity",Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.732
+09,130,Sugarcane,Sugarcane,43.0,65.0,77.0,82.0,43.0,65.0,77.0,82.0,0.001,0.7170000000000001
+09,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.537
+09,150,"Turf, small grain (seed)",,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+09,160,Fallow,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+09,170,Pasture or forage,"Pasture, grass, range",49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+09,180,Forest,Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+09,190,Shrubland,Brush-weed-grass,35.0,56.0,70.0,77.0,35.0,56.0,70.0,77.0,0.001,0.001
+09,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.223
+09,210,"Orchard, evergreen",Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+09,220,Miscellaneous land,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+09,230,"Developed, medium",Residential-1/8 ac,77.0,85.0,90.0,92.0,77.0,85.0,90.0,92.0,,
+09,250,"Wetland, herbaceous",Meadow,30.0,58.0,71.0,78.0,30.0,58.0,71.0,78.0,,
+09,270,"Developed, open",Developed open space,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,,
+09,280,"Developed, low",Residential-1/3 ac,57.0,72.0,81.0,86.0,57.0,72.0,81.0,86.0,,
+09,290,"Developed, high","Urban, commercial",89.0,92.0,94.0,95.0,89.0,92.0,94.0,95.0,,
+09,300,"Wetland, woody",Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+11,10,Corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+11,20,Cotton,Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.748
+11,40,Other grains or corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+11,50,Soybean,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.518
+11,60,Row or field crop,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.58
+11,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77.0,86.0,91.0,94.0,45.0,66.0,77.0,83.0,0.2,0.611
+11,80,"Hay, all",Close-seeded legumes (C) ,64.0,75.0,83.0,85.0,55.0,69.0,78.0,83.0,0.003,0.004
+11,90,Small grains,Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22
+11,100,"Wheat, spring",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.278
+11,110,"Wheat, winter",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22899999999999998
+11,120,"Vegetable, commodity",Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.732
+11,130,Sugarcane,Sugarcane,43.0,65.0,77.0,82.0,43.0,65.0,77.0,82.0,0.001,0.7170000000000001
+11,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.537
+11,150,"Turf, small grain (seed)",,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+11,160,Fallow,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+11,170,Pasture or forage,"Pasture, grass, range",49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+11,180,Forest,Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+11,190,Shrubland,Brush-weed-grass,35.0,56.0,70.0,77.0,35.0,56.0,70.0,77.0,0.001,0.001
+11,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.223
+11,210,"Orchard, evergreen",Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+11,220,Miscellaneous land,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+11,230,"Developed, medium",Residential-1/8 ac,77.0,85.0,90.0,92.0,77.0,85.0,90.0,92.0,,
+11,250,"Wetland, herbaceous",Meadow,30.0,58.0,71.0,78.0,30.0,58.0,71.0,78.0,,
+11,270,"Developed, open",Developed open space,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,,
+11,280,"Developed, low",Residential-1/3 ac,57.0,72.0,81.0,86.0,57.0,72.0,81.0,86.0,,
+11,290,"Developed, high","Urban, commercial",89.0,92.0,94.0,95.0,89.0,92.0,94.0,95.0,,
+11,300,"Wetland, woody",Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+12,10,Corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+12,20,Cotton,Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.748
+12,40,Other grains or corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+12,50,Soybean,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.518
+12,60,Row or field crop,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.58
+12,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77.0,86.0,91.0,94.0,45.0,66.0,77.0,83.0,0.2,0.611
+12,80,"Hay, all",Close-seeded legumes (C) ,64.0,75.0,83.0,85.0,55.0,69.0,78.0,83.0,0.003,0.004
+12,90,Small grains,Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22
+12,100,"Wheat, spring",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.278
+12,110,"Wheat, winter",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22899999999999998
+12,120,"Vegetable, commodity",Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.732
+12,130,Sugarcane,Sugarcane,43.0,65.0,77.0,82.0,43.0,65.0,77.0,82.0,0.001,0.7170000000000001
+12,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.537
+12,150,"Turf, small grain (seed)",,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+12,160,Fallow,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+12,170,Pasture or forage,"Pasture, grass, range",49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+12,180,Forest,Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+12,190,Shrubland,Brush-weed-grass,35.0,56.0,70.0,77.0,35.0,56.0,70.0,77.0,0.001,0.001
+12,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.223
+12,210,"Orchard, evergreen",Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+12,220,Miscellaneous land,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+12,230,"Developed, medium",Residential-1/8 ac,77.0,85.0,90.0,92.0,77.0,85.0,90.0,92.0,,
+12,250,"Wetland, herbaceous",Meadow,30.0,58.0,71.0,78.0,30.0,58.0,71.0,78.0,,
+12,270,"Developed, open",Developed open space,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,,
+12,280,"Developed, low",Residential-1/3 ac,57.0,72.0,81.0,86.0,57.0,72.0,81.0,86.0,,
+12,290,"Developed, high","Urban, commercial",89.0,92.0,94.0,95.0,89.0,92.0,94.0,95.0,,
+12,300,"Wetland, woody",Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+13,10,Corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+13,20,Cotton,Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.748
+13,40,Other grains or corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+13,50,Soybean,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.518
+13,60,Row or field crop,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.58
+13,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77.0,86.0,91.0,94.0,45.0,66.0,77.0,83.0,0.2,0.611
+13,80,"Hay, all",Close-seeded legumes (C) ,64.0,75.0,83.0,85.0,55.0,69.0,78.0,83.0,0.003,0.004
+13,90,Small grains,Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22
+13,100,"Wheat, spring",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.278
+13,110,"Wheat, winter",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22899999999999998
+13,120,"Vegetable, commodity",Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.732
+13,130,Sugarcane,Sugarcane,43.0,65.0,77.0,82.0,43.0,65.0,77.0,82.0,0.001,0.7170000000000001
+13,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.537
+13,150,"Turf, small grain (seed)",,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+13,160,Fallow,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+13,170,Pasture or forage,"Pasture, grass, range",49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+13,180,Forest,Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+13,190,Shrubland,Brush-weed-grass,35.0,56.0,70.0,77.0,35.0,56.0,70.0,77.0,0.001,0.001
+13,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.223
+13,210,"Orchard, evergreen",Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+13,220,Miscellaneous land,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+13,230,"Developed, medium",Residential-1/8 ac,77.0,85.0,90.0,92.0,77.0,85.0,90.0,92.0,,
+13,250,"Wetland, herbaceous",Meadow,30.0,58.0,71.0,78.0,30.0,58.0,71.0,78.0,,
+13,270,"Developed, open",Developed open space,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,,
+13,280,"Developed, low",Residential-1/3 ac,57.0,72.0,81.0,86.0,57.0,72.0,81.0,86.0,,
+13,290,"Developed, high","Urban, commercial",89.0,92.0,94.0,95.0,89.0,92.0,94.0,95.0,,
+13,300,"Wetland, woody",Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+14,10,Corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+14,40,Other grains or corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+14,50,Soybean,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.518
+14,60,Row or field crop,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.58
+14,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77.0,86.0,91.0,94.0,45.0,66.0,77.0,83.0,0.2,0.611
+14,80,"Hay, all",Close-seeded legumes (C) ,64.0,75.0,83.0,85.0,55.0,69.0,78.0,83.0,0.003,0.004
+14,90,Small grains,Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22
+14,100,"Wheat, spring",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.278
+14,110,"Wheat, winter",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22899999999999998
+14,120,"Vegetable, commodity",Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.732
+14,130,Sugarcane,Sugarcane,43.0,65.0,77.0,82.0,43.0,65.0,77.0,82.0,0.001,0.7170000000000001
+14,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.537
+14,150,"Turf, small grain (seed)",,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+14,160,Fallow,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+14,170,Pasture or forage,"Pasture, grass, range",49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+14,180,Forest,Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+14,190,Shrubland,Brush-weed-grass,35.0,56.0,70.0,77.0,35.0,56.0,70.0,77.0,0.001,0.001
+14,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.223
+14,210,"Orchard, evergreen",Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+14,220,Miscellaneous land,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+14,230,"Developed, medium",Residential-1/8 ac,77.0,85.0,90.0,92.0,77.0,85.0,90.0,92.0,,
+14,250,"Wetland, herbaceous",Meadow,30.0,58.0,71.0,78.0,30.0,58.0,71.0,78.0,,
+14,270,"Developed, open",Developed open space,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,,
+14,280,"Developed, low",Residential-1/3 ac,57.0,72.0,81.0,86.0,57.0,72.0,81.0,86.0,,
+14,290,"Developed, high","Urban, commercial",89.0,92.0,94.0,95.0,89.0,92.0,94.0,95.0,,
+14,300,"Wetland, woody",Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+15,10,Corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+15,20,Cotton,Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.748
+15,40,Other grains or corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+15,50,Soybean,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.518
+15,60,Row or field crop,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.58
+15,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77.0,86.0,91.0,94.0,45.0,66.0,77.0,83.0,0.2,0.611
+15,80,"Hay, all",Close-seeded legumes (C) ,64.0,75.0,83.0,85.0,55.0,69.0,78.0,83.0,0.003,0.004
+15,90,Small grains,Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22
+15,100,"Wheat, spring",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.278
+15,110,"Wheat, winter",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22899999999999998
+15,120,"Vegetable, commodity",Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.732
+15,130,Sugarcane,Sugarcane,43.0,65.0,77.0,82.0,43.0,65.0,77.0,82.0,0.001,0.7170000000000001
+15,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.537
+15,150,"Turf, small grain (seed)",,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+15,160,Fallow,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+15,170,Pasture or forage,"Pasture, grass, range",49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+15,180,Forest,Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+15,190,Shrubland,Brush-weed-grass,35.0,56.0,70.0,77.0,35.0,56.0,70.0,77.0,0.001,0.001
+15,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.223
+15,210,"Orchard, evergreen",Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+15,220,Miscellaneous land,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+15,230,"Developed, medium",Residential-1/8 ac,77.0,85.0,90.0,92.0,77.0,85.0,90.0,92.0,,
+15,250,"Wetland, herbaceous",Meadow,30.0,58.0,71.0,78.0,30.0,58.0,71.0,78.0,,
+15,270,"Developed, open",Developed open space,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,,
+15,280,"Developed, low",Residential-1/3 ac,57.0,72.0,81.0,86.0,57.0,72.0,81.0,86.0,,
+15,290,"Developed, high","Urban, commercial",89.0,92.0,94.0,95.0,89.0,92.0,94.0,95.0,,
+15,300,"Wetland, woody",Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+16,10,Corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+16,40,Other grains or corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+16,50,Soybean,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.518
+16,60,Row or field crop,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.58
+16,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77.0,86.0,91.0,94.0,45.0,66.0,77.0,83.0,0.2,0.611
+16,80,"Hay, all",Close-seeded legumes (C) ,64.0,75.0,83.0,85.0,55.0,69.0,78.0,83.0,0.003,0.004
+16,90,Small grains,Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22
+16,100,"Wheat, spring",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.278
+16,110,"Wheat, winter",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22899999999999998
+16,120,"Vegetable, commodity",Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.732
+16,130,Sugarcane,Sugarcane,43.0,65.0,77.0,82.0,43.0,65.0,77.0,82.0,0.001,0.7170000000000001
+16,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.537
+16,150,"Turf, small grain (seed)",,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+16,160,Fallow,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+16,170,Pasture or forage,"Pasture, grass, range",49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+16,180,Forest,Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+16,190,Shrubland,Brush-weed-grass,35.0,56.0,70.0,77.0,35.0,56.0,70.0,77.0,0.001,0.001
+16,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.223
+16,210,"Orchard, evergreen",Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+16,220,Miscellaneous land,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+16,230,"Developed, medium",Residential-1/8 ac,77.0,85.0,90.0,92.0,77.0,85.0,90.0,92.0,,
+16,250,"Wetland, herbaceous",Meadow,30.0,58.0,71.0,78.0,30.0,58.0,71.0,78.0,,
+16,270,"Developed, open",Developed open space,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,,
+16,280,"Developed, low",Residential-1/3 ac,57.0,72.0,81.0,86.0,57.0,72.0,81.0,86.0,,
+16,290,"Developed, high","Urban, commercial",89.0,92.0,94.0,95.0,89.0,92.0,94.0,95.0,,
+16,300,"Wetland, woody",Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+17,10,Corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+17,40,Other grains or corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+17,50,Soybean,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.518
+17,60,Row or field crop,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.58
+17,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77.0,86.0,91.0,94.0,45.0,66.0,77.0,83.0,0.2,0.611
+17,80,"Hay, all",Close-seeded legumes (C) ,64.0,75.0,83.0,85.0,55.0,69.0,78.0,83.0,0.003,0.004
+17,90,Small grains,Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22
+17,100,"Wheat, spring",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.278
+17,110,"Wheat, winter",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22899999999999998
+17,120,"Vegetable, commodity",Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.732
+17,130,Sugarcane,Sugarcane,43.0,65.0,77.0,82.0,43.0,65.0,77.0,82.0,0.001,0.7170000000000001
+17,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.537
+17,150,"Turf, small grain (seed)",,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+17,160,Fallow,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+17,170,Pasture or forage,"Pasture, grass, range",49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+17,180,Forest,Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+17,190,Shrubland,Brush-weed-grass,35.0,56.0,70.0,77.0,35.0,56.0,70.0,77.0,0.001,0.001
+17,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.223
+17,210,"Orchard, evergreen",Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+17,220,Miscellaneous land,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+17,230,"Developed, medium",Residential-1/8 ac,77.0,85.0,90.0,92.0,77.0,85.0,90.0,92.0,,
+17,250,"Wetland, herbaceous",Meadow,30.0,58.0,71.0,78.0,30.0,58.0,71.0,78.0,,
+17,270,"Developed, open",Developed open space,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,,
+17,280,"Developed, low",Residential-1/3 ac,57.0,72.0,81.0,86.0,57.0,72.0,81.0,86.0,,
+17,290,"Developed, high","Urban, commercial",89.0,92.0,94.0,95.0,89.0,92.0,94.0,95.0,,
+17,300,"Wetland, woody",Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+18,10,Corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+18,20,Cotton,Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.748
+18,40,Other grains or corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+18,50,Soybean,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.518
+18,60,Row or field crop,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.58
+18,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77.0,86.0,91.0,94.0,45.0,66.0,77.0,83.0,0.2,0.611
+18,80,"Hay, all",Close-seeded legumes (C) ,64.0,75.0,83.0,85.0,55.0,69.0,78.0,83.0,0.003,0.004
+18,90,Small grains,Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22
+18,100,"Wheat, spring",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.278
+18,110,"Wheat, winter",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22899999999999998
+18,120,"Vegetable, commodity",Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.732
+18,130,Sugarcane,Sugarcane,43.0,65.0,77.0,82.0,43.0,65.0,77.0,82.0,0.001,0.7170000000000001
+18,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.537
+18,150,"Turf, small grain (seed)",,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+18,160,Fallow,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+18,170,Pasture or forage,"Pasture, grass, range",49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+18,180,Forest,Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+18,190,Shrubland,Brush-weed-grass,35.0,56.0,70.0,77.0,35.0,56.0,70.0,77.0,0.001,0.001
+18,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.223
+18,210,"Orchard, evergreen",Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+18,220,Miscellaneous land,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+18,230,"Developed, medium",Residential-1/8 ac,77.0,85.0,90.0,92.0,77.0,85.0,90.0,92.0,,
+18,250,"Wetland, herbaceous",Meadow,30.0,58.0,71.0,78.0,30.0,58.0,71.0,78.0,,
+18,270,"Developed, open",Developed open space,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,,
+18,280,"Developed, low",Residential-1/3 ac,57.0,72.0,81.0,86.0,57.0,72.0,81.0,86.0,,
+18,290,"Developed, high","Urban, commercial",89.0,92.0,94.0,95.0,89.0,92.0,94.0,95.0,,
+18,300,"Wetland, woody",Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+03N,10,Corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+03N,20,Cotton,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.6579999999999999
+03N,40,Other grains or corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+03N,50,Soybean,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.518
+03N,60,Row or field crop,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.58
+03N,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77.0,86.0,91.0,94.0,45.0,66.0,77.0,83.0,0.2,0.611
+03N,80,"Hay, all",Close-seeded legumes (C) ,64.0,75.0,83.0,85.0,55.0,69.0,78.0,83.0,0.003,0.004
+03N,90,Small grains,Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22
+03N,100,"Wheat, spring",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.278
+03N,110,"Wheat, winter",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22899999999999998
+03N,120,"Vegetable, commodity",Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.732
+03N,130,Sugarcane,Sugarcane,43.0,65.0,77.0,82.0,43.0,65.0,77.0,82.0,0.001,0.7170000000000001
+03N,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.537
+03N,150,"Turf, small grain (seed)",,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+03N,160,Fallow,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+03N,170,Pasture or forage,"Pasture, grass, range",49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+03N,180,Forest,Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+03N,190,Shrubland,Brush-weed-grass,35.0,56.0,70.0,77.0,35.0,56.0,70.0,77.0,0.001,0.001
+03N,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.223
+03N,210,"Orchard, evergreen",Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+03N,220,Miscellaneous land,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+03N,230,"Developed, medium",Residential-1/8 ac,77.0,85.0,90.0,92.0,77.0,85.0,90.0,92.0,,
+03N,250,"Wetland, herbaceous",Meadow,30.0,58.0,71.0,78.0,30.0,58.0,71.0,78.0,,
+03N,270,"Developed, open",Developed open space,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,,
+03N,280,"Developed, low",Residential-1/3 ac,57.0,72.0,81.0,86.0,57.0,72.0,81.0,86.0,,
+03N,290,"Developed, high","Urban, commercial",89.0,92.0,94.0,95.0,89.0,92.0,94.0,95.0,,
+03N,300,"Wetland, woody",Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+03S,10,Corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+03S,20,Cotton,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.6579999999999999
+03S,40,Other grains or corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+03S,50,Soybean,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.518
+03S,60,Row or field crop,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.58
+03S,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77.0,86.0,91.0,94.0,45.0,66.0,77.0,83.0,0.2,0.611
+03S,80,"Hay, all",Close-seeded legumes (C) ,64.0,75.0,83.0,85.0,55.0,69.0,78.0,83.0,0.003,0.004
+03S,90,Small grains,Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22
+03S,100,"Wheat, spring",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.278
+03S,110,"Wheat, winter",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22899999999999998
+03S,120,"Vegetable, commodity",Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.732
+03S,130,Sugarcane,Sugarcane,43.0,65.0,77.0,82.0,43.0,65.0,77.0,82.0,0.001,0.7170000000000001
+03S,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.537
+03S,150,"Turf, small grain (seed)",,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+03S,160,Fallow,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+03S,170,Pasture or forage,"Pasture, grass, range",49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+03S,180,Forest,Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+03S,190,Shrubland,Brush-weed-grass,35.0,56.0,70.0,77.0,35.0,56.0,70.0,77.0,0.001,0.001
+03S,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.223
+03S,210,"Orchard, evergreen",Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+03S,220,Miscellaneous land,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+03S,230,"Developed, medium",Residential-1/8 ac,77.0,85.0,90.0,92.0,77.0,85.0,90.0,92.0,,
+03S,250,"Wetland, herbaceous",Meadow,30.0,58.0,71.0,78.0,30.0,58.0,71.0,78.0,,
+03S,270,"Developed, open",Developed open space,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,,
+03S,280,"Developed, low",Residential-1/3 ac,57.0,72.0,81.0,86.0,57.0,72.0,81.0,86.0,,
+03S,290,"Developed, high","Urban, commercial",89.0,92.0,94.0,95.0,89.0,92.0,94.0,95.0,,
+03S,300,"Wetland, woody",Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+03W,10,Corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+03W,20,Cotton,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.6579999999999999
+03W,40,Other grains or corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+03W,50,Soybean,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.518
+03W,60,Row or field crop,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.58
+03W,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77.0,86.0,91.0,94.0,45.0,66.0,77.0,83.0,0.2,0.611
+03W,80,"Hay, all",Close-seeded legumes (C) ,64.0,75.0,83.0,85.0,55.0,69.0,78.0,83.0,0.003,0.004
+03W,90,Small grains,Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22
+03W,100,"Wheat, spring",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.278
+03W,110,"Wheat, winter",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22899999999999998
+03W,120,"Vegetable, commodity",Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.732
+03W,130,Sugarcane,Sugarcane,43.0,65.0,77.0,82.0,43.0,65.0,77.0,82.0,0.001,0.7170000000000001
+03W,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.537
+03W,150,"Turf, small grain (seed)",,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+03W,160,Fallow,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+03W,170,Pasture or forage,"Pasture, grass, range",49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+03W,180,Forest,Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+03W,190,Shrubland,Brush-weed-grass,35.0,56.0,70.0,77.0,35.0,56.0,70.0,77.0,0.001,0.001
+03W,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.223
+03W,210,"Orchard, evergreen",Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+03W,220,Miscellaneous land,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+03W,230,"Developed, medium",Residential-1/8 ac,77.0,85.0,90.0,92.0,77.0,85.0,90.0,92.0,,
+03W,250,"Wetland, herbaceous",Meadow,30.0,58.0,71.0,78.0,30.0,58.0,71.0,78.0,,
+03W,270,"Developed, open",Developed open space,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,,
+03W,280,"Developed, low",Residential-1/3 ac,57.0,72.0,81.0,86.0,57.0,72.0,81.0,86.0,,
+03W,290,"Developed, high","Urban, commercial",89.0,92.0,94.0,95.0,89.0,92.0,94.0,95.0,,
+03W,300,"Wetland, woody",Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+10L,10,Corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+10L,40,Other grains or corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+10L,50,Soybean,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.518
+10L,60,Row or field crop,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.58
+10L,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77.0,86.0,91.0,94.0,45.0,66.0,77.0,83.0,0.2,0.611
+10L,80,"Hay, all",Close-seeded legumes (C) ,64.0,75.0,83.0,85.0,55.0,69.0,78.0,83.0,0.003,0.004
+10L,90,Small grains,Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22
+10L,100,"Wheat, spring",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.278
+10L,110,"Wheat, winter",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22899999999999998
+10L,120,"Vegetable, commodity",Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.732
+10L,130,Sugarcane,Sugarcane,43.0,65.0,77.0,82.0,43.0,65.0,77.0,82.0,0.001,0.7170000000000001
+10L,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.537
+10L,150,"Turf, small grain (seed)",,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+10L,160,Fallow,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+10L,170,Pasture or forage,"Pasture, grass, range",49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+10L,180,Forest,Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+10L,190,Shrubland,Brush-weed-grass,35.0,56.0,70.0,77.0,35.0,56.0,70.0,77.0,0.001,0.001
+10L,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.223
+10L,210,"Orchard, evergreen",Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+10L,220,Miscellaneous land,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+10L,230,"Developed, medium",Residential-1/8 ac,77.0,85.0,90.0,92.0,77.0,85.0,90.0,92.0,,
+10L,250,"Wetland, herbaceous",Meadow,30.0,58.0,71.0,78.0,30.0,58.0,71.0,78.0,,
+10L,270,"Developed, open",Developed open space,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,,
+10L,280,"Developed, low",Residential-1/3 ac,57.0,72.0,81.0,86.0,57.0,72.0,81.0,86.0,,
+10L,290,"Developed, high","Urban, commercial",89.0,92.0,94.0,95.0,89.0,92.0,94.0,95.0,,
+10L,300,"Wetland, woody",Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+10U,10,Corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+10U,40,Other grains or corn,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.348
+10U,50,Soybean,Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.58
+10U,60,Row or field crop,Row Crop (C+CR),74.0,83.0,88.0,90.0,64.0,74.0,81.0,85.0,0.2,0.58
+10U,70,"Vegetable, fresh or processing market",Minor crop /truck crops,77.0,86.0,91.0,94.0,45.0,66.0,77.0,83.0,0.2,0.611
+10U,80,"Hay, all",Close-seeded legumes (C) ,64.0,75.0,83.0,85.0,55.0,69.0,78.0,83.0,0.003,0.004
+10U,90,Small grains,Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22
+10U,100,"Wheat, spring",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.278
+10U,110,"Wheat, winter",Small Grain (C+CR),74.0,83.0,88.0,90.0,60.0,72.0,80.0,83.0,0.03,0.22899999999999998
+10U,120,"Vegetable, commodity",Row Crop (C) ,77.0,86.0,91.0,94.0,65.0,75.0,82.0,86.0,0.2,0.732
+10U,130,Sugarcane,Sugarcane,43.0,65.0,77.0,82.0,43.0,65.0,77.0,82.0,0.001,0.7170000000000001
+10U,140,"Small fruit, trellised","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.537
+10U,150,"Turf, small grain (seed)",,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+10U,160,Fallow,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+10U,170,Pasture or forage,"Pasture, grass, range",49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,0.003,0.004
+10U,180,Forest,Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+10U,190,Shrubland,Brush-weed-grass,35.0,56.0,70.0,77.0,35.0,56.0,70.0,77.0,0.001,0.001
+10U,200,"Orchard, deciduous","Woods-grass (fair for cov, poor for fal)",45.0,66.0,77.0,83.0,36.0,60.0,73.0,79.0,0.001,0.223
+10U,210,"Orchard, evergreen",Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+10U,220,Miscellaneous land,Fallow,77.0,86.0,91.0,94.0,77.0,86.0,91.0,94.0,,
+10U,230,"Developed, medium",Residential-1/8 ac,77.0,85.0,90.0,92.0,77.0,85.0,90.0,92.0,,
+10U,250,"Wetland, herbaceous",Meadow,30.0,58.0,71.0,78.0,30.0,58.0,71.0,78.0,,
+10U,270,"Developed, open",Developed open space,49.0,69.0,79.0,84.0,49.0,69.0,79.0,84.0,,
+10U,280,"Developed, low",Residential-1/3 ac,57.0,72.0,81.0,86.0,57.0,72.0,81.0,86.0,,
+10U,290,"Developed, high","Urban, commercial",89.0,92.0,94.0,95.0,89.0,92.0,94.0,95.0,,
+10U,300,"Wetland, woody",Woods,43.0,65.0,76.0,82.0,43.0,65.0,76.0,82.0,0.001,0.001
+01,211,Christmas Trees,Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+02,211,Christmas Trees,Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+04,211,Christmas Trees,Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+05,211,Christmas Trees,Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+06,211,Christmas Trees,Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+07,211,Christmas Trees,Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+08,211,Christmas Trees,Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+09,211,Christmas Trees,Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+11,211,Christmas Trees,Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+12,211,Christmas Trees,Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+13,211,Christmas Trees,Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+14,211,Christmas Trees,Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+15,211,Christmas Trees,Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+16,211,Christmas Trees,Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+17,211,Christmas Trees,Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+18,211,Christmas Trees,Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+03N,211,Christmas Trees,Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+03S,211,Christmas Trees,Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+03W,211,Christmas Trees,Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+10L,211,Christmas Trees,Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223
+10U,211,Christmas Trees,Woods-grass (single CN),36.0,60.0,73.0,79.0,36.0,60.0,73.0,79.0,0.001,0.223

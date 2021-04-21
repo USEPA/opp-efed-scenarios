@@ -18,9 +18,29 @@ import read
 import write
 
 from paths import scratch_dir, condensed_nhd_path
-from hydro import read_nhd
+from hydro.params_nhd import nhd_regions
 from tools.efed_lib import report
 from parameters import nhd_regions, pwc_selection_field, pwc_min_selection, pwc_selection_pct
+
+from paths import pwc_scenario_path, crop_group_path, concatenated_scenario_path
+
+
+def concatenate_scenarios(regions):
+    crop_groups = pd.read_csv(crop_group_path)[['pwc_class', 'pwc_class_desc']].drop_duplicates()
+    for num, desc in crop_groups.values:
+        all_tables = []
+        for region in regions:
+            path = pwc_scenario_path.format(region, num, desc)
+            if os.path.exists(path):
+                table = pd.read_csv(path)
+                field_order = table.columns.values
+                all_tables.append(table)
+                print(f"Appending table for region {region} {desc}")
+            else:
+                print(f"Table for region {region} {desc} not found")
+        if len(all_tables) > 0:
+            all_tables = pd.concat(all_tables, axis=0)[field_order]
+            all_tables.to_csv(concatenated_scenario_path.format(num, desc), index=None)
 
 
 def create_recipes(combos, watershed_params):
@@ -95,7 +115,7 @@ def create_scenarios(combinations, soil_params, met_params, crop_params, crop_da
     scenarios = scenarios.merge(irrigation, how="left", on=['cdl_alias', 'state'])
     scenarios = scenarios.merge(curve_numbers, how="left", on=['region', 'pwc_class'])
 
-    # Crop dates are more complicated since there are variable
+    # Crop dates are more complicated
     crop_dates = finalize_crop_dates(scenarios, crop_dates)
     scenarios = scenarios.merge(crop_dates, how="left", on=['scenario_id', 'cdl_alias'])
 
@@ -131,8 +151,13 @@ def select_pwc_scenarios(in_scenarios, crop_params):
             yield int(crop), crop_name, sample
 
     # Write a table describing how many scenarios were selected for each crop
-    yield 'all', 'meta', pd.DataFrame(np.array(meta_table),
-                                      columns=['crop', 'crop_name', 'n_scenarios', 'sample_size'])
+    try:
+        out_table = pd.DataFrame(np.array(meta_table),
+                                 columns=['crop', 'crop_name', 'n_scenarios', 'sample_size'])
+    except Exception as e:
+        print(e)
+        out_table = None
+    yield 'all', 'meta', out_table
 
 
 def chunk_combinations(combos):
@@ -228,26 +253,27 @@ def scenarios_and_recipes(regions, years, mode, class_filter=None):
         elif mode == 'pwc':
             scenarios = create_scenarios(combinations, soil_params, met_params, crop_params, crop_dates,
                                          irrigation, curve_numbers)
-
             scenarios = modify.scenarios(scenarios, mode, region)
+
             # For PWC, apply sampling and write crop-specific tables
             for crop_num, crop_name, crop_scenarios in select_pwc_scenarios(scenarios, crop_params):
-                report("Writing table for Region {} {}...".format(region, crop_name), 2)
-                write.scenarios(crop_scenarios, mode, region, name=crop_name, num=crop_num)
+                if crop_num in (200, 210, 211):
+                    report("Writing table for Region {} {}...".format(region, crop_name), 2)
 
-        #os.remove("combos.csv")
+                    write.scenarios(crop_scenarios, mode, region, name=crop_name, num=crop_num)
+
 
 def main():
     """ Wraps scenarios_and_recipes.
     Specify mode, years, and regions for processing here """
-    modes = ('sam',)  # pwc and/or sam
+    modes = ('pwc',)  # pwc and/or sam
     years = range(2015, 2020)
-    #regions = nhd_regions
-    regions = ['07']
+    regions = nhd_regions
     class_filter = None
     for mode in modes:
         scenarios_and_recipes(regions, years, mode, class_filter)
-
+        if mode == 'pwc':
+            concatenate_scenarios(regions, years)
 
 if __name__ == "__main__":
     main()

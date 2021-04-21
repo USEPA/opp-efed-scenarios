@@ -60,7 +60,7 @@ cdl,cdl_desc,cdl_alias,cdl_alias_desc,pwc_class,pwc_class_desc,model,gen_class_n
 67,Peaches,67,Peaches,200,"Orchard, deciduous",all,Other Orchards,70,12-12B,Stone Fruit 
 68,Apples,68,Apples,200,"Orchard, deciduous",all,Other Orchards,70,10-Nov,Pome Fruit 
 69,Grapes,69,Grapes,140,"Small fruit, trellised",all,Grapes,71,13-07F,Berries and Small Fruit 
-70,Christmas Trees,70,Christmas Trees,210,"Orchard, evergreen",all,Other trees,75,,
+70,Christmas Trees,70,Christmas Trees,211,Christmas Trees,all,Other trees,75,,
 71,Other Tree Crops,71,Other Tree Crops,200,"Orchard, deciduous",all,Other Orchards,70,,Mixed
 72,Citrus,72,Citrus,210,"Orchard, evergreen",all,Citrus,72,10-Oct,Citrus Fruits 
 73,unidentified,73,unidentified,220,Miscellaneous land,sam,Miscellaneous land,200,,

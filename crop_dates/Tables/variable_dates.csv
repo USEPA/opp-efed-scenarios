@@ -1,293 +1,293 @@
-state,cdl,cdl_desc,season,sam_only,emergence,maxcover,harvest
-AL,68,Apples,,1,gdd_apples,gdd_apples,fall_frost
-AL,67,Peaches,,1,gdd_peaches,gdd_peaches,fall_frost
-AL,74,Pecans,,,gdd_pecans,gdd_pecans,fall_frost
-AL,242,Blueberries,,1,14-Feb,21-Mar,fall_frost
-AL,69,Grapes,,1,5-Apr,10-May,fall_frost
-AR,68,Apples,,1,gdd_apples,gdd_apples,fall_frost
-AR,67,Peaches,,1,gdd_peaches,gdd_peaches,fall_frost
-AR,74,Pecans,,,gdd_pecans,gdd_pecans,fall_frost
-AR,242,Blueberries,,1,10-Feb,17-Mar,fall_frost
-AR,69,Grapes,,1,21-Apr,26-May,fall_frost
-AZ,75,Almonds,,,gdd_almonds,gdd_almonds,fall_frost
-AZ,68,Apples,,1,gdd_apples,gdd_apples,fall_frost
-AZ,71,Other Tree Crops,,,gdd_pecans,gdd_pecans,fall_frost
-AZ,67,Peaches,,1,gdd_peaches,gdd_peaches,fall_frost
-AZ,77,Pears,,1,gdd_pears,gdd_pears,fall_frost
-AZ,74,Pecans,,,gdd_pecans,gdd_pecans,fall_frost
-AZ,204,Pistachios,,,gdd_almonds,gdd_almonds,fall_frost
-AZ,69,Grapes,,1,11-Mar,15-Apr,fall_frost
-CA,75,Almonds,,,gdd_almonds,gdd_almonds,fall_frost
-CA,68,Apples,,,gdd_apples,gdd_apples,fall_frost
-CA,223,Apricots,,,gdd_peaches,gdd_peaches,fall_frost
-CA,66,Cherries,,,gdd_cherries,gdd_cherries,fall_frost
-CA,218,Nectarines,,,gdd_peaches,gdd_peaches,fall_frost
-CA,71,Other Tree Crops,,,gdd_almonds,gdd_almonds,fall_frost
-CA,67,Peaches,,,gdd_peaches,gdd_peaches,fall_frost
-CA,77,Pears,,,gdd_pears,gdd_pears,fall_frost
-CA,74,Pecans,,,gdd_pecans,gdd_pecans,fall_frost
-CA,204,Pistachios,,,gdd_almonds,gdd_almonds,fall_frost
-CA,220,Plums,,,gdd_plums,gdd_plums,fall_frost
-CA,217,Pomegranates,,,gdd_plums,gdd_plums,fall_frost
-CA,210,Prunes,,1,gdd_plums,gdd_plums,fall_frost
-CA,76,Walnuts,,,gdd_almonds,gdd_almonds,fall_frost
-CA,242,Blueberries,,,4-May,8-Jun,fall_frost
-CA,55,Caneberries,,,4-May,8-Jun,fall_frost
-CA,69,Grapes,,,12-Apr,17-May,fall_frost
-CO,68,Apples,,,gdd_apples,gdd_apples,fall_frost
-CO,223,Apricots,,,gdd_peaches,gdd_peaches,fall_frost
-CO,66,Cherries,,,gdd_cherries,gdd_cherries,fall_frost
-CO,67,Peaches,,,gdd_peaches,gdd_peaches,fall_frost
-CO,77,Pears,,,gdd_pears,gdd_pears,fall_frost
-CO,55,Caneberries,,1,11-Mar,15-Apr,fall_frost
-CO,69,Grapes,,1,11-Mar,15-Apr,fall_frost
-CO,56,Hops,,1,21-Mar,8-Jul,11-Sep
-CT,68,Apples,,,gdd_apples,gdd_apples,fall_frost
-CT,71,Other Tree Crops,,,gdd_peaches,gdd_peaches,fall_frost
-CT,67,Peaches,,,gdd_peaches,gdd_peaches,fall_frost
-CT,77,Pears,,,gdd_pears,gdd_pears,fall_frost
-CT,220,Plums,,,gdd_plums,gdd_plums,fall_frost
-CT,242,Blueberries,,1,23-Apr,28-May,fall_frost
-CT,69,Grapes,,1,6-May,10-Jun,fall_frost
-DE,68,Apples,,1,gdd_apples,gdd_apples,fall_frost
-DE,218,Nectarines,,1,gdd_peaches,gdd_peaches,fall_frost
-DE,67,Peaches,,1,gdd_peaches,gdd_peaches,fall_frost
-DE,242,Blueberries,,1,26-Mar,30-Apr,fall_frost
-DE,69,Grapes,,1,26-Mar,30-Apr,fall_frost
-FL,67,Peaches,,1,gdd_peaches,gdd_peaches,fall_frost
-FL,74,Pecans,,,gdd_pecans,gdd_pecans,fall_frost
-FL,242,Blueberries,,1,2-Jan,6-Feb,fall_frost
-FL,69,Grapes,,,5-Apr,10-May,fall_frost
-GA,68,Apples,,,gdd_apples,gdd_apples,fall_frost
-GA,71,Other Tree Crops,,,gdd_pecans,gdd_pecans,fall_frost
-GA,67,Peaches,,,gdd_peaches,gdd_peaches,fall_frost
-GA,77,Pears,,,gdd_pears,gdd_pears,fall_frost
-GA,74,Pecans,,,gdd_pecans,gdd_pecans,fall_frost
-GA,220,Plums,,,gdd_plums,gdd_plums,fall_frost
-GA,242,Blueberries,,,15-Feb,22-Mar,fall_frost
-GA,55,Caneberries,,1,15-Feb,22-Mar,fall_frost
-GA,69,Grapes,,,5-Apr,10-May,fall_frost
-IA,68,Apples,,1,gdd_apples,gdd_apples,fall_frost
-IA,56,Hops,,1,21-Mar,8-Jul,11-Sep
-ID,68,Apples,,,gdd_apples,gdd_apples,fall_frost
-ID,223,Apricots,,,gdd_peaches,gdd_peaches,fall_frost
-ID,66,Cherries,,,gdd_cherries,gdd_cherries,fall_frost
-ID,218,Nectarines,,,gdd_peaches,gdd_peaches,fall_frost
-ID,67,Peaches,,,gdd_peaches,gdd_peaches,fall_frost
-ID,77,Pears,,,gdd_pears,gdd_pears,fall_frost
-ID,220,Plums,,,gdd_plums,gdd_plums,fall_frost
-ID,242,Blueberries,,1,8-Apr,13-May,fall_frost
-ID,69,Grapes,,,30-Apr,4-Jun,fall_frost
-ID,56,Hops,,,21-Mar,8-Jul,11-Sep
-IL,68,Apples,,1,gdd_apples,gdd_apples,fall_frost
-IL,71,Other Tree Crops,,1,gdd_pecans,gdd_pecans,fall_frost
-IL,67,Peaches,,1,gdd_peaches,gdd_peaches,fall_frost
-IL,77,Pears,,1,gdd_pears,gdd_pears,fall_frost
-IL,74,Pecans,,,gdd_pecans,gdd_pecans,fall_frost
-IL,76,Walnuts,,,gdd_pecans,gdd_pecans,fall_frost
-IL,242,Blueberries,,1,15-Apr,20-May,fall_frost
-IL,69,Grapes,,1,18-Apr,23-May,fall_frost
-IN,68,Apples,,1,gdd_apples,gdd_apples,fall_frost
-IN,67,Peaches,,1,gdd_peaches,gdd_peaches,fall_frost
-IN,242,Blueberries,,1,15-Apr,20-May,fall_frost
-IN,55,Caneberries,,1,15-Apr,20-May,fall_frost
-IN,69,Grapes,,1,13-May,17-Jun,fall_frost
-KS,66,Cherries,,1,gdd_cherries,gdd_cherries,fall_frost
-KS,74,Pecans,,1,gdd_pecans,gdd_pecans,fall_frost
-KY,68,Apples,,1,gdd_apples,gdd_apples,fall_frost
-KY,71,Other Tree Crops,,1,gdd_pecans,gdd_pecans,fall_frost
-KY,67,Peaches,,1,gdd_peaches,gdd_peaches,fall_frost
-KY,74,Pecans,,1,gdd_pecans,gdd_pecans,fall_frost
-KY,76,Walnuts,,1,gdd_pecans,gdd_pecans,fall_frost
-KY,242,Blueberries,,1,15-Apr,20-May,fall_frost
-KY,69,Grapes,,1,18-Apr,23-May,fall_frost
-LA,67,Peaches,,1,gdd_peaches,gdd_peaches,fall_frost
-LA,74,Pecans,,,gdd_pecans,gdd_pecans,fall_frost
-LA,242,Blueberries,,1,7-Apr,12-May,fall_frost
-MA,68,Apples,,,gdd_apples,gdd_apples,fall_frost
-MA,71,Other Tree Crops,,,gdd_apples,gdd_apples,fall_frost
-MA,67,Peaches,,,gdd_peaches,gdd_peaches,fall_frost
-MA,77,Pears,,,gdd_pears,gdd_pears,fall_frost
-MA,242,Blueberries,,1,23-Apr,28-May,fall_frost
-MA,69,Grapes,,1,6-May,10-Jun,fall_frost
-MD,68,Apples,,,gdd_apples,gdd_apples,fall_frost
-MD,66,Cherries,,,gdd_cherries,gdd_cherries,fall_frost
-MD,67,Peaches,,,gdd_peaches,gdd_peaches,fall_frost
-MD,77,Pears,,,gdd_pears,gdd_pears,fall_frost
-MD,220,Plums,,,gdd_plums,gdd_plums,fall_frost
-MD,242,Blueberries,,1,25-Apr,30-May,fall_frost
-MD,69,Grapes,,1,25-Apr,30-May,fall_frost
-ME,68,Apples,,,gdd_apples,gdd_apples,fall_frost
-ME,242,Blueberries,,,23-Apr,28-May,fall_frost
-ME,56,Hops,,1,21-Mar,8-Jul,11-Sep
-MI,68,Apples,,,gdd_apples,gdd_apples,fall_frost
-MI,223,Apricots,,,gdd_peaches,gdd_peaches,fall_frost
-MI,66,Cherries,,,gdd_cherries,gdd_cherries,fall_frost
-MI,71,Other Tree Crops,,,gdd_cherries,gdd_cherries,fall_frost
-MI,67,Peaches,,,gdd_peaches,gdd_peaches,fall_frost
-MI,77,Pears,,,gdd_pears,gdd_pears,fall_frost
-MI,220,Plums,,,gdd_plums,gdd_plums,fall_frost
-MI,76,Walnuts,,1,gdd_pecans,gdd_pecans,fall_frost
-MI,242,Blueberries,,,7-Apr,12-May,fall_frost
-MI,55,Caneberries,,1,6-May,10-Jun,fall_frost
-MI,69,Grapes,,,6-May,10-Jun,fall_frost
-MI,56,Hops,,1,21-Mar,8-Jul,11-Sep
-MN,75,Almonds,,1,gdd_almonds,gdd_almonds,fall_frost
-MN,68,Apples,,1,gdd_apples,gdd_apples,fall_frost
-MN,69,Grapes,,1,6-May,10-Jun,fall_frost
-MO,68,Apples,,1,gdd_apples,gdd_apples,fall_frost
-MO,67,Peaches,,1,gdd_peaches,gdd_peaches,fall_frost
-MO,74,Pecans,,,gdd_pecans,gdd_pecans,fall_frost
-MO,76,Walnuts,,,gdd_pecans,gdd_pecans,fall_frost
-MO,242,Blueberries,,1,10-Feb,17-Mar,fall_frost
-MO,69,Grapes,,1,18-Apr,23-May,fall_frost
-MS,71,Other Tree Crops,,,gdd_pecans,gdd_pecans,fall_frost
-MS,67,Peaches,,1,gdd_peaches,gdd_peaches,fall_frost
-MS,74,Pecans,,,gdd_pecans,gdd_pecans,fall_frost
-MS,242,Blueberries,,1,14-Feb,21-Mar,fall_frost
-MS,69,Grapes,,1,21-Apr,26-May,fall_frost
-MT,68,Apples,,1,gdd_apples,gdd_apples,fall_frost
-MT,66,Cherries,,1,gdd_cherries,gdd_cherries,fall_frost
-NC,68,Apples,,,gdd_apples,gdd_apples,fall_frost
-NC,218,Nectarines,,,gdd_peaches,gdd_peaches,fall_frost
-NC,67,Peaches,,,gdd_peaches,gdd_peaches,fall_frost
-NC,74,Pecans,,1,gdd_pecans,gdd_pecans,fall_frost
-NC,242,Blueberries,,,5-Mar,9-Apr,fall_frost
-NC,55,Caneberries,,1,5-Mar,9-Apr,fall_frost
-NC,69,Grapes,,,15-Apr,20-May,fall_frost
-NE,68,Apples,,1,gdd_apples,gdd_apples,fall_frost
-NE,69,Grapes,,1,18-Apr,23-May,fall_frost
-NH,68,Apples,,,gdd_apples,gdd_apples,fall_frost
-NH,71,Other Tree Crops,,,gdd_apples,gdd_apples,fall_frost
-NH,77,Pears,,,gdd_pears,gdd_pears,fall_frost
-NH,242,Blueberries,,1,23-Apr,28-May,fall_frost
-NH,69,Grapes,,1,6-May,10-Jun,fall_frost
-NJ,68,Apples,,,gdd_apples,gdd_apples,fall_frost
-NJ,218,Nectarines,,,gdd_peaches,gdd_peaches,fall_frost
-NJ,67,Peaches,,,gdd_peaches,gdd_peaches,fall_frost
-NJ,242,Blueberries,,,26-Mar,30-Apr,fall_frost
-NJ,69,Grapes,,1,11-May,15-Jun,fall_frost
-NM,68,Apples,,1,gdd_apples,gdd_apples,fall_frost
-NM,223,Apricots,,1,gdd_peaches,gdd_peaches,fall_frost
-NM,66,Cherries,,1,gdd_cherries,gdd_cherries,fall_frost
-NM,67,Peaches,,1,gdd_peaches,gdd_peaches,fall_frost
-NM,74,Pecans,,,gdd_pecans,gdd_pecans,fall_frost
-NM,204,Pistachios,,,gdd_pecans,gdd_pecans,fall_frost
-NM,69,Grapes,,1,11-Mar,15-Apr,fall_frost
-NV,69,Grapes,,1,12-Apr,17-May,fall_frost
-NY,68,Apples,,,gdd_apples,gdd_apples,fall_frost
-NY,66,Cherries,,,gdd_cherries,gdd_cherries,fall_frost
-NY,218,Nectarines,,,gdd_peaches,gdd_peaches,fall_frost
-NY,71,Other Tree Crops,,,gdd_apples,gdd_apples,fall_frost
-NY,67,Peaches,,,gdd_peaches,gdd_peaches,fall_frost
-NY,77,Pears,,,gdd_pears,gdd_pears,fall_frost
-NY,220,Plums,,,gdd_plums,gdd_plums,fall_frost
-NY,242,Blueberries,,1,23-Apr,28-May,fall_frost
-NY,55,Caneberries,,1,6-May,10-Jun,fall_frost
-NY,69,Grapes,,,6-May,10-Jun,fall_frost
-NY,56,Hops,,1,21-Mar,8-Jul,11-Sep
-OH,68,Apples,,,gdd_apples,gdd_apples,fall_frost
-OH,66,Cherries,,,gdd_cherries,gdd_cherries,fall_frost
-OH,71,Other Tree Crops,,,gdd_apples,gdd_apples,fall_frost
-OH,67,Peaches,,,gdd_peaches,gdd_peaches,fall_frost
-OH,220,Plums,,,gdd_plums,gdd_plums,fall_frost
-OH,242,Blueberries,,1,15-Apr,20-May,fall_frost
-OH,55,Caneberries,,1,13-May,17-Jun,fall_frost
-OH,69,Grapes,,1,13-May,17-Jun,fall_frost
-OK,67,Peaches,,1,gdd_peaches,gdd_peaches,fall_frost
-OK,74,Pecans,,,gdd_pecans,gdd_pecans,fall_frost
-OK,242,Blueberries,,1,10-Feb,17-Mar,fall_frost
-OK,69,Grapes,,1,21-Apr,26-May,fall_frost
-OR,68,Apples,,,gdd_apples,gdd_apples,fall_frost
-OR,223,Apricots,,,gdd_peaches,gdd_peaches,fall_frost
-OR,66,Cherries,,,gdd_cherries,gdd_cherries,fall_frost
-OR,218,Nectarines,,,gdd_peaches,gdd_peaches,fall_frost
-OR,71,Other Tree Crops,,,gdd_cherries,gdd_cherries,fall_frost
-OR,67,Peaches,,,gdd_peaches,gdd_peaches,fall_frost
-OR,77,Pears,,,gdd_pears,gdd_pears,fall_frost
-OR,220,Plums,,,gdd_plums,gdd_plums,fall_frost
-OR,76,Walnuts,,1,gdd_pecans,gdd_pecans,fall_frost
-OR,242,Blueberries,,,8-Apr,13-May,fall_frost
-OR,55,Caneberries,,,16-May,20-Jun,fall_frost
-OR,69,Grapes,,,30-Apr,4-Jun,fall_frost
-OR,56,Hops,,,21-Mar,8-Jul,8-Sep
-PA,68,Apples,,,gdd_apples,gdd_apples,fall_frost
-PA,66,Cherries,,,gdd_cherries,gdd_cherries,fall_frost
-PA,71,Other Tree Crops,,,gdd_apples,gdd_apples,fall_frost
-PA,67,Peaches,,,gdd_peaches,gdd_peaches,fall_frost
-PA,242,Blueberries,,1,11-May,15-Jun,fall_frost
-PA,69,Grapes,,,11-May,15-Jun,fall_frost
-RI,68,Apples,,1,gdd_apples,gdd_apples,fall_frost
-RI,242,Blueberries,,1,23-Apr,28-May,fall_frost
-RI,69,Grapes,,1,6-May,10-Jun,fall_frost
-RI,56,Hops,,1,21-Mar,8-Jul,11-Sep
-SC,68,Apples,,,gdd_apples,gdd_apples,fall_frost
-SC,71,Other Tree Crops,,,gdd_peaches,gdd_peaches,fall_frost
-SC,67,Peaches,,,gdd_peaches,gdd_peaches,fall_frost
-SC,74,Pecans,,1,gdd_pecans,gdd_pecans,fall_frost
-SC,220,Plums,,,gdd_plums,gdd_plums,fall_frost
-SC,242,Blueberries,,1,15-Feb,22-Mar,fall_frost
-SC,69,Grapes,,1,5-Apr,10-May,fall_frost
-SD,68,Apples,,1,gdd_apples,gdd_apples,fall_frost
-SD,69,Grapes,,1,6-May,10-Jun,fall_frost
-TN,68,Apples,,1,gdd_apples,gdd_apples,fall_frost
-TN,67,Peaches,,1,gdd_peaches,gdd_peaches,fall_frost
-TN,74,Pecans,,1,gdd_pecans,gdd_pecans,fall_frost
-TN,55,Caneberries,,1,5-Mar,9-Apr,fall_frost
-TN,69,Grapes,,1,15-Apr,20-May,fall_frost
-TX,71,Other Tree Crops,,,gdd_pecans,gdd_pecans,fall_frost
-TX,67,Peaches,,1,gdd_peaches,gdd_peaches,fall_frost
-TX,77,Pears,,1,gdd_pears,gdd_pears,fall_frost
-TX,74,Pecans,,,gdd_pecans,gdd_pecans,fall_frost
-TX,204,Pistachios,,,gdd_pecans,gdd_pecans,fall_frost
-TX,242,Blueberries,,1,7-Apr,12-May,fall_frost
-TX,55,Caneberries,,1,7-Apr,12-May,fall_frost
-TX,69,Grapes,,1,7-Apr,12-May,fall_frost
-UT,68,Apples,,,gdd_apples,gdd_apples,fall_frost
-UT,223,Apricots,,,gdd_peaches,gdd_peaches,fall_frost
-UT,66,Cherries,,,gdd_cherries,gdd_cherries,fall_frost
-UT,67,Peaches,,,gdd_peaches,gdd_peaches,fall_frost
-UT,77,Pears,,,gdd_pears,gdd_pears,fall_frost
-UT,55,Caneberries,,1,11-Mar,15-Apr,fall_frost
-UT,69,Grapes,,1,11-Mar,15-Apr,fall_frost
-VA,68,Apples,,,gdd_apples,gdd_apples,fall_frost
-VA,67,Peaches,,,gdd_peaches,gdd_peaches,fall_frost
-VA,77,Pears,,,gdd_pears,gdd_pears,fall_frost
-VA,74,Pecans,,1,gdd_pecans,gdd_pecans,fall_frost
-VA,220,Plums,,,gdd_plums,gdd_plums,fall_frost
-VA,76,Walnuts,,1,gdd_pecans,gdd_pecans,fall_frost
-VA,242,Blueberries,,1,25-Apr,30-May,fall_frost
-VA,69,Grapes,,1,25-Apr,30-May,fall_frost
-VT,68,Apples,,,gdd_apples,gdd_apples,fall_frost
-VT,71,Other Tree Crops,,,gdd_apples,gdd_apples,fall_frost
-VT,242,Blueberries,,1,23-Apr,28-May,fall_frost
-VT,69,Grapes,,1,6-May,10-Jun,fall_frost
-WA,75,Almonds,,1,gdd_almonds,gdd_almonds,fall_frost
-WA,68,Apples,,,gdd_apples,gdd_apples,fall_frost
-WA,223,Apricots,,,gdd_peaches,gdd_peaches,fall_frost
-WA,66,Cherries,,,gdd_cherries,gdd_cherries,fall_frost
-WA,218,Nectarines,,,gdd_peaches,gdd_peaches,fall_frost
-WA,71,Other Tree Crops,,,gdd_apples,gdd_apples,fall_frost
-WA,67,Peaches,,,gdd_peaches,gdd_peaches,fall_frost
-WA,77,Pears,,,gdd_pears,gdd_pears,fall_frost
-WA,220,Plums,,,gdd_plums,gdd_plums,fall_frost
-WA,76,Walnuts,,1,gdd_pecans,gdd_pecans,fall_frost
-WA,242,Blueberries,,,18-Apr,23-May,fall_frost
-WA,55,Caneberries,,,1-May,5-Jun,fall_frost
-WA,69,Grapes,,,27-Apr,1-Jun,fall_frost
-WA,56,Hops,,,21-Mar,8-Jul,8-Sep
-WI,68,Apples,,,gdd_apples,gdd_apples,fall_frost
-WI,66,Cherries,,,gdd_cherries,gdd_cherries,fall_frost
-WI,77,Pears,,,gdd_pears,gdd_pears,fall_frost
-WI,76,Walnuts,,1,gdd_pecans,gdd_pecans,fall_frost
-WI,242,Blueberries,,1,7-Apr,12-May,fall_frost
-WI,55,Caneberries,,1,7-Apr,12-May,fall_frost
-WI,69,Grapes,,1,6-May,10-Jun,fall_frost
-WI,56,Hops,,1,21-Mar,8-Jul,11-Sep
-WV,68,Apples,,,gdd_apples,gdd_apples,fall_frost
-WV,71,Other Tree Crops,,,gdd_apples,gdd_apples,fall_frost
-WV,67,Peaches,,,gdd_peaches,gdd_peaches,fall_frost
-WV,77,Pears,,,gdd_pears,gdd_pears,fall_frost
-WV,220,Plums,,,gdd_plums,gdd_plums,fall_frost
-WV,55,Caneberries,,1,13-May,17-Jun,fall_frost
-WV,69,Grapes,,1,13-May,17-Jun,fall_frost
+﻿state,cdl,cdl_desc,Gen_PWC_Scen1,cdl_alias,season,sam_only,evergreen,alt_date,plant_mid,harvest,emergence,maxcover,plant_begin,plant_begin_active,plant_end_active,plant_end,harvest_begin,harvest_begin_active,harvest_end_active,harvest_end,bloom_begin,bloom_end
+AL,68,Apples,"Orchard, Deciduous",68,,1,,1,,Fall Frost Date,15-Apr,25-Apr,,,,,1-Aug,1-Sep,30-Sep,10-Nov,10-Apr,20-Apr
+AL,67,Peaches,"Orchard, Deciduous",67,,,,1,,Fall Frost Date,12-Mar,22-Mar,,,,,15-May,15-Jun,31-Jul,15-Aug,5-Mar,20-Mar
+AL,74,Pecans,"Orchard, Deciduous",74,,,,1,,Fall Frost Date,20-Apr,30-Apr,,,,,15-Oct,1-Nov,20-Nov,20-Dec,20-Apr,20-Apr
+AL,242,Blueberries,"Small Fruit, Trellised",242,,1,,1,,Fall Frost Date,14-Feb,21-Mar,,,,,20-May,1-Jun,23-Jul,30-Jul,6-Mar,6-Apr
+AL,69,Grapes,"Small Fruit, Trellised",69,,1,,1,,Fall Frost Date,5-Apr,10-May,,,,,25-Jul,1-Aug,30-Sep,15-Oct,1-May,20-May
+AR,68,Apples,"Orchard, Deciduous",68,,1,,1,,Fall Frost Date,7-Apr,17-Apr,,,,,15-Aug,1-Sep,1-Oct,1-Nov,1-Apr,14-Apr
+AR,67,Peaches,"Orchard, Deciduous",67,,1,,1,,Fall Frost Date,14-Mar,24-Mar,,,,,1-Jun,15-Jun,31-Jul,30-Aug,7-Mar,21-Mar
+AR,74,Pecans,"Orchard, Deciduous",74,,,,1,,Fall Frost Date,25-Apr,5-May,,,,,1-Nov,15-Nov,15-Dec,16-Jan,20-Apr,30-Apr
+AR,242,Blueberries,"Small Fruit, Trellised",242,,1,,1,,Fall Frost Date,10-Feb,17-Mar,,,,,5-May,1-Jul,1-Jul,15-Aug,16-Feb,15-Apr
+AR,69,Grapes,"Small Fruit, Trellised",69,,1,,1,,Fall Frost Date,21-Apr,26-May,,,,,10-Jul,25-Aug,15-Sep,15-Oct,7-May,14-Jun
+AZ,75,Almonds,"Orchard, Deciduous",75,,,,1,,Fall Frost Date,24-Feb,6-Mar,,,,,15-Aug,1-Sep,15-Oct,31-Oct,11-Feb,10-Mar
+AZ,68,Apples,"Orchard, Deciduous",68,,,,1,,Fall Frost Date,15-Apr,25-Apr,,,,,1-Aug,1-Sep,31-Oct,30-Nov,1-Apr,30-Apr
+AZ,71,Other Tree Crops,"Orchard, Deciduous",71,,1,,1,,Fall Frost Date,15-Apr,25-Apr,,,,,1-Dec,2-Jan,1-Feb,1-Mar,1-Apr,30-Apr
+AZ,67,Peaches,"Orchard, Deciduous",67,,1,,1,,Fall Frost Date,12-Mar,22-Mar,,,,,10-Jul,15-Jul,5-Sep,15-Sep,5-Mar,20-Mar
+AZ,77,Pears,"Orchard, Deciduous",77,,1,,1,,Fall Frost Date,15-Mar,25-Mar,,,,,5-Jul,15-Jul,30-Jul,5-Aug,10-Mar,20-Mar
+AZ,74,Pecans,"Orchard, Deciduous",74,,,,1,,Fall Frost Date,15-Apr,25-Apr,,,,,1-Dec,2-Jan,1-Feb,1-Mar,1-Apr,30-Apr
+AZ,204,Pistachios,"Orchard, Deciduous",204,,,,1,,Fall Frost Date,7-Apr,17-Apr,,,,,1-Sep,10-Sep,25-Sep,15-Oct,1-Apr,14-Apr
+AZ,69,Grapes,"Small Fruit, Trellised",69,,1,,1,,Fall Frost Date,11-Mar,15-Apr,,,,,1-Jul,1-Aug,30-Sep,31-Oct,1-Apr,30-Apr
+CA,75,Almonds,"Orchard, Deciduous",75,,,,1,,Fall Frost Date,24-Feb,6-Mar,,,,,15-Aug,1-Sep,15-Oct,31-Oct,11-Feb,10-Mar
+CA,68,Apples,"Orchard, Deciduous",68,,,,1,,Fall Frost Date,4-Apr,14-Apr,,,,,15-Jul,20-Jul,20-Oct,20-Nov,20-Mar,20-Apr
+CA,223,Apricots,"Orchard, Deciduous",223,,,,1,,Fall Frost Date,2-Mar,12-Mar,,,,,1-Jun,15-Jun,15-Jun,5-Jul,1-Mar,3-Mar
+CA,66,Cherries,"Orchard, Deciduous",66,,,,1,,Fall Frost Date,20-Mar,30-Mar,,,,,10-May,25-May,10-Jun,15-Jun,10-Mar,31-Mar
+CA,218,Nectarines,"Orchard, Deciduous",218,,,,1,,Fall Frost Date,10-Mar,20-Mar,,,,,30-Apr,20-May,10-Sep,15-Oct,1-Mar,20-Mar
+CA,71,Other Tree Crops,"Orchard, Deciduous",71,,1,,1,,Fall Frost Date,24-Feb,6-Mar,,,,,15-Aug,1-Sep,15-Oct,31-Oct,11-Feb,10-Mar
+CA,67,Peaches,"Orchard, Deciduous",67,,,,1,,Fall Frost Date,12-Mar,22-Mar,,,,,10-Jul,15-Jul,5-Sep,15-Sep,5-Mar,20-Mar
+CA,77,Pears,"Orchard, Deciduous",77,,,,1,,Fall Frost Date,15-Mar,25-Mar,,,,,5-Jul,15-Jul,30-Jul,5-Aug,10-Mar,20-Mar
+CA,74,Pecans,"Orchard, Deciduous",74,,,,1,,Fall Frost Date,17-May,27-May,,,,,1-Nov,10-Nov,20-Dec,31-Dec,5-May,30-May
+CA,204,Pistachios,"Orchard, Deciduous",204,,,,1,,Fall Frost Date,7-Apr,17-Apr,,,,,1-Sep,10-Sep,25-Sep,15-Oct,1-Apr,14-Apr
+CA,220,Plums,"Orchard, Deciduous",220,,,,1,,Fall Frost Date,4-Mar,14-Mar,,,,,15-May,1-Jun,15-Sep,20-Oct,26-Feb,10-Mar
+CA,217,Pomegranates,"Orchard, Deciduous",217,,,,1,,Fall Frost Date,4-Mar,14-Mar,,,,,15-May,1-Jun,15-Sep,20-Oct,26-Feb,10-Mar
+CA,210,Prunes,"Orchard, Deciduous",210,,1,,1,,Fall Frost Date,4-Mar,14-Mar,,,,,15-May,1-Jun,15-Sep,20-Oct,26-Feb,10-Mar
+CA,76,Walnuts,"Orchard, Deciduous",76,,,,1,,Fall Frost Date,17-Apr,27-Apr,,,,,5-Sep,5-Oct,30-Oct,15-Nov,25-Mar,10-May
+CA,242,Blueberries,"Small Fruit, Trellised",242,,,,1,,Fall Frost Date,4-May,8-Jun,,,,,5-May,10-May,5-Jul,10-Jul,1-Jun,15-Jun
+CA,55,Caneberries,"Small Fruit, Trellised",55,,,,1,,Fall Frost Date,4-May,8-Jun,,,,,5-May,10-May,5-Jul,10-Jul,1-Jun,15-Jun
+CA,69,Grapes,"Small Fruit, Trellised",69,,,,1,,Fall Frost Date,12-Apr,17-May,,,,,15-Jul,15-Jul,15-Jul,15-Dec,10-May,25-May
+CO,68,Apples,"Orchard, Deciduous",68,,,,1,,Fall Frost Date,25-Apr,5-May,,,,,15-Aug,5-Sep,5-Oct,5-Nov,20-Apr,30-Apr
+CO,223,Apricots,"Orchard, Deciduous",223,,1,,1,,Fall Frost Date,10-Apr,20-Apr,,,,,15-Jul,1-Aug,30-Aug,30-Sep,5-Apr,15-Apr
+CO,66,Cherries,"Orchard, Deciduous",66,,,,1,,Fall Frost Date,25-Apr,5-May,,,,,5-Jul,20-Jul,30-Jul,5-Aug,25-Apr,25-Apr
+CO,67,Peaches,"Orchard, Deciduous",67,,,,1,,Fall Frost Date,10-Apr,20-Apr,,,,,15-Jul,1-Aug,30-Aug,30-Sep,5-Apr,15-Apr
+CO,77,Pears,"Orchard, Deciduous",77,,,,1,,Fall Frost Date,17-Apr,27-Apr,,,,,10-Aug,15-Aug,10-Sep,20-Sep,15-Apr,20-Apr
+CO,55,Caneberries,"Small Fruit, Trellised",55,,1,,1,,Fall Frost Date,11-Mar,15-Apr,,,,,1-Jul,1-Aug,30-Sep,31-Oct,1-Apr,30-Apr
+CO,69,Grapes,"Small Fruit, Trellised",69,,1,,1,,Fall Frost Date,11-Mar,15-Apr,,,,,1-Jul,1-Aug,30-Sep,31-Oct,1-Apr,30-Apr
+CO,56,Hops,"Small Fruit, Trellised",56,,1,,1,,11-Sep,21-Mar,8-Jul,,,,,24-Aug,,,30-Sep,1-Jul,15-Jul
+CT,68,Apples,"Orchard, Deciduous",68,,,,1,,Fall Frost Date,22-May,1-Jun,,,,,1-Aug,10-Sep,27-Oct,8-Nov,15-May,30-May
+CT,71,Other Tree Crops,"Orchard, Deciduous",71,,1,,1,,Fall Frost Date,22-May,1-Jun,,,,,1-Aug,10-Sep,27-Oct,8-Nov,15-May,30-May
+CT,67,Peaches,"Orchard, Deciduous",67,,,,1,,Fall Frost Date,9-May,19-May,,,,,14-Jul,6-Aug,23-Sep,12-Oct,1-May,18-May
+CT,77,Pears,"Orchard, Deciduous",77,,,,1,,Fall Frost Date,9-May,19-May,,,,,17-Aug,9-Sep,15-Oct,31-Oct,1-May,18-May
+CT,220,Plums,"Orchard, Deciduous",220,,1,,1,,Fall Frost Date,22-May,1-Jun,,,,,1-Aug,10-Sep,27-Oct,8-Nov,15-May,30-May
+CT,242,Blueberries,"Small Fruit, Trellised",242,,1,,1,,Fall Frost Date,23-Apr,28-May,,,,,15-Jul,1-Aug,1-Aug,15-Aug,15-May,10-Jun
+CT,69,Grapes,"Small Fruit, Trellised",69,,1,,1,,Fall Frost Date,6-May,10-Jun,,,,,20-Sep,25-Sep,20-Oct,25-Oct,5-Jun,15-Jun
+DE,68,Apples,"Orchard, Deciduous",68,,1,,1,,Fall Frost Date,27-Apr,7-May,,,,,1-Jul,10-Sep,10-Oct,15-Nov,15-Apr,10-May
+DE,218,Nectarines,"Orchard, Deciduous",218,,1,,1,,Fall Frost Date,15-Apr,25-Apr,,,,,1-Jul,8-Aug,15-Sep,30-Sep,5-Apr,25-Apr
+DE,67,Peaches,"Orchard, Deciduous",67,,1,,1,,Fall Frost Date,15-Apr,25-Apr,,,,,1-Jul,8-Aug,15-Sep,30-Sep,5-Apr,25-Apr
+DE,242,Blueberries,"Small Fruit, Trellised",242,,1,,1,,Fall Frost Date,26-Mar,30-Apr,,,,,15-Jun,27-Jun,11-Jul,15-Aug,15-Apr,15-May
+DE,69,Grapes,"Small Fruit, Trellised",69,,1,,1,,Fall Frost Date,26-Mar,30-Apr,,,,,15-Jun,27-Jun,11-Jul,15-Aug,15-Apr,15-May
+FL,67,Peaches,"Orchard, Deciduous",67,,1,,1,,Fall Frost Date,20-Mar,30-Mar,,,,,15-May,1-Jun,1-Aug,15-Aug,10-Mar,30-Mar
+FL,74,Pecans,"Orchard, Deciduous",74,,,,1,,Fall Frost Date,15-Apr,25-Apr,,,,,1-Oct,1-Nov,1-Nov,3-Dec,1-Apr,30-Apr
+FL,242,Blueberries,"Small Fruit, Trellised",242,,1,,1,,Fall Frost Date,2-Jan,6-Feb,,,,,1-Apr,1-Apr,30-Apr,31-May,16-Jan,28-Feb
+FL,69,Grapes,"Small Fruit, Trellised",69,,,,1,,Fall Frost Date,5-Apr,10-May,,,,,25-Jul,1-Aug,30-Sep,15-Oct,1-May,20-May
+GA,68,Apples,"Orchard, Deciduous",68,,,,1,,Fall Frost Date,15-Apr,25-Apr,,,,,1-Aug,1-Sep,30-Sep,10-Nov,10-Apr,20-Apr
+GA,71,Other Tree Crops,"Orchard, Deciduous",71,,1,,1,,Fall Frost Date,12-May,22-May,,,,,1-Oct,15-Oct,15-Dec,2-Jan,5-May,20-May
+GA,67,Peaches,"Orchard, Deciduous",67,,,,1,,Fall Frost Date,20-Mar,30-Mar,,,,,15-May,1-Jun,1-Aug,15-Aug,10-Mar,30-Mar
+GA,77,Pears,"Orchard, Deciduous",77,,1,,1,,Fall Frost Date,15-Apr,25-Apr,,,,,1-Aug,1-Sep,30-Sep,10-Nov,10-Apr,20-Apr
+GA,74,Pecans,"Orchard, Deciduous",74,,,,1,,Fall Frost Date,12-May,22-May,,,,,1-Oct,15-Oct,15-Dec,2-Jan,5-May,20-May
+GA,220,Plums,"Orchard, Deciduous",220,,1,,1,,Fall Frost Date,20-Mar,30-Mar,,,,,15-May,1-Jun,1-Aug,15-Aug,10-Mar,30-Mar
+GA,242,Blueberries,"Small Fruit, Trellised",242,,,,1,,Fall Frost Date,15-Feb,22-Mar,,,,,15-Apr,10-May,30-Jun,1-Sep,15-Mar,30-Mar
+GA,55,Caneberries,"Small Fruit, Trellised",55,,1,,1,,Fall Frost Date,15-Feb,22-Mar,,,,,15-Apr,10-May,30-Jun,1-Sep,15-Mar,30-Mar
+GA,69,Grapes,"Small Fruit, Trellised",69,,,,1,,Fall Frost Date,5-Apr,10-May,,,,,25-Jul,1-Aug,30-Sep,15-Oct,1-May,20-May
+IA,68,Apples,"Orchard, Deciduous",68,,1,,1,,Fall Frost Date,5-May,15-May,,,,,1-Aug,20-Sep,20-Sep,12-Oct,5-May,5-May
+IA,56,Hops,"Small Fruit, Trellised",56,,1,,1,,11-Sep,21-Mar,8-Jul,,,,,24-Aug,,,30-Sep,1-Jul,15-Jul
+ID,68,Apples,"Orchard, Deciduous",68,,,,1,,Fall Frost Date,7-May,17-May,,,,,5-Sep,20-Sep,30-Oct,10-Nov,30-Apr,15-May
+ID,223,Apricots,"Orchard, Deciduous",223,,1,,1,,Fall Frost Date,9-Apr,19-Apr,,,,,30-Jul,20-Aug,5-Sep,20-Sep,1-Apr,17-Apr
+ID,66,Cherries,"Orchard, Deciduous",66,,,,1,,Fall Frost Date,15-Apr,25-Apr,,,,,20-Jun,1-Jul,10-Jul,15-Jul,10-Apr,20-Apr
+ID,218,Nectarines,"Orchard, Deciduous",218,,1,,1,,Fall Frost Date,9-Apr,19-Apr,,,,,30-Jul,20-Aug,5-Sep,20-Sep,1-Apr,17-Apr
+ID,67,Peaches,"Orchard, Deciduous",67,,,,1,,Fall Frost Date,9-Apr,19-Apr,,,,,30-Jul,20-Aug,5-Sep,20-Sep,1-Apr,17-Apr
+ID,77,Pears,"Orchard, Deciduous",77,,1,,1,,Fall Frost Date,15-Apr,25-Apr,,,,,10-Aug,15-Aug,30-Aug,10-Sep,15-Apr,15-Apr
+ID,220,Plums,"Orchard, Deciduous",220,,,,1,,Fall Frost Date,8-Apr,18-Apr,,,,,5-Aug,20-Aug,10-Sep,5-Oct,30-Mar,18-Apr
+ID,242,Blueberries,"Small Fruit, Trellised",242,,1,,1,,Fall Frost Date,8-Apr,13-May,,,,,25-Jun,20-Jul,20-Jul,30-Sep,20-Apr,5-Jun
+ID,69,Grapes,"Small Fruit, Trellised",69,,,,1,,Fall Frost Date,30-Apr,4-Jun,,,,,20-Sep,1-Oct,10-Oct,25-Oct,1-Jun,8-Jun
+ID,56,Hops,"Small Fruit, Trellised",56,,,,1,,11-Sep,21-Mar,8-Jul,,,,,24-Aug,,,30-Sep,1-Jul,15-Jul
+IL,68,Apples,"Orchard, Deciduous",68,,1,,1,,Fall Frost Date,20-Apr,30-Apr,,,,,25-Jul,10-Sep,10-Oct,15-Nov,15-Apr,25-Apr
+IL,71,Other Tree Crops,"Orchard, Deciduous",71,,1,,1,,Fall Frost Date,12-Mar,22-Mar,,,,,4-Jul,1-Aug,25-Aug,31-Aug,10-Mar,15-Mar
+IL,67,Peaches,"Orchard, Deciduous",67,,1,,1,,Fall Frost Date,12-Mar,22-Mar,,,,,4-Jul,1-Aug,25-Aug,31-Aug,10-Mar,15-Mar
+IL,77,Pears,"Orchard, Deciduous",77,,1,,1,,Fall Frost Date,20-Apr,30-Apr,,,,,25-Jul,10-Sep,10-Oct,15-Nov,15-Apr,25-Apr
+IL,74,Pecans,"Orchard, Deciduous",74,,1,,1,,Fall Frost Date,20-Apr,30-Apr,,,,,25-Jul,10-Sep,10-Oct,15-Nov,15-Apr,25-Apr
+IL,76,Walnuts,"Orchard, Deciduous",76,,,,1,,Fall Frost Date,20-Apr,30-Apr,,,,,25-Jul,10-Sep,10-Oct,15-Nov,15-Apr,25-Apr
+IL,242,Blueberries,"Small Fruit, Trellised",242,,1,,1,,Fall Frost Date,15-Apr,20-May,,,,,25-Jun,15-Jul,1-Sep,10-Sep,10-May,30-May
+IL,69,Grapes,"Small Fruit, Trellised",69,,1,,1,,Fall Frost Date,18-Apr,23-May,,,,,22-Aug,25-Aug,15-Sep,25-Sep,20-May,27-May
+IN,68,Apples,"Orchard, Deciduous",68,,1,,1,,Fall Frost Date,22-Apr,2-May,,,,,30-Jun,5-Sep,30-Sep,10-Oct,20-Apr,25-Apr
+IN,67,Peaches,"Orchard, Deciduous",67,,1,,1,,Fall Frost Date,5-Apr,15-Apr,,,,,10-Jul,10-Aug,25-Aug,30-Aug,5-Apr,5-Apr
+IN,242,Blueberries,"Small Fruit, Trellised",242,,1,,1,,Fall Frost Date,15-Apr,20-May,,,,,25-Jun,15-Jul,1-Sep,10-Sep,10-May,30-May
+IN,55,Caneberries,"Small Fruit, Trellised",55,,1,,1,,Fall Frost Date,15-Apr,20-May,,,,,25-Jun,15-Jul,1-Sep,10-Sep,10-May,30-May
+IN,69,Grapes,"Small Fruit, Trellised",69,,1,,1,,Fall Frost Date,13-May,17-Jun,,,,,15-Sep,25-Sep,20-Oct,5-Nov,10-Jun,25-Jun
+KS,66,Cherries,"Orchard, Deciduous",66,,1,,1,,Fall Frost Date,25-Apr,5-May,,,,,5-Jul,20-Jul,30-Jul,5-Aug,25-Apr,25-Apr
+KS,74,Pecans,"Orchard, Deciduous",74,,,,1,,Fall Frost Date,23-May,2-Jun,,,,,15-Oct,15-Nov,31-Dec,26-Jan,15-May,31-May
+KY,68,Apples,"Orchard, Deciduous",68,,1,,1,,Fall Frost Date,24-Apr,4-May,,,,,1-Jul,1-Sep,30-Sep,30-Oct,18-Apr,30-Apr
+KY,71,Other Tree Crops,"Orchard, Deciduous",71,,1,,1,,Fall Frost Date,12-Apr,22-Apr,,,,,20-Jun,1-Jul,31-Aug,15-Sep,6-Apr,18-Apr
+KY,67,Peaches,"Orchard, Deciduous",67,,1,,1,,Fall Frost Date,12-Apr,22-Apr,,,,,20-Jun,1-Jul,31-Aug,15-Sep,6-Apr,18-Apr
+KY,74,Pecans,"Orchard, Deciduous",74,,1,,1,,Fall Frost Date,12-Apr,22-Apr,,,,,20-Jun,1-Jul,31-Aug,15-Sep,6-Apr,18-Apr
+KY,76,Walnuts,"Orchard, Deciduous",76,,1,,1,,Fall Frost Date,12-Apr,22-Apr,,,,,20-Jun,1-Jul,31-Aug,15-Sep,6-Apr,18-Apr
+KY,242,Blueberries,"Small Fruit, Trellised",242,,1,,1,,Fall Frost Date,15-Apr,20-May,,,,,25-Jun,15-Jul,1-Sep,10-Sep,10-May,30-May
+KY,69,Grapes,"Small Fruit, Trellised",69,,1,,1,,Fall Frost Date,18-Apr,23-May,,,,,22-Aug,25-Aug,15-Sep,25-Sep,20-May,27-May
+LA,67,Peaches,"Orchard, Deciduous",67,,1,,1,,Fall Frost Date,11-Mar,21-Mar,,,,,22-May,11-Jun,15-Jul,17-Aug,7-Mar,15-Mar
+LA,74,Pecans,"Orchard, Deciduous",74,,,,1,,Fall Frost Date,16-May,26-May,,,,,3-Oct,8-Nov,5-Dec,31-Dec,1-May,31-May
+LA,242,Blueberries,"Small Fruit, Trellised",242,,1,,1,,Fall Frost Date,7-Apr,12-May,,,,,31-Jul,20-Aug,20-Aug,15-Sep,10-May,15-May
+MA,68,Apples,"Orchard, Deciduous",68,,,,1,,Fall Frost Date,22-May,1-Jun,,,,,1-Aug,10-Sep,27-Oct,8-Nov,15-May,30-May
+MA,71,Other Tree Crops,"Orchard, Deciduous",71,,1,,1,,Fall Frost Date,22-May,1-Jun,,,,,1-Aug,10-Sep,27-Oct,8-Nov,15-May,30-May
+MA,67,Peaches,"Orchard, Deciduous",67,,,,1,,Fall Frost Date,9-May,19-May,,,,,14-Jul,6-Aug,23-Sep,12-Oct,1-May,18-May
+MA,77,Pears,"Orchard, Deciduous",77,,1,,1,,Fall Frost Date,9-May,19-May,,,,,17-Aug,9-Sep,15-Oct,31-Oct,1-May,18-May
+MA,242,Blueberries,"Small Fruit, Trellised",242,,1,,1,,Fall Frost Date,23-Apr,28-May,,,,,15-Jul,1-Aug,1-Aug,15-Aug,15-May,10-Jun
+MA,69,Grapes,"Small Fruit, Trellised",69,,1,,1,,Fall Frost Date,6-May,10-Jun,,,,,20-Sep,25-Sep,20-Oct,25-Oct,5-Jun,15-Jun
+MD,68,Apples,"Orchard, Deciduous",68,,,,1,,Fall Frost Date,27-Apr,7-May,,,,,1-Jul,10-Sep,10-Oct,15-Nov,15-Apr,10-May
+MD,66,Cherries,"Orchard, Deciduous",66,,1,,1,,Fall Frost Date,23-Apr,3-May,,,,,10-Jun,25-Jun,5-Jul,10-Jul,15-Apr,2-May
+MD,67,Peaches,"Orchard, Deciduous",67,,,,1,,Fall Frost Date,15-Apr,25-Apr,,,,,1-Jul,8-Aug,15-Sep,30-Sep,5-Apr,25-Apr
+MD,77,Pears,"Orchard, Deciduous",77,,1,,1,,Fall Frost Date,27-Apr,7-May,,,,,1-Jul,10-Sep,10-Oct,15-Nov,15-Apr,10-May
+MD,220,Plums,"Orchard, Deciduous",220,,1,,1,,Fall Frost Date,15-Apr,25-Apr,,,,,1-Jul,8-Aug,15-Sep,30-Sep,5-Apr,25-Apr
+MD,242,Blueberries,"Small Fruit, Trellised",242,,1,,1,,Fall Frost Date,25-Apr,30-May,,,,,25-Aug,10-Sep,15-Oct,5-Nov,20-May,10-Jun
+MD,69,Grapes,"Small Fruit, Trellised",69,,1,,1,,Fall Frost Date,25-Apr,30-May,,,,,25-Aug,10-Sep,15-Oct,5-Nov,20-May,10-Jun
+ME,68,Apples,"Orchard, Deciduous",68,,,,1,,Fall Frost Date,22-May,1-Jun,,,,,1-Aug,10-Sep,27-Oct,8-Nov,15-May,30-May
+ME,242,Blueberries,"Small Fruit, Trellised",242,,,,1,,Fall Frost Date,23-Apr,28-May,,,,,30-Jul,10-Aug,20-Aug,5-Sep,20-May,6-Jun
+ME,56,Hops,"Small Fruit, Trellised",56,,1,,1,,11-Sep,21-Mar,8-Jul,,,,,24-Aug,,,30-Sep,1-Jul,15-Jul
+MI,68,Apples,"Orchard, Deciduous",68,,,,1,,Fall Frost Date,8-May,18-May,,,,,15-Aug,5-Sep,25-Oct,1-Nov,1-May,15-May
+MI,223,Apricots,"Orchard, Deciduous",223,,1,,1,,Fall Frost Date,10-May,20-May,,,,,25-Jul,5-Aug,5-Sep,25-Sep,5-May,15-May
+MI,66,Cherries,"Orchard, Deciduous",66,,,,1,,Fall Frost Date,25-Apr,5-May,,,,,25-Jun,30-Jun,15-Jul,20-Jul,20-Apr,30-Apr
+MI,71,Other Tree Crops,"Orchard, Deciduous",71,,1,,1,,Fall Frost Date,25-Apr,5-May,,,,,25-Jun,30-Jun,15-Jul,20-Jul,20-Apr,30-Apr
+MI,67,Peaches,"Orchard, Deciduous",67,,,,1,,Fall Frost Date,10-May,20-May,,,,,25-Jul,5-Aug,5-Sep,25-Sep,5-May,15-May
+MI,77,Pears,"Orchard, Deciduous",77,,,,1,,Fall Frost Date,10-May,20-May,,,,,20-Aug,25-Aug,20-Sep,1-Oct,5-May,15-May
+MI,220,Plums,"Orchard, Deciduous",220,,,,1,,Fall Frost Date,12-May,22-May,,,,,1-Sep,5-Sep,25-Sep,1-Oct,5-May,20-May
+MI,76,Walnuts,"Orchard, Deciduous",76,,1,,1,,Fall Frost Date,25-Apr,5-May,,,,,25-Jun,30-Jun,15-Jul,20-Jul,20-Apr,30-Apr
+MI,242,Blueberries,"Small Fruit, Trellised",242,,,,1,,Fall Frost Date,7-Apr,12-May,,,,,25-Jun,10-Jul,1-Aug,10-Sep,5-May,20-May
+MI,55,Caneberries,"Small Fruit, Trellised",55,,1,,1,,Fall Frost Date,6-May,10-Jun,,,,,,,,,,
+MI,69,Grapes,"Small Fruit, Trellised",69,,,,1,,Fall Frost Date,6-May,10-Jun,,,,,25-Aug,15-Sep,15-Oct,30-Oct,5-Jun,15-Jun
+MI,56,Hops,"Small Fruit, Trellised",56,,1,,1,,11-Sep,21-Mar,8-Jul,,,,,24-Aug,,,30-Sep,1-Jul,15-Jul
+MN,75,Almonds,"Orchard, Deciduous",75,,1,,1,,Fall Frost Date,15-May,25-May,,,,,1-Aug,1-Sep,30-Sep,30-Oct,10-May,20-May
+MN,68,Apples,"Orchard, Deciduous",68,,,,1,,Fall Frost Date,15-May,25-May,,,,,1-Aug,1-Sep,30-Sep,30-Oct,10-May,20-May
+MN,69,Grapes,"Small Fruit, Trellised",69,,1,,1,,Fall Frost Date,6-May,10-Jun,,,,,25-Aug,15-Sep,15-Oct,30-Oct,5-Jun,15-Jun
+MO,68,Apples,"Orchard, Deciduous",68,,1,,1,,Fall Frost Date,23-Apr,3-May,,,,,27-Aug,5-Sep,5-Oct,25-Oct,20-Apr,27-Apr
+MO,67,Peaches,"Orchard, Deciduous",67,,,,1,,Fall Frost Date,8-Apr,18-Apr,,,,,1-Jul,20-Jul,31-Aug,15-Sep,1-Apr,15-Apr
+MO,74,Pecans,"Orchard, Deciduous",74,,1,,1,,Fall Frost Date,23-May,2-Jun,,,,,15-Oct,15-Nov,31-Dec,26-Jan,15-May,31-May
+MO,76,Walnuts,"Orchard, Deciduous",76,,1,,1,,Fall Frost Date,23-May,2-Jun,,,,,15-Oct,15-Nov,31-Dec,26-Jan,15-May,31-May
+MO,242,Blueberries,"Small Fruit, Trellised",242,,1,,1,,Fall Frost Date,10-Feb,17-Mar,,,,,5-May,1-Jul,1-Jul,15-Aug,16-Feb,15-Apr
+MO,69,Grapes,"Small Fruit, Trellised",69,,1,,1,,Fall Frost Date,18-Apr,23-May,,,,,22-Aug,25-Aug,15-Sep,25-Sep,20-May,27-May
+MS,71,Other Tree Crops,"Orchard, Deciduous",71,,1,,1,,Fall Frost Date,23-May,2-Jun,,,,,1-Oct,15-Oct,30-Nov,31-Dec,15-May,1-Jun
+MS,67,Peaches,"Orchard, Deciduous",67,,1,,1,,Fall Frost Date,12-Mar,22-Mar,,,,,15-May,15-Jun,31-Jul,15-Aug,5-Mar,20-Mar
+MS,74,Pecans,"Orchard, Deciduous",74,,,,1,,Fall Frost Date,23-May,2-Jun,,,,,1-Oct,15-Oct,30-Nov,31-Dec,15-May,1-Jun
+MS,242,Blueberries,"Small Fruit, Trellised",242,,1,,1,,Fall Frost Date,14-Feb,21-Mar,,,,,20-May,1-Jun,23-Jul,30-Jul,6-Mar,6-Apr
+MS,69,Grapes,"Small Fruit, Trellised",69,,1,,1,,Fall Frost Date,21-Apr,26-May,,,,,10-Jul,25-Aug,15-Sep,15-Oct,7-May,14-Jun
+MT,68,Apples,"Orchard, Deciduous",68,,1,,1,,Fall Frost Date,7-May,17-May,,,,,5-Sep,20-Sep,30-Oct,10-Nov,30-Apr,15-May
+MT,66,Cherries,"Orchard, Deciduous",66,,,,1,,Fall Frost Date,10-May,20-May,,,,,20-Jul,31-Jul,14-Aug,20-Aug,7-May,14-May
+NC,68,Apples,"Orchard, Deciduous",68,,,,1,,Fall Frost Date,15-Apr,25-Apr,,,,,15-Aug,15-Sep,15-Oct,1-Nov,15-Apr,15-Apr
+NC,218,Nectarines,"Orchard, Deciduous",218,,1,,1,,Fall Frost Date,25-Mar,4-Apr,,,,,1-Jul,15-Jul,25-Jul,10-Aug,25-Mar,25-Mar
+NC,67,Peaches,"Orchard, Deciduous",67,,,,1,,Fall Frost Date,25-Mar,4-Apr,,,,,1-Jul,15-Jul,25-Jul,10-Aug,25-Mar,25-Mar
+NC,74,Pecans,"Orchard, Deciduous",74,,,,1,,Fall Frost Date,15-May,25-May,,,,,5-Oct,10-Nov,25-Nov,15-Dec,15-May,15-May
+NC,242,Blueberries,"Small Fruit, Trellised",242,,,,1,,Fall Frost Date,5-Mar,9-Apr,,,,,15-May,31-May,14-Jun,3-Aug,9-Apr,9-Apr
+NC,55,Caneberries,"Small Fruit, Trellised",55,,1,,1,,Fall Frost Date,5-Mar,9-Apr,,,,,15-May,31-May,14-Jun,3-Aug,9-Apr,9-Apr
+NC,69,Grapes,"Small Fruit, Trellised",69,,,,1,,Fall Frost Date,15-Apr,20-May,,,,,20-Aug,25-Aug,20-Sep,10-Oct,20-May,20-May
+NE,68,Apples,"Orchard, Deciduous",68,,1,,1,,Fall Frost Date,5-May,15-May,,,,,1-Aug,20-Sep,20-Sep,12-Oct,5-May,5-May
+NE,69,Grapes,"Small Fruit, Trellised",69,,1,,1,,Fall Frost Date,18-Apr,23-May,,,,,22-Aug,25-Aug,15-Sep,25-Sep,20-May,27-May
+NH,68,Apples,"Orchard, Deciduous",68,,,,1,,Fall Frost Date,22-May,1-Jun,,,,,1-Aug,10-Sep,27-Oct,8-Nov,15-May,30-May
+NH,71,Other Tree Crops,"Orchard, Deciduous",71,,1,,1,,Fall Frost Date,22-May,1-Jun,,,,,1-Aug,10-Sep,27-Oct,8-Nov,15-May,30-May
+NH,77,Pears,"Orchard, Deciduous",77,,1,,1,,Fall Frost Date,7-May,17-May,,,,,15-Aug,10-Aug,25-Sep,30-Oct,5-May,10-May
+NH,242,Blueberries,"Small Fruit, Trellised",242,,1,,1,,Fall Frost Date,23-Apr,28-May,,,,,30-Jul,10-Aug,20-Aug,5-Sep,20-May,6-Jun
+NH,69,Grapes,"Small Fruit, Trellised",69,,1,,1,,Fall Frost Date,6-May,10-Jun,,,,,20-Sep,25-Sep,20-Oct,25-Oct,5-Jun,15-Jun
+NJ,68,Apples,"Orchard, Deciduous",68,,,,1,,Fall Frost Date,16-Apr,26-Apr,,,,,15-Jul,1-Sep,25-Oct,31-Oct,12-Apr,20-Apr
+NJ,218,Nectarines,"Orchard, Deciduous",218,,1,,1,,Fall Frost Date,11-Apr,21-Apr,,,,,5-Jul,20-Jul,31-Aug,15-Sep,7-Apr,15-Apr
+NJ,67,Peaches,"Orchard, Deciduous",67,,,,1,,Fall Frost Date,11-Apr,21-Apr,,,,,5-Jul,20-Jul,31-Aug,15-Sep,7-Apr,15-Apr
+NJ,242,Blueberries,"Small Fruit, Trellised",242,,,,1,,Fall Frost Date,26-Mar,30-Apr,,,,,15-Jun,27-Jun,11-Jul,15-Aug,15-Apr,15-May
+NJ,69,Grapes,"Small Fruit, Trellised",69,,1,,1,,Fall Frost Date,11-May,15-Jun,,,,,20-Sep,30-Sep,25-Oct,30-Oct,5-Jun,25-Jun
+NM,68,Apples,"Orchard, Deciduous",68,,,,1,,Fall Frost Date,22-Apr,2-May,,,,,1-Sep,15-Sep,15-Oct,30-Oct,15-Apr,30-Apr
+NM,223,Apricots,"Orchard, Deciduous",223,,1,,1,,Fall Frost Date,16-Mar,26-Mar,,,,,5-Jun,15-Jun,15-Aug,15-Sep,10-Mar,22-Mar
+NM,66,Cherries,"Orchard, Deciduous",66,,1,,1,,Fall Frost Date,25-Apr,5-May,,,,,5-Jul,20-Jul,30-Jul,5-Aug,25-Apr,25-Apr
+NM,67,Peaches,"Orchard, Deciduous",67,,1,,1,,Fall Frost Date,16-Mar,26-Mar,,,,,5-Jun,15-Jun,15-Aug,15-Sep,10-Mar,22-Mar
+NM,74,Pecans,"Orchard, Deciduous",74,,,,1,,Fall Frost Date,8-May,18-May,,,,,14-Nov,15-Nov,15-Dec,11-Jan,1-May,15-May
+NM,204,Pistachios,"Orchard, Deciduous",204,,1,,1,,Fall Frost Date,7-Apr,17-Apr,,,,,1-Sep,10-Sep,25-Sep,15-Oct,1-Apr,14-Apr
+NM,69,Grapes,"Small Fruit, Trellised",69,,1,,1,,Fall Frost Date,11-Mar,15-Apr,,,,,1-Jul,1-Aug,30-Sep,31-Oct,1-Apr,30-Apr
+NV,69,Grapes,"Small Fruit, Trellised",69,,1,,1,,Fall Frost Date,12-Apr,17-May,,,,,15-Jul,15-Jul,15-Jul,15-Dec,10-May,25-May
+NY,68,Apples,"Orchard, Deciduous",68,,,,1,,Fall Frost Date,10-May,20-May,,,,,20-Jul,1-Sep,20-Oct,30-Oct,1-May,20-May
+NY,66,Cherries,"Orchard, Deciduous",66,,,,1,,Fall Frost Date,8-May,18-May,,,,,25-Jun,1-Jul,10-Jul,15-Jul,1-May,15-May
+NY,218,Nectarines,"Orchard, Deciduous",218,,1,,1,,Fall Frost Date,10-May,20-May,,,,,1-Aug,10-Aug,31-Aug,20-Sep,1-May,20-May
+NY,71,Other Tree Crops,"Orchard, Deciduous",71,,1,,1,,Fall Frost Date,10-May,20-May,,,,,20-Jul,1-Sep,20-Oct,30-Oct,1-May,20-May
+NY,67,Peaches,"Orchard, Deciduous",67,,,,1,,Fall Frost Date,10-May,20-May,,,,,1-Aug,10-Aug,31-Aug,20-Sep,1-May,20-May
+NY,77,Pears,"Orchard, Deciduous",77,,,,1,,Fall Frost Date,7-May,17-May,,,,,15-Aug,10-Aug,25-Sep,30-Oct,5-May,10-May
+NY,220,Plums,"Orchard, Deciduous",220,,1,,1,,Fall Frost Date,12-May,22-May,,,,,1-Sep,5-Sep,25-Sep,1-Oct,5-May,20-May
+NY,242,Blueberries,"Small Fruit, Trellised",242,,1,,1,,Fall Frost Date,23-Apr,28-May,,,,,15-Jul,1-Aug,1-Aug,15-Aug,15-May,10-Jun
+NY,55,Caneberries,"Small Fruit, Trellised",55,,1,,1,,Fall Frost Date,6-May,10-Jun,,,,,,,,,,
+NY,69,Grapes,"Small Fruit, Trellised",69,,,,1,,Fall Frost Date,6-May,10-Jun,,,,,20-Sep,25-Sep,20-Oct,25-Oct,5-Jun,15-Jun
+NY,56,Hops,"Small Fruit, Trellised",56,,1,,1,,11-Sep,21-Mar,8-Jul,,,,,24-Aug,,,30-Sep,1-Jul,15-Jul
+OH,68,Apples,"Orchard, Deciduous",68,,,,1,,Fall Frost Date,27-Apr,7-May,,,,,1-Jul,20-Aug,15-Oct,20-Oct,20-Apr,5-May
+OH,66,Cherries,"Orchard, Deciduous",66,,1,,1,,Fall Frost Date,23-Apr,3-May,,,,,10-Jun,25-Jun,5-Jul,10-Jul,15-Apr,2-May
+OH,71,Other Tree Crops,"Orchard, Deciduous",71,,1,,1,,Fall Frost Date,23-Apr,3-May,,,,,10-Jun,25-Jun,5-Jul,10-Jul,15-Apr,2-May
+OH,67,Peaches,"Orchard, Deciduous",67,,,,1,,Fall Frost Date,25-Apr,5-May,,,,,25-Jul,10-Aug,1-Sep,5-Oct,20-Apr,1-May
+OH,220,Plums,"Orchard, Deciduous",220,,1,,1,,Fall Frost Date,12-May,22-May,,,,,1-Sep,5-Sep,25-Sep,1-Oct,5-May,20-May
+OH,242,Blueberries,"Small Fruit, Trellised",242,,1,,1,,Fall Frost Date,15-Apr,20-May,,,,,25-Jun,15-Jul,1-Sep,10-Sep,10-May,30-May
+OH,55,Caneberries,"Small Fruit, Trellised",55,,1,,1,,Fall Frost Date,13-May,17-Jun,,,,,15-Sep,25-Sep,20-Oct,5-Nov,10-Jun,25-Jun
+OH,69,Grapes,"Small Fruit, Trellised",69,,1,,1,,Fall Frost Date,13-May,17-Jun,,,,,15-Sep,25-Sep,20-Oct,5-Nov,10-Jun,25-Jun
+OK,67,Peaches,"Orchard, Deciduous",67,,1,,1,,Fall Frost Date,22-Mar,1-Apr,,,,,25-Jun,25-Jul,15-Aug,25-Sep,20-Mar,25-Mar
+OK,74,Pecans,"Orchard, Deciduous",74,,,,1,,Fall Frost Date,16-May,26-May,,,,,15-Oct,15-Nov,31-Dec,1-Feb,1-May,1-Jun
+OK,242,Blueberries,"Small Fruit, Trellised",242,,1,,1,,Fall Frost Date,10-Feb,17-Mar,,,,,5-May,1-Jul,1-Jul,15-Aug,16-Feb,15-Apr
+OK,69,Grapes,"Small Fruit, Trellised",69,,1,,1,,Fall Frost Date,21-Apr,26-May,,,,,10-Jul,25-Aug,15-Sep,15-Oct,7-May,14-Jun
+OR,68,Apples,"Orchard, Deciduous",68,,,,1,,Fall Frost Date,3-May,13-May,,,,,15-Sep,25-Sep,10-Oct,25-Oct,1-May,5-May
+OR,223,Apricots,"Orchard, Deciduous",223,,1,,1,,Fall Frost Date,3-Apr,13-Apr,,,,,15-Jul,15-Jul,5-Sep,10-Sep,1-Apr,5-Apr
+OR,66,Cherries,"Orchard, Deciduous",66,,,,1,,Fall Frost Date,10-Apr,20-Apr,,,,,10-Jun,15-Jun,30-Jun,5-Jul,5-Apr,15-Apr
+OR,218,Nectarines,"Orchard, Deciduous",218,,1,,1,,Fall Frost Date,3-Apr,13-Apr,,,,,15-Jul,15-Jul,5-Sep,10-Sep,1-Apr,5-Apr
+OR,71,Other Tree Crops,"Orchard, Deciduous",71,,,,1,,Fall Frost Date,30-Jan,9-Feb,,,,,25-Sep,1-Oct,15-Oct,25-Oct,15-Jan,15-Feb
+OR,67,Peaches,"Orchard, Deciduous",67,,,,1,,Fall Frost Date,3-Apr,13-Apr,,,,,15-Jul,15-Jul,5-Sep,10-Sep,1-Apr,5-Apr
+OR,77,Pears,"Orchard, Deciduous",77,,,,1,,Fall Frost Date,5-Apr,15-Apr,,,,,1-Aug,5-Aug,20-Aug,1-Sep,1-Apr,10-Apr
+OR,220,Plums,"Orchard, Deciduous",220,,,,1,,Fall Frost Date,17-Apr,27-Apr,,,,,1-Sep,5-Sep,20-Sep,30-Sep,10-Apr,25-Apr
+OR,76,Walnuts,"Orchard, Deciduous",76,,1,,1,,Fall Frost Date,17-Apr,27-Apr,,,,,5-Sep,5-Oct,30-Oct,15-Nov,25-Mar,10-May
+OR,242,Blueberries,"Small Fruit, Trellised",242,,,,1,,Fall Frost Date,8-Apr,13-May,,,,,25-Jun,20-Jul,20-Jul,30-Sep,20-Apr,5-Jun
+OR,55,Caneberries,"Small Fruit, Trellised",55,,,,1,,Fall Frost Date,16-May,20-Jun,,,,,25-Jul,4-Aug,4-Aug,24-Sep,20-Jun,20-Jun
+OR,69,Grapes,"Small Fruit, Trellised",69,,,,1,,Fall Frost Date,30-Apr,4-Jun,,,,,20-Sep,1-Oct,10-Oct,25-Oct,1-Jun,8-Jun
+OR,56,Hops,"Small Fruit, Trellised",56,,,,1,,8-Sep,21-Mar,8-Jul,,,,,24-Aug,,,24-Sep,1-Jul,15-Jul
+PA,68,Apples,"Orchard, Deciduous",68,,,,1,,Fall Frost Date,2-May,12-May,,,,,30-Jul,7-Sep,20-Oct,25-Nov,25-Apr,10-May
+PA,66,Cherries,"Orchard, Deciduous",66,,,,1,,Fall Frost Date,23-Apr,3-May,,,,,10-Jun,25-Jun,5-Jul,10-Jul,15-Apr,2-May
+PA,71,Other Tree Crops,"Orchard, Deciduous",71,,1,,1,,Fall Frost Date,2-May,12-May,,,,,30-Jul,7-Sep,20-Oct,25-Nov,25-Apr,10-May
+PA,67,Peaches,"Orchard, Deciduous",67,,,,1,,Fall Frost Date,22-Apr,2-May,,,,,30-Jul,10-Aug,20-Sep,25-Sep,10-Apr,5-May
+PA,242,Blueberries,"Small Fruit, Trellised",242,,1,,1,,Fall Frost Date,11-May,15-Jun,,,,,,,,,,
+PA,69,Grapes,"Small Fruit, Trellised",69,,,,1,,Fall Frost Date,11-May,15-Jun,,,,,20-Sep,30-Sep,25-Oct,30-Oct,5-Jun,25-Jun
+RI,68,Apples,"Orchard, Deciduous",68,,,,1,,Fall Frost Date,22-May,1-Jun,,,,,1-Aug,10-Sep,27-Oct,8-Nov,15-May,30-May
+RI,242,Blueberries,"Small Fruit, Trellised",242,,1,,1,,Fall Frost Date,23-Apr,28-May,,,,,15-Jul,1-Aug,1-Aug,15-Aug,15-May,10-Jun
+RI,69,Grapes,"Small Fruit, Trellised",69,,1,,1,,Fall Frost Date,6-May,10-Jun,,,,,20-Sep,25-Sep,20-Oct,25-Oct,5-Jun,15-Jun
+RI,56,Hops,"Small Fruit, Trellised",56,,1,,1,,11-Sep,21-Mar,8-Jul,,,,,24-Aug,,,30-Sep,1-Jul,15-Jul
+SC,68,Apples,"Orchard, Deciduous",68,,,,1,,Fall Frost Date,15-Apr,25-Apr,,,,,15-Aug,1-Sep,15-Oct,1-Nov,15-Apr,15-Apr
+SC,71,Other Tree Crops,"Orchard, Deciduous",71,,1,,1,,Fall Frost Date,15-Mar,25-Mar,,,,,15-May,1-Jun,1-Aug,1-Sep,10-Mar,20-Mar
+SC,67,Peaches,"Orchard, Deciduous",67,,,,1,,Fall Frost Date,15-Mar,25-Mar,,,,,15-May,1-Jun,1-Aug,1-Sep,10-Mar,20-Mar
+SC,74,Pecans,"Orchard, Deciduous",74,,,,1,,Fall Frost Date,15-May,25-May,,,,,1-Oct,15-Oct,15-Nov,15-Dec,10-May,20-May
+SC,220,Plums,"Orchard, Deciduous",220,,1,,1,,Fall Frost Date,15-Mar,25-Mar,,,,,15-May,1-Jun,1-Aug,1-Sep,10-Mar,20-Mar
+SC,242,Blueberries,"Small Fruit, Trellised",242,,1,,1,,Fall Frost Date,15-Feb,22-Mar,,,,,15-Apr,10-May,30-Jun,1-Sep,15-Mar,30-Mar
+SC,69,Grapes,"Small Fruit, Trellised",69,,1,,1,,Fall Frost Date,5-Apr,10-May,,,,,25-Jul,1-Aug,30-Sep,15-Oct,1-May,20-May
+SD,68,Apples,"Orchard, Deciduous",68,,1,,1,,Fall Frost Date,15-May,25-May,,,,,1-Aug,1-Sep,30-Sep,30-Oct,10-May,20-May
+SD,69,Grapes,"Small Fruit, Trellised",69,,1,,1,,Fall Frost Date,6-May,10-Jun,,,,,25-Aug,15-Sep,15-Oct,30-Oct,5-Jun,15-Jun
+TN,68,Apples,"Orchard, Deciduous",68,,1,,1,,Fall Frost Date,10-Apr,20-Apr,,,,,1-Jul,1-Sep,30-Sep,15-Nov,10-Apr,10-Apr
+TN,67,Peaches,"Orchard, Deciduous",67,,,,1,,Fall Frost Date,1-Apr,11-Apr,,,,,1-Jun,1-Jul,30-Jul,1-Sep,1-Apr,1-Apr
+TN,74,Pecans,"Orchard, Deciduous",74,,1,,1,,Fall Frost Date,25-Apr,5-May,,,,,1-Nov,15-Nov,15-Dec,16-Jan,20-Apr,30-Apr
+TN,55,Caneberries,"Small Fruit, Trellised",55,,1,,1,,Fall Frost Date,5-Mar,9-Apr,,,,,15-May,31-May,14-Jun,3-Aug,9-Apr,9-Apr
+TN,69,Grapes,"Small Fruit, Trellised",69,,1,,1,,Fall Frost Date,15-Apr,20-May,,,,,20-Aug,25-Aug,20-Sep,10-Oct,20-May,20-May
+TX,71,Other Tree Crops,"Orchard, Deciduous",71,,1,,1,,Fall Frost Date,15-Apr,25-Apr,,,,,15-Sep,15-Oct,15-Dec,1-Feb,1-Apr,30-Apr
+TX,67,Peaches,"Orchard, Deciduous",67,,,,1,,Fall Frost Date,16-Mar,26-Mar,,,,,5-Jun,15-Jun,15-Aug,15-Sep,10-Mar,22-Mar
+TX,77,Pears,"Orchard, Deciduous",77,,1,,1,,Fall Frost Date,16-Mar,26-Mar,,,,,5-Jun,15-Jun,15-Aug,15-Sep,10-Mar,22-Mar
+TX,74,Pecans,"Orchard, Deciduous",74,,,,1,,Fall Frost Date,15-Apr,25-Apr,,,,,15-Sep,15-Oct,15-Dec,1-Feb,1-Apr,30-Apr
+TX,204,Pistachios,"Orchard, Deciduous",204,,1,,1,,Fall Frost Date,7-Apr,17-Apr,,,,,1-Sep,10-Sep,25-Sep,15-Oct,1-Apr,14-Apr
+TX,242,Blueberries,"Small Fruit, Trellised",242,,1,,1,,Fall Frost Date,7-Apr,12-May,,,,,31-Jul,20-Aug,20-Aug,15-Sep,10-May,15-May
+TX,55,Caneberries,"Small Fruit, Trellised",55,,1,,1,,Fall Frost Date,7-Apr,12-May,,,,,31-Jul,20-Aug,20-Aug,15-Sep,10-May,15-May
+TX,69,Grapes,"Small Fruit, Trellised",69,,1,,1,,Fall Frost Date,7-Apr,12-May,,,,,31-Jul,20-Aug,20-Aug,15-Sep,10-May,15-May
+UT,68,Apples,"Orchard, Deciduous",68,,,,1,,Fall Frost Date,5-May,15-May,,,,,15-Sep,15-Sep,1-Nov,15-Nov,1-May,10-May
+UT,223,Apricots,"Orchard, Deciduous",223,,,,1,,Fall Frost Date,11-Mar,21-Mar,,,,,3-Jun,8-Jun,15-Jun,20-Jun,11-Mar,11-Mar
+UT,66,Cherries,"Orchard, Deciduous",66,,,,1,,Fall Frost Date,20-Apr,30-Apr,,,,,10-Jun,15-Jun,15-Jul,20-Jul,20-Apr,20-Apr
+UT,67,Peaches,"Orchard, Deciduous",67,,,,1,,Fall Frost Date,20-Apr,30-Apr,,,,,10-Aug,10-Aug,5-Oct,5-Oct,15-Apr,25-Apr
+UT,77,Pears,"Orchard, Deciduous",77,,,,1,,Fall Frost Date,20-Apr,30-Apr,,,,,20-Aug,25-Aug,15-Sep,20-Sep,20-Apr,20-Apr
+UT,55,Caneberries,"Small Fruit, Trellised",55,,1,,1,,Fall Frost Date,11-Mar,15-Apr,,,,,1-Jul,1-Aug,30-Sep,31-Oct,1-Apr,30-Apr
+UT,69,Grapes,"Small Fruit, Trellised",69,,1,,1,,Fall Frost Date,11-Mar,15-Apr,,,,,1-Jul,1-Aug,30-Sep,31-Oct,1-Apr,30-Apr
+VA,68,Apples,"Orchard, Deciduous",68,,,,1,,Fall Frost Date,20-Apr,30-Apr,,,,,25-Jun,10-Sep,1-Nov,5-Nov,10-Apr,30-Apr
+VA,67,Peaches,"Orchard, Deciduous",67,,,,1,,Fall Frost Date,4-Apr,14-Apr,,,,,15-Jun,10-Jul,15-Aug,1-Sep,25-Mar,15-Apr
+VA,77,Pears,"Orchard, Deciduous",77,,1,,1,,Fall Frost Date,20-Apr,30-Apr,,,,,25-Jun,10-Sep,1-Nov,5-Nov,10-Apr,30-Apr
+VA,74,Pecans,"Orchard, Deciduous",74,,1,,1,,Fall Frost Date,20-Apr,30-Apr,,,,,25-Jun,10-Sep,1-Nov,5-Nov,10-Apr,30-Apr
+VA,220,Plums,"Orchard, Deciduous",220,,1,,1,,Fall Frost Date,4-Apr,14-Apr,,,,,15-Jun,10-Jul,15-Aug,1-Sep,25-Mar,15-Apr
+VA,76,Walnuts,"Orchard, Deciduous",76,,1,,1,,Fall Frost Date,20-Apr,30-Apr,,,,,25-Jun,10-Sep,1-Nov,5-Nov,10-Apr,30-Apr
+VA,242,Blueberries,"Small Fruit, Trellised",242,,1,,1,,Fall Frost Date,25-Apr,30-May,,,,,25-Aug,10-Sep,15-Oct,5-Nov,20-May,10-Jun
+VA,69,Grapes,"Small Fruit, Trellised",69,,1,,1,,Fall Frost Date,25-Apr,30-May,,,,,25-Aug,10-Sep,15-Oct,5-Nov,20-May,10-Jun
+VT,68,Apples,"Orchard, Deciduous",68,,,,1,,Fall Frost Date,22-May,1-Jun,,,,,1-Aug,10-Sep,27-Oct,8-Nov,15-May,30-May
+VT,71,Other Tree Crops,"Orchard, Deciduous",71,,1,,1,,Fall Frost Date,22-May,1-Jun,,,,,1-Aug,10-Sep,27-Oct,8-Nov,15-May,30-May
+VT,242,Blueberries,"Small Fruit, Trellised",242,,1,,1,,Fall Frost Date,23-Apr,28-May,,,,,15-Jul,1-Aug,1-Aug,15-Aug,15-May,10-Jun
+VT,69,Grapes,"Small Fruit, Trellised",69,,1,,1,,Fall Frost Date,6-May,10-Jun,,,,,20-Sep,25-Sep,20-Oct,25-Oct,5-Jun,15-Jun
+WA,75,Almonds,"Orchard, Deciduous",75,,1,,1,,Fall Frost Date,28-Apr,8-May,,,,,10-Aug,25-Aug,20-Oct,11-Nov,28-Apr,28-Apr
+WA,68,Apples,"Orchard, Deciduous",68,,,,1,,Fall Frost Date,28-Apr,8-May,,,,,10-Aug,25-Aug,20-Oct,11-Nov,28-Apr,28-Apr
+WA,223,Apricots,"Orchard, Deciduous",223,,,,1,,Fall Frost Date,5-Apr,15-Apr,,,,,1-Jul,10-Jul,25-Jul,20-Jul,5-Apr,5-Apr
+WA,66,Cherries,"Orchard, Deciduous",66,,,,1,,Fall Frost Date,15-Apr,25-Apr,,,,,15-Jun,25-Jun,30-Jun,20-Jul,15-Apr,15-Apr
+WA,218,Nectarines,"Orchard, Deciduous",218,,1,,1,,Fall Frost Date,10-Apr,20-Apr,,,,,5-Jul,5-Jul,30-Jul,5-Aug,10-Apr,10-Apr
+WA,71,Other Tree Crops,"Orchard, Deciduous",71,,1,,1,,Fall Frost Date,28-Apr,8-May,,,,,10-Aug,25-Aug,20-Oct,11-Nov,28-Apr,28-Apr
+WA,67,Peaches,"Orchard, Deciduous",67,,,,1,,Fall Frost Date,10-Apr,20-Apr,,,,,5-Jul,5-Jul,30-Jul,5-Aug,10-Apr,10-Apr
+WA,77,Pears,"Orchard, Deciduous",77,,,,1,,Fall Frost Date,15-Apr,25-Apr,,,,,10-Aug,15-Aug,30-Aug,10-Sep,15-Apr,15-Apr
+WA,220,Plums,"Orchard, Deciduous",220,,,,1,,Fall Frost Date,15-Apr,25-Apr,,,,,15-Aug,25-Aug,5-Sep,15-Sep,15-Apr,15-Apr
+WA,76,Walnuts,"Orchard, Deciduous",76,,1,,1,,Fall Frost Date,28-Apr,8-May,,,,,10-Aug,25-Aug,20-Oct,11-Nov,28-Apr,28-Apr
+WA,242,Blueberries,"Small Fruit, Trellised",242,,,,1,,Fall Frost Date,18-Apr,23-May,,,,,25-Jun,15-Jul,15-Sep,5-Oct,15-May,31-May
+WA,55,Caneberries,"Small Fruit, Trellised",55,,,,1,,Fall Frost Date,1-May,5-Jun,,,,,15-Jun,1-Jul,10-Jul,25-Jul,1-Jun,10-Jun
+WA,69,Grapes,"Small Fruit, Trellised",69,,,,1,,Fall Frost Date,27-Apr,1-Jun,,,,,15-Sep,25-Sep,20-Oct,1-Nov,26-May,7-Jun
+WA,56,Hops,"Small Fruit, Trellised",56,,,,1,,8-Sep,21-Mar,8-Jul,,,,,24-Aug,,,24-Sep,1-Jul,15-Jul
+WI,68,Apples,"Orchard, Deciduous",68,,,,1,,Fall Frost Date,25-May,4-Jun,,,,,15-Sep,1-Oct,20-Oct,31-Oct,25-May,25-May
+WI,66,Cherries,"Orchard, Deciduous",66,,,,1,,Fall Frost Date,20-May,30-May,,,,,25-Jul,1-Aug,10-Aug,15-Aug,20-May,20-May
+WI,77,Pears,"Orchard, Deciduous",77,,1,,1,,Fall Frost Date,25-May,4-Jun,,,,,15-Sep,1-Oct,20-Oct,31-Oct,25-May,25-May
+WI,76,Walnuts,"Orchard, Deciduous",76,,1,,1,,Fall Frost Date,25-May,4-Jun,,,,,15-Sep,1-Oct,20-Oct,31-Oct,25-May,25-May
+WI,242,Blueberries,"Small Fruit, Trellised",242,,1,,1,,Fall Frost Date,7-Apr,12-May,,,,,25-Jun,10-Jul,1-Aug,10-Sep,5-May,20-May
+WI,55,Caneberries,"Small Fruit, Trellised",55,,1,,1,,Fall Frost Date,7-Apr,12-May,,,,,25-Jun,10-Jul,1-Aug,10-Sep,5-May,20-May
+WI,69,Grapes,"Small Fruit, Trellised",69,,1,,1,,Fall Frost Date,6-May,10-Jun,,,,,25-Aug,15-Sep,15-Oct,30-Oct,5-Jun,15-Jun
+WI,56,Hops,"Small Fruit, Trellised",56,,1,,1,,11-Sep,21-Mar,8-Jul,,,,,24-Aug,,,30-Sep,1-Jul,15-Jul
+WV,68,Apples,"Orchard, Deciduous",68,,,,1,,Fall Frost Date,25-Apr,5-May,,,,,22-Aug,20-Sep,10-Oct,31-Oct,20-Apr,30-Apr
+WV,71,Other Tree Crops,"Orchard, Deciduous",71,,1,,1,,Fall Frost Date,25-Apr,5-May,,,,,22-Aug,20-Sep,10-Oct,31-Oct,20-Apr,30-Apr
+WV,67,Peaches,"Orchard, Deciduous",67,,,,1,,Fall Frost Date,12-Apr,22-Apr,,,,,20-Jul,15-Aug,30-Aug,20-Sep,10-Apr,15-Apr
+WV,77,Pears,"Orchard, Deciduous",77,,1,,1,,Fall Frost Date,25-Apr,5-May,,,,,22-Aug,20-Sep,10-Oct,31-Oct,20-Apr,30-Apr
+WV,220,Plums,"Orchard, Deciduous",220,,1,,1,,Fall Frost Date,12-Apr,22-Apr,,,,,20-Jul,15-Aug,30-Aug,20-Sep,10-Apr,15-Apr
+WV,55,Caneberries,"Small Fruit, Trellised",55,,1,,1,,Fall Frost Date,13-May,17-Jun,,,,,15-Sep,25-Sep,20-Oct,5-Nov,10-Jun,25-Jun
+WV,69,Grapes,"Small Fruit, Trellised",69,,1,,1,,Fall Frost Date,13-May,17-Jun,,,,,15-Sep,25-Sep,20-Oct,5-Nov,10-Jun,25-Jun

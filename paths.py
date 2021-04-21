@@ -12,8 +12,8 @@ import re
 run_local = True
 local_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir))
 if run_local:
-    root_dir = r"E:\opp-efed-data\scenarios"
-    input_dir = r"E:\opp-efed-data\global"
+    root_dir = r"F:\opp-efed-data\scenarios"
+    input_dir = r"F:\opp-efed-data\global"
 else:
     root_dir = local_dir
     input_dir = os.path.join(root_dir, "Input")
@@ -67,8 +67,9 @@ sam_scenario_path = os.path.join(production_dir, "SamScenarios", "r{}_{}.csv")  
 pwc_scenario_path = os.path.join(production_dir, "PwcScenarios", "{1}_{2}",
                                  "{0}_{1}_{2}.csv")  # region, crop num, crop name
 pwc_outfile_path = os.path.join(production_dir, "PwcOutput", "{}_{}_all_{}_koc{}")  # crop_num, i, koc
-combined_scenario_path = os.path.join(production_dir, "PwcScenarios", "combined",
-                                      "{}_{}_all.csv")  # crop num, crop name
+combined_scenario_path = \
+    os.path.join(production_dir, "PwcScenarios", "combined", "{}_{}_all.csv")  # crop num, crop name
+concatenated_scenario_path = os.path.join(production_dir, "Concatenated", "{}_{}_all.csv")  # crop num, crop name
 pwc_metfile_path = os.path.join(production_dir, "PwcMetfiles", "s{}.csv")
 pwc_selection_path = os.path.join(production_dir, "SelectedScenarios")
 qc_path = os.path.join(production_dir, "QC_Files", "{].csv")  # Identifier

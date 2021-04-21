@@ -14,7 +14,7 @@ import datetime as dt
 import write
 from tools.efed_lib import report
 from parameters import fields, max_horizons, hydro_soil_group, uslep_values, aggregation_bins, depth_bins, \
-    usle_m_vals, usle_m_bins, date_fmt, pwc_selection_field
+    usle_m_vals, usle_m_bins, date_fmt, pwc_selection_field, chunk_size
 
 # This silences some error messages being raised by Pandas
 pd.options.mode.chained_assignment = None
@@ -91,7 +91,7 @@ def combinations(combos, crop_params, mode, agg_key):
     :param agg_key: Table linking aggregated soil IDs to original soil ID (df)
     :return: Modified combinations table (df)
     """
-    """
+
     # Split double-cropped classes into individual scenarios
     double_crops = \
         crop_params[['cdl', 'cdl_alias']].drop_duplicates().sort_values('cdl').astype(np.uint16)
@@ -111,14 +111,16 @@ def combinations(combos, crop_params, mode, agg_key):
         del combos['year']
         del combos['gridcode']
         combos = combos.rename(columns={'mukey': 'soil_id'})
-    """
-    combos = pd.read_csv("combos.csv")
+
     aggregate_fields = [c for c in combos.columns if c != "area"]
     n_combos = combos.shape[0]
-    #combos.to_csv("combos.csv", index=None)
+
+    # Write the combinations table to disk. It's easier to process this way.
+    combos.to_csv("combos.csv", index=None)
     del combos
+
+
     blocks = []
-    from parameters import chunk_size
     for i in range(0, n_combos, chunk_size):
         block = pd.read_csv("combos.csv", skiprows=range(1, i), nrows=chunk_size)
         block = block.groupby(aggregate_fields).sum().reset_index()
@@ -388,6 +390,7 @@ def soils(in_soils, mode):
     in_soils = in_soils.reset_index()
     fields.expand('horizon', max_horizons)
     qc_table = fields.perform_qc(in_soils).copy()
+
     for field in horizon_fields:
         check_fields = ['{}_{}'.format(field, i + 1) for i in range(max_horizons)]
         if qc_table[check_fields].values.max() > 1:  # QC value of 2 indicates invalid data
@@ -397,11 +400,7 @@ def soils(in_soils, mode):
 
     # Adjust cumulative thickness
     profile = in_soils[['thickness_{}'.format(i + 1) for i in range(max_horizons)]]
-
-    a = in_soils.n_horizons.values
-    b = np.arange(max_horizons)
-    msk = np.greater.outer(a, b)
-    profile_depth = profile.mask(~msk).sum(axis=1)
+    profile_depth = profile.mask(~np.greater.outer(in_soils.n_horizons.values, np.arange(max_horizons))).sum(axis=1)
     in_soils['root_zone_max'] = np.minimum(in_soils.root_zone_max.values, profile_depth)
     if mode == 'pwc':
         # Set values for missing or zero slopes

@@ -59,10 +59,6 @@ def get_scenarios(region_filter=None, class_filter=None):
     if class_filter is not None:
         classes = [row for row in classes if row[0] in class_filter]
 
-    # TODO - DELETE THIS IN THE FUTURE
-    #  This is to fix a problem that occurred in autumn of 2020 where Region 18 was left out
-    r18_combined = read_region_18(False)
-
     count = 0
     # Iterate through each class and read tables, starting with the PWC infile
     for class_num, class_name in classes:
@@ -72,11 +68,7 @@ def get_scenarios(region_filter=None, class_filter=None):
             pwc_output = read.pwc_outfile(class_num, class_name)  # all regions
             combined = pwc_output.merge(pwc_input, on='scenario_id', how='inner')
             for region in regions:
-                # TODO - delete this in the future (see above TODO re: region 18)
-                if region != '18':
-                    regional_combined = combined[combined.region == region]
-                else:
-                    regional_combined = r18_combined
+                regional_combined = combined[combined.region == region]
                 if not regional_combined.empty:
                     yield count, region, class_num, class_name, regional_combined
                     count += 1
@@ -163,7 +155,7 @@ def report_region(scenarios, region, class_name, class_num):
 def main():
     fields.expand('horizon', max_horizons)
     region_filter = None
-    class_filter = None
+    class_filter = [200, 210, 211]
 
     for i, region, class_num, class_name, scenarios in get_scenarios(region_filter, class_filter):
         report(f"Working on Region {region} {class_name}...")

@@ -87,6 +87,8 @@ def crop_dates(mode='pwc'):
         dates = dates[dates.sam_only != 1]
 
     # Convert dates to days since Jan 1
+    print(crop_dates_path)
+    print(dates.columns)
     dates = date_to_num(dates)
     # If date is earlier than preceeding event, move it forward a year
     # TODO - check this assumption. what if the dates are just off? should this be in modify.py?

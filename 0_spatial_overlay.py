@@ -3,7 +3,7 @@ import os
 import numpy as np
 import pandas as pd
 
-from hydro.nhd.params_nhd import nhd_regions, vpus_nhd
+from hydro.params_nhd import nhd_regions, vpus_nhd
 from tools.efed_lib import report
 from paths import nhd_raster_path, weather_raster_path, cdl_path, soil_raster_path, combined_raster_path, combo_path
 
@@ -59,7 +59,7 @@ def generate_combos(combined_raster, year):
 
 def main():
     years = range(2015, 2020)  # range(2010, 2016)
-    overwrite_raster = False
+    overwrite_raster = True
     overwrite_combos = False
     regions = ['07'] + list(nhd_regions)
     for region in regions:
@@ -69,7 +69,7 @@ def main():
         for year in years:
             print(region, year)
             cdl_raster = cdl_path.format(year)
-            combined_raster = combined_raster_path.format(region, year)
+            combined_raster = combined_raster_path.format(region, year) + "test"
             combinations_table = combo_path.format(region, year)
             if overwrite_raster or not os.path.exists(combined_raster):
                 report("Performing raster overlay for Region {}, {}...".format(region, year))

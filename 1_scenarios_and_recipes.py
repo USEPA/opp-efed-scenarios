@@ -266,9 +266,9 @@ def scenarios_and_recipes(regions, years, mode, class_filter=None):
 def main():
     """ Wraps scenarios_and_recipes.
     Specify mode, years, and regions for processing here """
-    modes = ('pwc',)  # pwc and/or sam
+    modes = ('sam',)  # pwc and/or sam
     years = range(2015, 2020)
-    regions = nhd_regions
+    regions = ('07',)
     class_filter = None
     for mode in modes:
         scenarios_and_recipes(regions, years, mode, class_filter)
